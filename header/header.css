@@ -1,5 +1,5 @@
 #parallax1{
-	background-image: url(../img/par1.png);
+	/* background-image: url(../img/par1.png); */
 	background-position-x:left;
 	min-height:1200px;
 	color:#fff;
@@ -7,11 +7,11 @@
 }
 
 .header1{
-	margin-bottom:10px;
-	text-transform:uppercase;
+	margin-bottom:34px;
+	/* text-transform:uppercase; */
 	font-family: Montserrat;
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 70px;
+	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
@@ -21,12 +21,12 @@
 }
 
 .header2{
-	height: 40px;
-	margin-bottom:30px;
-	text-transform:uppercase;
+	/* height: 40px; */
+	margin-bottom:60px;
+	/* text-transform:uppercase; */
 	font-family: Montserrat;
-	font-size: 60px;
-	font-weight: bold;
+	font-size: 30px;
+	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 0.63;
@@ -36,11 +36,11 @@
 }
 
 .header3{
-	height: 42px;
+	/* height: 42px; */
 	text-transform:uppercase;
 	font-family: Raleway;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.88;
@@ -49,6 +49,33 @@
 	color: #ffffff;
 	width:541px;
 }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.text-change{
+	color: #00fff7;
+	-webkit-animation: fadein 2s infinite;
+    -moz-animation: fadein 2s  infinite;
+    animation: fadein 2s infinite;
+
+	/* -webkit-animation: fadein 0.5s ease-in alternate infinite;
+    -moz-animation: fadein 0.5s ease-in alternate infinite;
+    animation: fadein 0.5s ease-in alternate infinite; */
+}
+
 #headerCubeLeft{
 	position:absolute;
 	left: -155px;
@@ -58,7 +85,7 @@
 #headerCube{
 	position: absolute;
 	right: 0px;
-	top: 325px;
+	top: 147px;
 	width:1404px;
 	height:839px;
 	background-image: url(../img/HEADER_CUBE01@2x.png);
@@ -75,6 +102,7 @@
 	background-image: url(../img/headerBinaryCode.png);
 	background-repeat:no-repeat;
 }
+
 
 @media only screen and (max-width: 1400px) {
 	#headerCube{
@@ -148,11 +176,11 @@
 	}
 
 	.header1{
-		font-size:42px;
+		font-size:25px;
 	}
 
 	.header2{
-		font-size:50.5px;
+		font-size:10px;
 	}
 
 	.header3{
