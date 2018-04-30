@@ -67,9 +67,9 @@
 
 .text-change{
 	color: #00fff7;
-	-webkit-animation: fadein 2s infinite;
-    -moz-animation: fadein 2s  infinite;
-    animation: fadein 2s infinite;
+	/* -webkit-animation: fadein 3s infinite;
+    -moz-animation: fadein 3s infinite;
+    animation: fadein 3s infinite; */
 
 	/* -webkit-animation: fadein 0.5s ease-in alternate infinite;
     -moz-animation: fadein 0.5s ease-in alternate infinite;

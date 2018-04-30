@@ -34,19 +34,28 @@ angular.module('header', [])
           }
         ]
 
-        // 2초 타이머에 따라서 글씨 변환되는 기능
-        let i =1;
+        // 3초 타이머에 따라서 글씨 변환되는 기능
+        
         $scope.index = textList[0].item;
 
+        let i =1;
+
         $interval(function() {
-          console.log(i);
+
+          $scope.fadein = {
+            "-webkit-animation": "fadein 3s infinite",
+            "-moz-animation": "fadein 3s infinite",
+            "animation": "fadein 3s infinite"
+          }
+
           $scope.index = textList[i].item;
           i++;
           if(i==3){
             i=0;
           }
-        }, 2000);
           
+        }, 3000);
+        
       }
     };
   });
