@@ -53,10 +53,9 @@
 
 #navContainer {
 	width:100%;
-	padding-top:66px;
-	padding-bottom:0px;
+	padding-top:20px;
+	padding-bottom:20px;
 	margin: 0 auto;
-	height:94px;
 	vertical-align: middle;
 }
 

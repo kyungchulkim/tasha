@@ -1,9 +1,9 @@
 #parallax8 {
-	background-color:#fff;
+	/* background-color:#fff; */
 }
 
 #parallax9 {
-	background:url('../img/par9.png');
+	/* background:url('../img/par9.png'); */
 	background-position-x:center;
 	height:2000px;
 	padding-top:186px;
@@ -12,7 +12,7 @@
 }
 
 #parallax10 {
-	background:url('../img/par10.png');
+	/* background:url('../img/par10.png'); */
 	background-position-x:center;
 	margin-top: -375px;
 	height:4075px;

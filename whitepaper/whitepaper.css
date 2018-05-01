@@ -3,26 +3,26 @@
 	background-position-x:center;
 	padding-top:800px;
 	height: 1679px;
-	margin-top: -350px;
+	/* margin-top: -350px; */
 	position:relative;
 	z-index:1001
 }
 
 .download{
-	height: 30px;
-	text-transform: uppercase;
+	height: 44px;
 	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 32px;
+	font-weight: 500;
 	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: 0.9px;
-	padding-top:18px;
+  	font-stretch: normal;
+  	line-height: normal;
+	  letter-spacing: normal;
+	  margin-left: 220px;
+  	color: #00fff7;
 }
 
 .download a{
-	color: #575757;
+	color: #00fff7;
 }
 .download a{
 	text-decoration: none;
@@ -35,7 +35,7 @@
 
 #whitepaperHeader{
 	height: 46px;
-	margin-bottom:59px;
+	margin-bottom:27px;
 	text-transform: uppercase;
 	font-family: Montserrat;
 	font-size: 48px;
@@ -43,6 +43,7 @@
 	font-style: normal;
 	font-stretch: normal;
 	margin-top:125px;
+	margin-left: 187px;
 	line-height: normal;
 	letter-spacing: -1.2px;
 	text-align: left;

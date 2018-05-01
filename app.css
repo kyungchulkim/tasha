@@ -4,7 +4,7 @@ main, .navbar, .parallax, #ploygon4, #base3{
 
 body,html{
 	font-family: 'Raleway', sans-serif;
-	background-color:#fff;
+	background-color:#041c53;
 	overflow-x:hidden;
 	
 }
@@ -25,8 +25,8 @@ main{
 main .container{
 	max-width:100% !important;
 	padding:0px;
-	/* background-color:#fff; */
-	background-image: linear-gradient(to bottom, #1a45da, #1943d5 9%, #001950 22%, #163dc2 66%, #001950);
+	background-color:#041c53;
+	/* background-image: linear-gradient(to bottom, #1a45da, #1943d5 9%, #001950 22%, #163dc2 66%, #001950); */
 }
 
 #go_to_top{
@@ -60,9 +60,10 @@ main .container{
 	font-size:1px;
 }
 .content{
-	max-width:1400px;
+	/* max-width:1400px; */
+	max-width:1650px;
 	margin:0 auto;
-/* 	padding:10px 100px; */
+	padding:0px 70px;
 	opacity:0;
 }
 

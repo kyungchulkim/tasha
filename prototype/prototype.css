@@ -1,6 +1,6 @@
 #parallax7 {
-	background-image: url(../img/par7.png);
-	background-color:#fff;
+	/* background-image: url(../img/par7.png); */
+	/* background-color:#fff; */
 	background-position-x:center;
 	height: 1198px;
 	position:relative;
@@ -11,14 +11,13 @@
 
 
 #phone{
-	margin-left:-60px;
 	position:relative;z-index:2;
 	width:360px;
 	height:730px;
 }
 
 #prototypeBGGraphic{
-	background: url('../img/BG ELEMENTS_PROTOTYPE.png');
+	/* background: url('../img/BG ELEMENTS_PROTOTYPE.png'); */
 	width: 1200px;
 	height: 1175px;
 	position: absolute;
@@ -29,20 +28,19 @@
 }
 
 #prototypeHeader{
-	height: 48px;
+	height: 55px;
 	text-transform:uppercase;
 	margin-bottom:53px;
 	margin-top:350px;
 	font-family: Montserrat;
-	font-size: 48px;
-	font-weight: bold;
+	font-size: 40px;
+	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: -1.2px;
-	text-align: right;
 	position:relative;
-	left:15px;
+	margin-left:250px;
 	color: #ffffff;
 }
 

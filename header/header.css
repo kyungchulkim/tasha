@@ -1,12 +1,14 @@
 #parallax1{
 	/* background-image: url(../img/par1.png); */
 	background-position-x:left;
-	min-height:1200px;
+	/* min-height:1200px; */
 	color:#fff;
 	padding-top:60px;
+	padding-bottom: 250px;
 }
 
 .header1{
+	height: 96px;
 	margin-bottom:34px;
 	/* text-transform:uppercase; */
 	font-family: Montserrat;
@@ -21,7 +23,7 @@
 }
 
 .header2{
-	/* height: 40px; */
+	height: 41px;
 	margin-bottom:60px;
 	/* text-transform:uppercase; */
 	font-family: Montserrat;
@@ -67,6 +69,10 @@
 
 .text-change{
 	color: #00fff7;
+	width:240px;
+	display:inline-block;
+	text-align:center;
+	/* width: 300px; */
 	/* -webkit-animation: fadein 3s infinite;
     -moz-animation: fadein 3s infinite;
     animation: fadein 3s infinite; */
@@ -84,13 +90,15 @@
 
 #headerCube{
 	position: absolute;
-	right: 0px;
-	top: 147px;
-	width:1404px;
-	height:839px;
-	background-image: url(../img/HEADER_CUBE01@2x.png);
-	background-size:contain;
-	background-repeat:no-repeat;
+	right: 70px;
+	top: 200px;
+	max-width:646px;
+	max-height:715px;
+	/* width: 646px;
+	height: 715px; */
+	background-color: #fff;
+	/* background-size:contain;
+	background-repeat:no-repeat; */
 }
 
 #headerBinary{
@@ -104,7 +112,7 @@
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1650px) {
 	#headerCube{
 		right:-110px;
 	}
