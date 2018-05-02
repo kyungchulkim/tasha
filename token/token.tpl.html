@@ -1,42 +1,38 @@
 <div id="dropToken"></div>
+
 <div id="parallax8" class="parallax">
 	<!-- <div style="margin-top: -307px;"
 			 class="tokenBackground">
 		<img src="img/BG ELEMENTS_TOKEN01-TOP.png" />
 	</div> -->
 	<div class="content" style="z-index:2;position:relative;">
+		<div class="row">
+				<div class="col-lg-7 col-md-7 ">
 		<a name="token" class="pin">&nbsp;</a>
-		<div class="text-category token-header" style="height: 48px;
-								text-transform: uppercase;
-								font-family: Montserrat;
-								font-size: 48px;
-								font-weight: bold;
-								font-style: normal;
-								font-stretch: normal;
-								line-height: normal;
-								letter-spacing: -1.2px;
-								text-align: center;
-								margin-bottom:147px;
-								margin-top:25px;
-								color: #344765;">
-			Token Model
-			<!-- <img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" /> -->
-		</div>
-		<div id="tokenContent">
-			<div id="tokenText1" class="text-desc">
-				TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a
-				<span class="second-paragraph">
-					sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can 
-					<br/>
-					spend the tokens in the TEMCO marketplace for your next purchase.
-				</span>
-			</div>
+		
+		
 			<div style="text-align:center;margin-top:84px;">
 				<img id="igToken"
 						 src="img/IG_APPRECIATION@2x.png" />
 				<img id="igTokenSmall"
 						 src="img/ig_appreciation_small@2x.png" />
 			</div>
+		</div>
+
+
+		<div class="col-lg-5 col-md-5">
+			<div class="text-category token-header">
+					Token Model
+				</div>
+					<div id="tokenText1" class="text-desc">
+						TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a
+						<span class="second-paragraph">
+							sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can 
+							<br/>
+							spend the tokens in the TEMCO marketplace for your next purchase.
+						</span>
+					</div>
+				</div>
 		</div>
 	</div>
 	<!-- <div style="margin-top: -680px;
@@ -46,70 +42,76 @@
 	</div> -->
 </div>
 
-<!--
+
 <div id="parallax9" class="parallax">
-	-->
-	<!--
-	<div style="margin: 0 auto;
+	
+	
+	<!-- <div style="margin: 0 auto;
 										width: 100px;
 										margin-top:24px;">
 		<img id="drop-distro-img" style="width: 100px;
 											margin-left: 2px;"
 				 src="img/drop_distro.png" />
-	</div>
-	-->
-	<!--
-	<div class="content">	
-		<div class="text-category token-dist-container" style="height: 48px;
-												margin-top:35px;
-												text-transform:uppercase;
-												font-family: Montserrat;
-												font-size: 48px;
-												font-weight: bold;
-												font-style: normal;
-												font-stretch: normal;
-												line-height: normal;
-												letter-spacing: -1.2px;
-												text-align: center;
-												margin-bottom:199px;
-												color: #344765;">
-			Token  Distribution
-			<img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
-		</div>
+	</div> -->
 	
-		<div style="text-align:center;">
+	
+	<div class="content">	
+		<div class="text-category token-dist-container">
+			Token  
+			Distribution
+		</div>
+		<div class="row">
+				<div class="col-lg-3 col-md-3"></div>
+		<div class="col-lg-9 col-md-9">
+		<div style="text-align:right;">
 			<img id="token-dist-img" style="width:80%;max-width:1071px;" src="img/IG_DISTRIBUTION@2x.png" />
 		</div>
-	
 	</div>
-	-->
-	<!--
 </div>
--->
+	</div>
+	
+	
+</div>
+
+
 <div id="parallax10" class="parallax">
-		https://owlcarousel2.github.io/OwlCarousel2/ 적용
-	<div style="margin: 0 auto;
+		
+	
+
+	<!-- <div style="margin: 0 auto;
 											width: 100px;
 											margin-top:10px;">
 		<img id="drop-roadmap-img" style="width: 100px;"
 				 src="img/drop_roadmap.png" />
+	</div> -->
+	<div class="content">
+			
+
+		<div class="text-category" id="roadmapHeader">
+			ROADMAP
+			<!-- <img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" /> -->
+		</div>
+
+		<!-- <data-owl-carousel class="owl-carousel" style="color:white;" 
+		data-options="{navigation: true, pagination: false, rewindNav : false}">
+			<div owl-carousel-item="" ng-repeat="item in ::items1" class="item" >
+			  <p>{{::item}}</p>
+			</div>
+		</data-owl-carousel> -->
+	
+		<data-owl-carousel class="token-roadmap owl-carousel" style="color:white;" 
+		data-options="{navigation: true, pagination: false, rewindNav : false, margin : 10}">
+		<div owl-carousel-item="" ng-repeat="item in ::items1" class="item">
+			<div class="each-road-map">
+				<p>{{::item}}</p>
+				<p>{{::item}}</p>	
+			</div>
+		  </div>
+		</data-owl-carousel>
+		
 	</div>
-	<div class="text-category" style="height: 48px;
-											margin-top:55px;
-											margin-bottom:212px;
-											font-family: Montserrat;
-											font-size: 48px;
-											font-weight: bold;
-											font-style: normal;
-											font-stretch: normal;
-											line-height: normal;
-											letter-spacing: -1.2px;
-											text-align: center;
-											color: #ffffff;" id="roadmapHeader">
-		ROADMAP
-		<img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
-	</div>
-	<div class="text-sub-category" style="height: 34px;
+	
+	<!-- <div class="text-sub-category" style="height: 34px;
 											font-family: Montserrat;
 											margin-bottom:25px;
 											font-size: 34px;
@@ -335,5 +337,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>

@@ -52,6 +52,18 @@ main .container{
 	text-align:right;
 }
 
+.text-category{
+	text-transform: uppercase;
+	height: 55px;
+	font-size: 40px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
 /* parallax */
 
 .pin{
@@ -89,8 +101,8 @@ main .container{
 /* zeplin */
 
 .TEMCO-LOGO {
-	width: 141px;
-	height: 38px;
+	width: 104px;
+	height: 28px;
 	object-fit: contain;
 }
 /* end of zeplin */
@@ -135,7 +147,7 @@ main .container{
 	}
 
 	.text-main{
-		font-size: 23px !important;
+		font-size: 23px ;
 	}
 
 	.text-category{
@@ -167,7 +179,7 @@ main .container{
 	}
 
 	.text-main{
-		font-size: 23px !important;
+		font-size: 23px ;
 	}
 
 	.text-category{
@@ -187,18 +199,19 @@ main .container{
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 	.content{
-		padding-left:15px;
-		padding-right:15px;
+		padding-left:30px;
+		padding-right:30px;
 		max-width:400px;
+		margin-top: 45px !important;
 	}
 }
 
 /* iphone x  */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	.text-main{
-		font-size: 23px !important;
+		font-size: 23px ;
 	}
 
 	.text-category{
@@ -226,7 +239,7 @@ main .container{
 	}
 
 	.text-main{
-		font-size: 23px !important;
+		font-size: 23px ;
 	}
 
 	.text-category{

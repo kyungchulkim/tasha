@@ -43,7 +43,7 @@ angular.module('header', [])
         $interval(function() {
 
           $scope.fadein = {
-            "width":"240px",
+            "width":"22vw",
             "display":"inline-block",
             "text-align":"center",
             "-webkit-animation": "fadein 3s infinite",

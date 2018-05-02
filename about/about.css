@@ -193,11 +193,12 @@
 	
 }
 
-@-webkit-keyframes bounce {
+/* @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
     40% {-webkit-transform: translateY(-30px) }
     60% {-webkit-transform: translateY(-20px);}
-} 
+}  */
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
@@ -208,6 +209,41 @@
     0%, 100% {transform: translateY(30px);}
 	50% {transform: translateY(-30px);}
 } 
+
+@keyframes glow {
+	from {
+	  box-shadow: 0 0 10px #58b7df, 0 0 20px #58b7df, 0 0 30px #58b7df;
+	}
+	to {
+	  box-shadow: 0 0 0px #041c53, 0 0 0px #041c53, 0 0 0px #041c53;
+	}
+}
+
+@keyframes glow_text {
+	from {
+	  text-shadow: 0 0 10px #58b7df, 0 0 20px #58b7df, 0 0 30px #58b7df;
+	}
+	to {
+	  text-shadow: 0 0 0px #041c53, 0 0 0px #041c53, 0 0 0px #041c53;
+	}
+}
+
+@keyframes fadeOutUp{
+	0% {
+		opacity:1
+		}
+	to
+	{
+		opacity:0;
+		transform:translate3d(0,-100%,0)
+	}
+}
+
+.fade_out_up{
+	animation-name: fadeOutUp;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
 
 .bounce_cube{
 	-webkit-animation-duration: 10s;
@@ -224,6 +260,14 @@
     -webkit-animation-name: bounce;
 	animation-name: bounce;
 	animation-iteration-count: infinite;
+}
+
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow-text {
+    animation: glow_text 1s ease-in-out infinite alternate;
 }
 
 .s2{

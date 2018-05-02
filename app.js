@@ -7,7 +7,7 @@ var app = angular.module('TashaApp', [
   'prototype',
   'token',
   'team',
-  'footer',
+  'footer'
 ]);
 
 app.controller('TashaCtrl', function ($scope, $timeout) {
@@ -59,5 +59,4 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
 
   // init controller
   $scope.controller = new ScrollMagic.Controller();
-
 });
