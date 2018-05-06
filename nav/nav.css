@@ -4,7 +4,7 @@
 }
 
 .navbar{
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -55,8 +55,8 @@
 
 #navContainer {
 	width:100%;
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:20px;
+	padding-bottom:20px;
 	margin: 0 auto;
 	vertical-align: middle;
 }
@@ -136,10 +136,10 @@
 
 	#navContainer {
 		width:100%;
-		padding: 0px;
-		padding-top: 35px;
-		padding-left: 19px;
+		/* padding-top: 35px; */
+		height: 75px;
 		margin: 0 auto;
+		margin-left: 19px;
 		vertical-align: middle;
 	}
 

@@ -1,4 +1,4 @@
-angular.module('team', ['bio'])
+angular.module('team', ['bio','advisor'])
   .directive('team', function(){
     return{
       scope:{

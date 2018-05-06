@@ -15,22 +15,24 @@ angular.module('header', [])
 
         var headerTransform = new ScrollMagic.Scene({
           triggerElement: "#headerTransform",
-          offset:300
+          offset:500
         }).setClassToggle(".navbar", "navbar-color")
         //.addIndicators()
           .addTo($scope.$parent.controller);
 
-          var textList = [{
-            item : "Things"
+
+
+        var textList = [{
+            item : "Process"
           },
           {
-            item : "Best"
+            item : "Process"
           },
           {
-            item : "House"
+            item : "Process"
           },
           {
-            item : "Help"
+            item : "Process"
           }
         ]
 
@@ -43,7 +45,7 @@ angular.module('header', [])
         $interval(function() {
 
           $scope.fadein = {
-            "width":"22vw",
+            "width":"18vw",
             "display":"inline-block",
             "text-align":"center",
             "-webkit-animation": "fadein 3s infinite",

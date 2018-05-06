@@ -1,8 +1,10 @@
 #parallax5 {
 	/* background-image: url(../img/par5.png); */
 	background-position-x:center;
-	padding-top:800px;
-	height: 1679px;
+	padding-top:590px;
+	/* height: 1679px; */
+	max-width: 1650px;
+	margin : 0 auto;
 	/* margin-top: -350px; */
 	position:relative;
 	z-index:1001
@@ -10,14 +12,14 @@
 
 .download{
 	height: 44px;
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-size: 32px;
 	font-weight: 500;
 	font-style: normal;
   	font-stretch: normal;
   	line-height: normal;
 	  letter-spacing: normal;
-	  margin-left: 220px;
+	  margin-left: 187px;
   	color: #00fff7;
 }
 
@@ -29,17 +31,17 @@
 }
 
 #whitepaperGraphic{
-	margin-top: -430px;
-	margin-right: -350px;
+	margin-top: -350px;
+	margin-right: 50px;
 }
 
 #whitepaperHeader{
 	height: 46px;
 	margin-bottom:27px;
 	text-transform: uppercase;
-	font-family: Montserrat;
-	font-size: 48px;
-	font-weight: bold;
+	font-family: Avenir;
+	font-size: 40px;
+	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
 	margin-top:125px;
@@ -71,6 +73,19 @@
 	--display:none;
 }
 
+#whitepaperContent{
+	position:relative;
+	z-index:2;
+	background-image: url('../img/anglerectangle-6.png');
+	max-width: 1650px;
+	height: 584px;
+    margin: 0px 134px;
+}
+
+.download-image{
+	display: none;
+}
+
 @media only screen and (max-width: 1050px) {
 	#whitepaperGraphic{
 		width:932px;
@@ -94,7 +109,7 @@
 	}
 
 	#whitepaperContainer{
-		position:relative;
+		/* position:relative; */
 		top:-200px;
 	}
 }
@@ -123,11 +138,91 @@
 	}
 }
 	
+@media only screen and (max-width: 450px) {
+
+	#whitepaperContainer{
+		padding-top: 50px;
+		padding-bottom: 60px;
+
+	}
+
+	#parallax5 {
+		/* background-image: url(../img/par5.png); */
+		background-position-x:center;
+		padding-top:100px;
+		/* padding-bottom: 300px; */
+		/* height: 900px; */
+		position:relative;
+		z-index:1001
+	}
+	
+	#whitepaperHeader{
+		height: 24px;
+		text-transform: uppercase;
+		font-family: Avenir;
+		font-size: 14px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.71;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 145px;
+	}
+
+	#whitepaperGraphic{
+		width: 115px;
+		margin-top: -260px;
+		margin-right: 0px;
+	}
+
+	.download{
+		height: 11px;
+		opacity: 0.7;
+		font-family: Avenir;
+		font-size: 8px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #00fff7;
+		margin-left: 0px;
+	}
+
+	#whitepaperContent{
+		position:relative;
+		z-index:2;
+		background-image: url('../img/anglerectangle-6.png');
+		max-width: 1650px;
+		height: auto;
+		margin: 0px 30px;
+		background-size: auto 140px;
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+	}
+
+	.download img{
+		width: 21px;
+		height: 21px;
+	}
+
+	.download-image{
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+
 
 /* iphone 6 7 8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
 	#whitepaperGraphic{
-		width:600px;
+		width:142px;
 		margin-right: 0px;
 		margin-left: 0px;		
 		margin-top: -200px;	
@@ -174,13 +269,13 @@
 	#parallax6{
 		margin-top: -670px !important;	
 	}
-}
+} */
 
 /* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 
 	#whitepaperGraphic{
-		width:600px;
+		width:142px;
 		margin-right: 0px;
 		margin-left: 0px;		
 		margin-top: -200px;	
@@ -225,19 +320,19 @@
 	}
 
 	#parallax6{
-		margin-top: -670px !important;	
+		margin-top: -970px !important;	
 	}
-}
+} */
 
 
 /* iphone x  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 
 	#whitepaperGraphic{
-		width:600px;
+		width:142px;
 		margin-right: 0px;
-		margin-left: 0px;	
-		margin-top: -200px;
+		margin-left: 0px;		
+		margin-top: -200px;	
 	}
 
 	#whitepaperBGGraphic{
@@ -270,27 +365,23 @@
 	}
 
 	#parallax6{
-		margin-top: -670px !important;		
+		margin-top: -970px !important;		
 	}
-}
+} */
 
 /* galxay  */
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
 	
-	#parallax6{
-		margin-top: -670px !important;		
-	}
-
 	#whitepaperBGGraphic {
 		margin-left: 0px;
 		margin-top: -130px;
 	}
 
 	#whitepaperGraphic{
-		width:600px;
+		width:142px;
 		margin-right: 0px;
-		margin-left: 0px;	
-		margin-top: -200px;		
+		margin-left: 0px;		
+		margin-top: -200px;	
 	}
 
 	.download{
@@ -326,4 +417,4 @@
 		margin-top: -30px;
 	}
 
-}
+} */

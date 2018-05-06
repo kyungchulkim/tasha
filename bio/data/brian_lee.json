@@ -12,5 +12,6 @@
   ],
   "img": "bio/data/brian_lee_profile.jpg",
   "linkedInUrl": "brianleenj",
-  "isTeam": true
+  "isTeam": true,
+  "company" : ["bloomberg","nomura","rbcroyal","stonybrook"]
 }

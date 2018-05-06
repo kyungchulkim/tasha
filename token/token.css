@@ -46,19 +46,23 @@
 }
 
 #tokenText1{
-	font-family: Raleway;
-	font-size: 14.4px;
-	font-weight: 600;
+	width: 378px;
+	height: 151.2px;
+	font-family: Avenir;
+	font-size: 16px;
+	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 1.5;
+	line-height: 1.35;
 	letter-spacing: normal;
-	padding-top:82px;
+	text-align: justify;
 	color: #ffffff;
+	margin-top: 42px;  
+	margin-left: 19.5%;
 }
 
 #igToken,#igTokenSmall{
-	max-width:920px;
+	max-width:821px;
 	width:100%;
 	background-blend-mode: multiply;
 }
@@ -68,6 +72,7 @@
 }
 
 .token-header{
+	font-family: Avenir;
 	text-transform: uppercase;
 	height: 55px;
 	font-size: 40px;
@@ -110,7 +115,7 @@
 
 .timeline-date{
 	height: 28px;
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-size: 28px;
 	font-weight: 600;
 	font-style: normal;
@@ -123,7 +128,7 @@
 }
 
 .timeline-text{
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-size: 22px;
 	font-weight: 500;
 	font-style: normal;
@@ -154,7 +159,7 @@
 	background-image: linear-gradient(to right, #7a0fff 0%, #46bdf4 100%);
 }
 
-.token-roadmap .owl-prev{
+/* .token-roadmap .owl-prev{
 	font-size: 36px !important;
 	position: absolute;
 	top:0px;
@@ -165,8 +170,77 @@
 	position: absolute;
 	top:0px;
 	right: 0px;
+} */
+
+#parallax8 .order-3{
+	order: 3;
 }
 
+#roadmapHeader{
+	float: left;
+}
+
+.roadmapTitle{
+	height: 27px;
+	font-family: Avenir;
+	font-size: 20px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #43ffc8;
+	margin-bottom: 56px;
+}
+.roadmapContents{
+	height: 40px;
+	font-family: Avenir;
+	font-size: 15px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 20px;
+}
+.roadmapSub{
+	opacity: 0.5;
+	font-family: Avenir;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.roadmapBG{
+	background-image: url('../img/10@2x.png');
+	background-size: 100% 100%;
+}
+
+.roadmap-owl-wrapper{
+	padding-top: 220px; 
+	padding-bottom: 320px;
+}
+
+.roadmap-line{
+	width:95%; height: 2px; 
+			object-fit: contain;
+			border-style: solid;
+			border-width: 3px;
+			border-image-source: linear-gradient(to right, rgba(0, 228, 255, 0), rgba(0, 225, 255, 0.53) 6%, #00dfff 50%, rgba(0, 221, 255, 0.52) 94%, rgba(0, 220, 255, 0));
+			border-image-slice: 1;
+			position: relative;
+			top: 350px;
+			margin: 0 auto;
+}
 @media only screen and (max-width: 1380px) {
 	#parallax9{
 		height: 1900px;
@@ -205,6 +279,9 @@
 		height: 1550px;
 	}
 
+	#parallax8 .order-3{
+		order: 1;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -264,7 +341,7 @@
 		margin-top: 150px !important;
 	}
 	#roadmapHeader{
-		margin-bottom:100px !important;
+		/* margin-bottom:100px !important; */
 	}
 
 	.timeline-left-container{
@@ -344,7 +421,32 @@
 }
 
 
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 450px) {
+
+	.token-header{
+		width: 140px;
+		height: 24px;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+		margin: 146px auto 22px auto;
+		
+	}
+
+	#parallax8 {
+		padding-top: 0px;
+	}
+	
+	#parallax9{
+		height: 1250px;
+		padding-top: 122px;
+	}
 
 	.timeline-date{
 		padding-top:5px;
@@ -354,11 +456,149 @@
 	.timeline-text{
 		font-size:16px;
 	}
-
-	#parallax9{
-		height: 1250px;
+	
+	.tokenBackground{
+		display:none;
 	}
 
+	#dropToken {
+		height: 245px;
+		width: 60px;
+		margin-top: -85px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	.token-header{
+		margin-bottom: 0px !important;
+	}
+
+	#drop-distro-img {
+		width: 60px !important;
+		margin-left: 18px !important;
+	}
+
+	.token-dist-container{
+		margin-bottom: 30px !important;
+		float: none;
+
+		width: 190px;
+  height: 24px;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+
+	}
+
+	
+	#token-dist-img{
+		width: 100% !important;
+	}
+
+	#parallax9 {
+		height: auto;
+	}
+
+	#drop-roadmap-img{
+		width: 60px !important;
+		margin-left: 18px !important;
+		margin-top: 0px;
+	}
+
+	#parallax10 {
+		/* height: 3560px ; */
+	}
+
+	#tokenText1{
+		
+			width: 240px;
+			height: auto;
+			font-family: Avenir;
+			font-size: 8px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.35;
+			letter-spacing: normal;
+			text-align: justify;
+			color: #ffffff;
+			padding-top: 22px;
+			margin: 0 auto;
+	}
+
+	.roadmapBG{
+		background-image: url('../img/10@2x.png');
+		background-size: 100% 280px;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+
+	.roadmap-owl-wrapper{
+		padding-top: 50px; 
+		padding-bottom: 0px;
+	}
+
+
+.roadmapTitle{
+	height: 12px;
+	font-family: Avenir;
+	font-size: 9px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #00fff7;
+	margin-bottom: 30px;
+}
+.roadmapContents{
+	height: auto;
+	font-family: Avenir;
+	font-size: 8px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 7px;
+}
+.roadmapSub{
+	opacity: 0.5;
+	font-family: Avenir;
+	font-size: 7px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.roadmap-line{
+	width:90%; height: 2px; 
+			object-fit: contain;
+			border-style: solid;
+			border-width: 3px;
+			border-image-source: linear-gradient(to right, rgba(0, 228, 255, 0), rgba(0, 225, 255, 0.53) 6%, #00dfff 50%, rgba(0, 221, 255, 0.52) 94%, rgba(0, 220, 255, 0));
+			border-image-slice: 1;
+			position: relative;
+			top: 160px;
+			margin: 0 auto;
+}
 }
 
 /**
@@ -416,7 +656,7 @@
 **/
 
 /* iphone 6 7 8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
 	.tokenBackground{
 		display:none;
 	}
@@ -464,10 +704,10 @@
 	#parallax10 {
 		height: 3560px ;
 	}
-}
+} */
 
 /* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 	.tokenBackground{
 		display:none;
 	}
@@ -515,11 +755,11 @@
 	#parallax10 {
 		height: 3560px ;
 	}
-}
+} */
 
 
 /* iphone x  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	.tokenBackground{
 		display:none;
 	}
@@ -567,10 +807,10 @@
 	#parallax10 {
 		height: 3560px ;
 	}
-}
+} */
 
 /* galxay  */
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
 	.tokenBackground{
 		display:none;
 	}
@@ -618,4 +858,4 @@
 		height: 3560px ;
 	}
 
-}
+} */

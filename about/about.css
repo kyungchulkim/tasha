@@ -26,30 +26,30 @@
 
 #parallax-video {
 	margin-top: 500px;
-	
 	text-align: center;
 }
 
 #parallax4 {
 	margin-top: 847px;
-	/* background-color:#fff; */
 }
 
 .about-header{
-	margin-bottom:76px;
-	font-family: Montserrat;
-	font-size: 34px;
+	height: 121px;
+	margin-bottom:61px;
+	font-family: Avenir;
+	font-size: 40px;
 	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: normal;
+	line-height: 1.5;
 	letter-spacing: normal;
 	text-align: left;
 	text-transform:uppercase;
 	color: #ffffff;
+	margin-left: 253px;
 }
 .accent4 {
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-size: 18px;
 	font-weight: 900;
 	font-style: normal;
@@ -59,8 +59,8 @@
 	text-align: left;
 	color: #ffffff;
 	text-transform:uppercase;
-	margin-top:31px;
-	margin-bottom: 3px;
+	margin-top: 33px;
+	margin-bottom: 10px;
 }
 
 .normal2{
@@ -89,16 +89,16 @@
 	background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
 }
 
-.icon-container img{
+/* .icon-container img{
 	margin:0 20px;
-}
+} */
 
 .icon-container div{
-	margin-bottom:5px;
+	/* margin-bottom:5px; */
 }
 
 .icon-container div:first-child {
-	min-width:100px;
+	/* min-width:100px; */
 }
 
 .max{
@@ -156,7 +156,7 @@
 	margin-top:32px;
 	margin-bottom:79px;
 	text-transform: uppercase;
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-size: 40px;
 	font-weight: 900;
 	font-style: normal;
@@ -177,7 +177,7 @@
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	text-align: left;
+	text-align: justify;
 	color: #ffffff;
 }
 
@@ -198,6 +198,14 @@
     40% {-webkit-transform: translateY(-30px) }
     60% {-webkit-transform: translateY(-20px);}
 }  */
+
+.pl60{
+	padding-left: 60px;
+}
+
+.pr60{
+	padding-right: 60px;
+}
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
@@ -294,6 +302,10 @@
    
 }
 
+#about-mobile{
+	display: none;
+}
+
 @media only screen and (max-width: 1050px) {
 
 	.max{
@@ -304,6 +316,9 @@
 		margin-top: -234px;
 	}
 
+	#about-mobile{
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -321,6 +336,7 @@
 	}
 
 	#igHeaderRight{
+		display: none;
 		position:relative;
 		top:0px;
 	}
@@ -333,6 +349,8 @@
 		flex:auto;
 		max-width:100%;
 		text-align: right;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
 	}
 
 	.accent4{
@@ -349,45 +367,158 @@
 
 	#ourMissionHeader{
 		font-size:55px;
-	}
-
-	#ourMissionText{
-		font-size:25px;
+		margin-bottom:38px;
 	}
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
+	#about-row-desktop{
+		display: none;
+	}
+
+	#parallax4 {
+		margin-top: 142px;
+	}
+
+	#parallax-video {
+		margin-top: 200px;
+		text-align: center;
+	}
+
+	#parallax-video iframe{
+		margin-top: 160px;
+	}
+
+	#parallax2{
+		margin-top: -350px;
+		background-size:cover;
+		min-width: none;
+	}
+
+	#parallax2 .col-6 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#parallax3 .col-6 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#pmr4{
+		padding-right: 15px !important;;
+	}
+
+	#pml4{
+		padding-left: 5px !important;;
+	}
+
+	.icon-container {
+		max-width: none;
+		width: 100%;
+		height: 94px;
+		margin: 0px 0px 14.8px 0px;
+		padding: 0px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0));
+		text-align: left;
+	}
+
+	.icon-container img{
+		width: 38px;
+		height: 38px;
+	}
+	
 	.about-header{
-		font-size:25px;
+		font-size:14px;
 	}
 
 	.accent4{
-		font-size:21px;
+		height: 16px;
+		font-family: Avenir;
+		font-size: 12px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		margin-top: 18px;
+	}
+
+	.parallax2-image{
+		display: none;
 	}
 
 	.normal2{
-		font-size:16px;
+		opacity: 0.7;
+		font-family: Avenir;
+		font-size: 8px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
 	}
 
 	#dropOurMission{
 		margin-top: -307px;
 	}
 
-	#ourMissionText{
+	#ourMissionHeader{
 		font-size:16px;
+		margin-bottom:38px;
 	}
 
-	.row{
-		margin-right: -5px;
+	#ourMissionText{
+		width: 260px;
+		opacity: 0.8;
+		font-family: Avenir;
+		font-size: 10px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+	  
 	}
 }
 
 /* iphone 6 7 8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+	
+	.icon-container {
+		float: left;
+		flex-wrap:nowrap;
+		margin-bottom: 10px;
+		padding-left: 19px;
+		padding-top: 9px;
+		height: 150px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
+		text-align: left;
+	}
+
+	.icon-container img{
+		width: 38px;
+		height: 38px;
+	}
+
+	.accent4{
+		margin-top: 10px;
+	}
+	
 	#about-container{
-		padding-top:250px;
+		padding-top:148px;
+	}
+
+	.parallax2-image{
+		display: none;
 	}
 
 	.about-header{
@@ -429,17 +560,40 @@
 	}
 
 	#ourMissionHeader {
+		font-size:16px;
 		margin-top: 32px;
-		margin-bottom: 30px;		
+		margin-bottom:38px;		
 	}
-}
+} */
 
 /* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-	#about-container{
-		padding-top:250px;
+/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+	
+	.icon-container {
+		float: left;
+		flex-wrap:nowrap;
+		margin-bottom: 10px;
+		padding-left: 19px;
+	
+		padding-top: 9px;
+
+		height: 150px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
+		text-align: left;
 	}
 
+	.accent4{
+		margin-top: 12px;
+	}
+	
+	#about-container{
+		padding-top:148px;
+	}
+
+	.parallax2-image{
+		display: none;
+	}
+	
 	.about-header{
 		margin-bottom: 25px;
 	}
@@ -481,16 +635,37 @@
 
 	#ourMissionHeader {
 		margin-top: 32px;
-		margin-bottom: 30px;		
+		margin-bottom:38px;
 	}
-}
+} */
 
 /* iphone x  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
-	#about-container{
-		padding-top:250px;
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+	
+	.icon-container {
+		float: left;
+		flex-wrap:nowrap;
+		margin-bottom: 10px;
+		padding-left: 19px;
+		padding-top: 9px;
+		max-width: 146px;
+		height: 150px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
+		text-align: left;
 	}
 
+	.accent4{
+		margin-top: 12px;
+	}
+	
+	#about-container{
+		padding-top:148px;
+	}
+
+	.parallax2-image{
+		display: none;
+	}
+	
 	.about-header{
 		margin-bottom: 25px;
 	}
@@ -531,16 +706,37 @@
 
 	#ourMissionHeader {
 		margin-top: 32px;
-		margin-bottom: 30px;		
+		margin-bottom:38px;		
 	}
-}
+} */
 
 /* galxay  */
-@media only screen and (max-width: 360px) {
-	#about-container{
-		padding-top:250px;
+/* @media only screen and (max-width: 360px) {
+
+	.icon-container {
+		float: left;
+		flex-wrap:nowrap;
+		margin-bottom: 10px;
+		padding-left: 19px;
+		padding-top: 9px;
+		max-width: 146px;
+		height: 150px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
+		text-align: left;
 	}
 
+	.accent4{
+		margin-top: 12px;
+	}
+	
+	#about-container{
+		padding-top:148px;
+	}
+
+	.parallax2-image{
+		display: none;
+	}
+	
 	.about-header{
 		margin-bottom: 25px;
 	}
@@ -582,7 +778,7 @@
 
 	#ourMissionHeader {
 		margin-top: 32px;
-		margin-bottom: 30px;		
+		margin-bottom:38px;		
 	}
 	
-}
+} */

@@ -4,40 +4,32 @@
 
 <div id="parallax11" class="parallax">
 	<div class="content">
-		<div class="text-category team-text-container">
+		<div class="row">
+		<div class="text-category team-text-container" style="margin: 669px auto 207px auto;">
 			TEAM
 			<!-- <img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" /> -->
 			<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
 		</div>
+	</div>
 		<div>
 			<div id="teamMembers" class="portrait-container" ng-repeat="teamMember in teamMembers">
 				<bio data="{{teamMember}}" />
 			</div>			
 		</div>
 	</div>
-	<!--
+	
 	<div class="content">
-	<div style="height: 48px;
-	    margin-bottom:89px;
-		font-family: Montserrat;
-		font-size: 48px;
-	    font-weight: bold;
-     	font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: -1.2px;
-		text-align: center;
-		margin-top: 74px;												
-		color: #344765;">
+			<div class="row">
+			<div class="text-category team-text-container" style="margin: 410px auto 190px auto;">
 		ADVISORY
-		<img style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" />
-	</div>
+		</div>
+	</div>	
 	<div>		
-		<div class="portrait-container" ng-repeat="advisor in advisors">
-			<bio data="{{advisor}}" />
+		<div class="portrait-container-advisor" ng-repeat="advisor in advisors">
+			<advisor data="{{advisor}}" />
 		</div>
 	</div>
 	</div>
-	-->
+	
 </div>
 </div>

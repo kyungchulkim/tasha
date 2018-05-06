@@ -8,5 +8,6 @@
   ],
   "img": "bio/data/hongsub_profile.jpg",
   "linkedInUrl": "hongsub-lim-328581160",
-  "isTeam": true
+  "isTeam": true,
+  "company" : ["posco","yonsei"]
 }

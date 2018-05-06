@@ -10,5 +10,6 @@
   ],
   "img": "bio/data/jaeseob_profile.jpg",
   "linkedInUrl": "jaeseob-yoon-0b1ab612",
-  "isTeam": true               
+  "isTeam": true,
+  "company" : ["posco","illinois","stonybrook"]          
 }

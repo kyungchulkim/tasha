@@ -6,10 +6,19 @@
 }
 
 .portrait-container{
-	width:33%;
+	width:25%;
 	display:inline-block;
 	vertical-align: top;
 	padding:10px;
+	margin-bottom: 90px;
+}
+
+.portrait-container-advisor{
+	width:20%;
+	display:inline-block;
+	vertical-align: top;
+	padding:10px;
+	margin-bottom: 90px;
 }
 
 #teamDropContainer{

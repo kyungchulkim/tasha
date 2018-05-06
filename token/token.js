@@ -73,7 +73,45 @@ angular.module('token', [])
           $scope.$parent.$apply();
         });
                     
-          $scope.items1 = [1,2,3,4,5];
+          $scope.roadmap = [
+            {
+              "year" : "2Q 2018",
+              "contents1" : "TEMCO Whitepaper Release",
+              "contents2" : "TEMCO Prototype Release"
+            },
+            {
+              "year" : "3Q 2018",
+              "contents1" : "Crowd Sale"
+            },
+            {
+              "year" : "4Q 2018",
+              "contents1" : "Exchange Listing of TEMCO Tokens",
+              "contents2" : "Development of Supply Chain Blockchain Network"
+            },
+            {
+              "year" : "1Q 2019",
+              "contents1" : "TEMCO Consumer App Launch",
+              "sub1" : "Smart Scan, Voting System"
+            },
+            {
+              "year" : "2Q 2019",
+              "contents1" : "TEMCO Vendor App Launch",
+              "sub1" : "Vendor Verification System",
+              "sub2" : "Smart Contract"
+            },
+            {
+              "year" : "3Q~4Q 2019",
+              "contents1" : "TEMCO Consumer App Launch",
+              "sub1" : "Smart Scan, Voting System",
+              "sub2" : "Smart Contract",
+              "contents2" : "TEMCO Market (Partner’s, Point Mall) Launch",
+            },
+            {
+              "year" : "1~4Q 2019",
+              "contents1" : "Development of TEMCO Blockchain"
+            }
+          ];
+
       }
     };
   }).directive("owlCarousel", function() {

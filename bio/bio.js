@@ -15,6 +15,7 @@ angular.module('bio', [])
             $scope.linkedInUrl = resp.data.linkedInUrl;            
             $scope.isTeam = resp.data.isTeam;            
             $scope.bios = resp.data.bio;
+            $scope.company = resp.data.company;
           });
       }
     };

@@ -4,7 +4,7 @@
 	/* margin-top:-516px; */
 	position:relative;
 	z-index:1002;
-	padding-top:300px;
+	padding-top:550px;
 	background-repeat: no-repeat;
 	/* min-height:1757px; */
 	background-size: auto 100%;
@@ -53,14 +53,14 @@
   letter-spacing: normal;
   text-align: justify;
   color: #ffffff;
-  
+  float: left;
 }
 
 .technologyText{
-	width: 384px;
+	width: 503px;
 	height: 108px;
 	font-family: Avenir;
-	font-size: 14.4px;
+	font-size: 16px;
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -68,9 +68,9 @@
 	letter-spacing: normal;
 	text-align: justify;
 	color: #ffffff;
-	margin-top: 48px;
-	margin-left: 50px;
-	float: right;
+	margin-top: 100px;
+	margin-left: 135px;
+	margin-bottom: 106px;
 }
 
 #bgTechnologyBottom{
@@ -85,6 +85,86 @@
 
 #dropTechnology{
 	text-align: center;
+}
+
+#technologyWeb{
+	/* order:4; */
+	float: left;
+}
+
+.techLine{
+	width: 378px;
+	height: 2px;
+	border: solid 1px #ffffff;
+	margin-top: 22.4px;
+	margin-bottom: 21px;
+}
+
+.techBox{
+	width: 378px;
+	float: right;
+}
+
+.techBoxHeader{
+	height: 21.6px;
+	font-family: Avenir;
+	font-size: 20px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.08;
+	letter-spacing: normal;
+	text-align: right;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.techBoxSubHeader{
+	float: right;
+	position: absolute;
+	right: 0px;
+	top: -11px;
+	font-size: 14.4px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: right;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.techBoxText{
+	position: relative;
+	height: 21.6px;
+	font-family: Avenir;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: justify;
+	color: #ffffff;
+	margin-bottom: 12.4px;
+	text-transform: uppercase;
+}
+
+#technologyContent{
+	margin:0 125px;
+}
+
+#techboxMT1{
+	margin-top: 50px;
+}
+
+#techboxMT2{
+	margin-top: 360px;
+}
+
+#techboxMT3{
+	margin-top: 120px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -119,6 +199,9 @@
 		width:200px;
 	}
 
+	#technologyWeb{
+		order:1;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -171,8 +254,162 @@
 }
 
 
+@media only screen and (max-width: 450px) {
+
+	#parallax6 {
+		--height:1400px;
+		padding-top: 105px;
+	}
+
+	#bgTechnologyTop{
+		top: 100px;
+	}
+
+	#bgTechnologyTop img{
+		width:200px;
+	}
+
+	#bgTechnologyBottom{
+		bottom: 150px;
+		position:relative;
+	}
+
+	#bgTechnologyBottom img{
+		width:200px;
+	}
+
+	#dropTechnology{
+		margin-top:-129px;
+		text-align: center;
+	}
+
+	#technologyWeb{
+		order:1;
+		margin-left: 15px;
+	}
+	
+	#technologyHeader{
+		float:none;
+		text-align: center;
+		width: 100%;
+		height: 24px;
+		font-family: Avenir;
+		font-size: 14px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.71;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+		float: left;
+		margin-bottom: 22px;
+	}
+
+	.technologyText{
+		width: 260px;
+		height: 82px;
+		opacity: 0.8;
+		font-family: Avenir;
+		font-size: 8px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 42px;
+		float: none;
+	}
+
+	#igTechnology, #igTechnologySmall{
+		max-width: 892px;
+		width:100%;
+		margin: 0 auto;
+		margin-bottom: 0px;
+	}
+
+	#technologyContent{
+		margin:0 30px 0 50px;
+		padding: 0px;
+	}
+
+	.techBoxHeader{
+		height: 21.6px;
+		font-family: Avenir;
+		font-size: 9px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2.4;
+		letter-spacing: normal;
+		text-align: right;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	
+	.techLine{
+		width: 150px;
+		height: 2px;
+		border: solid 0.5px #ffffff;
+		margin: 0px;
+	}
+
+	.techBox{
+		width: 150px;
+	}
+
+	.techBoxSubHeader {
+		float: right;
+		position: absolute;
+		right: 0px;
+		top: -5px;
+		font-size: 7px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 3.09;
+		letter-spacing: normal;
+		text-align: right;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.techBoxText{
+		position: relative;
+		height: 21.6px;
+		font-family: Avenir;
+		font-size: 8px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2.7;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+		margin-bottom: 0px;
+		text-transform: uppercase;
+	}
+
+	#techboxMT1{
+		margin-top: 0px;
+	}
+	
+	#techboxMT2{
+		margin-top: 37px;
+	}
+	
+	#techboxMT3{
+		margin-top: 24px;
+	}
+}
+
 /* iphone 6 7 8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	#cubeDropImg {
 		height: 207px;
 		margin-left: 0px !important;
@@ -208,10 +445,10 @@
 	#dropTechnology{
 		text-align: center !important;
 	}
-}
+} */
 
 /* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 	
 	#cubeDropImg {
 		height: 170px;
@@ -248,11 +485,11 @@
 	#dropTechnology{
 		text-align: center !important;
 	}
-}
+} */
 
 
 /* iphone x  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 
 	#cubeDropImg {
 		height: 207px;
@@ -289,10 +526,10 @@
 	#dropTechnology{
 		text-align: center !important;
 	}
-}
+} */
 
 /* galxay  */
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
 	
 	#cubeDropImg {
 		margin-top: -30px;
@@ -330,4 +567,4 @@
 		text-align: center !important;
 	}
 	
-}
+} */

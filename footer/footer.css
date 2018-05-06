@@ -5,13 +5,13 @@ footer, footer .copyright{
 }
 
 footer{
-	font-family: Montserrat;
+	font-family: Avenir;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 2.71;
 	letter-spacing: normal;
-	padding: 124px 20px 111px 20px;
+	/* padding: 124px 20px 111px 20px; */
 	background-color:#202020;
 	text-align: center !important;
 	float:left;

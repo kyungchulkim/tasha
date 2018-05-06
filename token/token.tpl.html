@@ -1,4 +1,4 @@
-<div id="dropToken"></div>
+<!-- <div id="dropToken"></div> -->
 
 <div id="parallax8" class="parallax">
 	<!-- <div style="margin-top: -307px;"
@@ -7,30 +7,27 @@
 	</div> -->
 	<div class="content" style="z-index:2;position:relative;">
 		<div class="row">
-				<div class="col-lg-7 col-md-7 ">
+				<div class="col-lg-7 col-md-7 order-2">
 		<a name="token" class="pin">&nbsp;</a>
 		
 		
-			<div style="text-align:center;margin-top:84px;">
+			<div style="text-align:center;margin-top:22px;">
 				<img id="igToken"
-						 src="img/IG_APPRECIATION@2x.png" />
+						 src="img/asset-39.png" />
 				<img id="igTokenSmall"
-						 src="img/ig_appreciation_small@2x.png" />
+						 src="img/asset-39@2x.png" style="width: 246px; margin: 0 auto;" />
 			</div>
 		</div>
 
 
-		<div class="col-lg-5 col-md-5">
-			<div class="text-category token-header">
+		<div class="col-lg-5 col-md-5 order-3">
+			<div class="token-header">
 					Token Model
-				</div>
+			</div>
 					<div id="tokenText1" class="text-desc">
 						TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a
-						<span class="second-paragraph">
-							sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can 
-							<br/>
-							spend the tokens in the TEMCO marketplace for your next purchase.
-						</span>
+						sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can 
+						spend the tokens in the TEMCO marketplace for your next purchase.
 					</div>
 				</div>
 		</div>
@@ -56,10 +53,12 @@
 	
 	
 	<div class="content">	
-		<div class="text-category token-dist-container">
-			Token  
+		<div class="row">
+		<div class="token-header" style="margin-left: 184px;">
+			Token<br> 
 			Distribution
 		</div>
+	</div>
 		<div class="row">
 				<div class="col-lg-3 col-md-3"></div>
 		<div class="col-lg-9 col-md-9">
@@ -74,8 +73,8 @@
 </div>
 
 
-<div id="parallax10" class="parallax">
-		
+<div id="parallax10" class="parallax" >
+	
 	
 
 	<!-- <div style="margin: 0 auto;
@@ -85,34 +84,45 @@
 				 src="img/drop_roadmap.png" />
 	</div> -->
 	<div class="content">
-			
+		<div class="roadmapBG">
 
 		<div class="text-category" id="roadmapHeader">
 			ROADMAP
-			<!-- <img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" /> -->
 		</div>
 
-		<!-- <data-owl-carousel class="owl-carousel" style="color:white;" 
-		data-options="{navigation: true, pagination: false, rewindNav : false}">
-			<div owl-carousel-item="" ng-repeat="item in ::items1" class="item" >
-			  <p>{{::item}}</p>
+		<div class="roadmap-line">
+		</div>
+
+		<div class="roadmap-owl-wrapper">
+			<data-owl-carousel class="token-roadmap owl-carousel" style="color:white;" 
+			data-options="{	nav: false, pagination: false, rewindNav : false,
+							responsive:{
+								0:{
+									items:2
+								},
+								600:{
+									items:3
+								},
+								1000:{
+									items:6
+								}
+							}
+						}">
+			<div owl-carousel-item="" ng-repeat="roadmap in roadmap" class="item">
+				<div class="each-road-map">
+					<div class="roadmapTitle">{{roadmap.year}}</div>		
+					<div class="roadmapContents" style="margin-top: 48px;">{{roadmap.contents1}}</div>	
+					<div class="roadmapSub">{{roadmap.sub1}}</div>	
+					<div class="roadmapSub">{{roadmap.sub2}}</div>	
+					<div class="roadmapContents">{{roadmap.contents2}}</div>
+				</div>
 			</div>
-		</data-owl-carousel> -->
-	
-		<data-owl-carousel class="token-roadmap owl-carousel" style="color:white;" 
-		data-options="{navigation: true, pagination: false, rewindNav : false, margin : 10}">
-		<div owl-carousel-item="" ng-repeat="item in ::items1" class="item">
-			<div class="each-road-map">
-				<p>{{::item}}</p>
-				<p>{{::item}}</p>	
-			</div>
-		  </div>
-		</data-owl-carousel>
-		
+			</data-owl-carousel>
+		</div>
 	</div>
 	
 	<!-- <div class="text-sub-category" style="height: 34px;
-											font-family: Montserrat;
+											font-family: Avenir;
 											margin-bottom:25px;
 											font-size: 34px;
 											font-weight: 600;
@@ -126,7 +136,7 @@
 	</div>
 	<div class="text-sub-category" style="text-transform: uppercase;
 											margin-bottom:25px;
-											font-family: Montserrat;
+											font-family: Avenir;
 											font-size: 40px;
 											font-weight: 600;
 											font-style: normal;
@@ -240,7 +250,7 @@
 	<div class="text-sub-category" style="height: 34px;
 											margin-top:500px;
 											margin-bottom:25px;
-											font-family: Montserrat;
+											font-family: Avenir;
 											font-size: 34px;
 											font-weight: 600;
 											font-style: normal;
@@ -251,7 +261,7 @@
 											color: #69bdca;" id="phase2Header">
 		PHASE 2
 	</div>
-	<div class="text-sub-category" style="font-family: Montserrat;
+	<div class="text-sub-category" style="font-family: Avenir;
 											text-transform: uppercase;
 											font-size: 40px;
 											font-weight: 600;
@@ -338,4 +348,5 @@
 			</div>
 		</div>
 	</div> -->
+</div>
 </div>
