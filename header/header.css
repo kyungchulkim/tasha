@@ -7,6 +7,10 @@
 	padding-bottom: 250px;
 }
 
+#parallax1 .content{
+	margin-top: 140px;
+}
+
 .header1{
 	height: 96px;
 	margin-top:114px;
@@ -171,7 +175,7 @@
 
 	#headerCube{
 		right:-150px;
-		width:1200px;
+		
 	}
 
 	#headerBinary{
@@ -203,7 +207,7 @@
 
 	#headerCube{
 		right:-150px;
-		width:1200px;
+
 	}
 
 	#headerBinary{
@@ -215,32 +219,145 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+
+	#force-100{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	#parallax1{
+		padding-bottom: 0px;
+	}
 
 	#headerBinary{
 		display:none;
 	}
 
 	#headerCube{
-		width: 1000px;
-		top: 500px;
-		right: -124px;
+		width: 550px;
+		margin-top: 140px;
+		float: right;
 	}
 
 	.header1{
-		font-size:60px;
+		font-size:24px;
+		height :82px;
+		margin-bottom: 28px;
+		margin-top: 0px;
+		font-family: Avenir;
+		font-size: 60px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #ffffff;
 	}
 
 	.header2{
-		font-size:72px;
+		font-size:25px;
+		height :34px;
+		margin-bottom: 28px;
+	}
+
+	.header3{
+		display:none;
+	}
+
+	.header3m{
+		height: 36px;
+		opacity: 0.5;
+		font-family: Avenir;
+		font-size: 12px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		text-transform: uppercase;
+		display: block;
+	}
+
+	.change-text{
+		width: 28vw !important;
 	}
 
 }
-
+/* 
 @media only screen and (max-width: 818px) {
 
 	.header1{
 		line-height: 1 !important;
+	}
+} */
+
+@media (max-width: 767px) {
+
+	#force-100{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	#parallax1{
+		padding-bottom: 0px;
+	}
+
+	#headerBinary{
+		display:none;
+	}
+
+	#headerCube{
+		width: 100%;
+		margin-top: 140px;
+		float: right;
+	}
+
+	.header1{
+		font-size:24px;
+		height :7.5vw;
+		margin-bottom: 7vw;
+		margin-top: 0px;
+		font-family: Avenir;
+		font-size: 7.5vw;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #ffffff;
+	}
+
+	.header2{
+		font-size:3.5vw;
+		height :34px;
+		margin-bottom: 3vw;
+	}
+
+	.header3{
+		display:none;
+	}
+
+	.header3m{
+		height: 36px;
+		opacity: 0.5;
+		font-family: Avenir;
+		font-size: 2vw;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		text-transform: uppercase;
+		display: block;
+	}
+
+	.change-text{
+		width: 28vw !important;
 	}
 }
 
@@ -248,6 +365,10 @@
 
 	#parallax1{
 		padding-bottom: 0px;
+	}
+
+	#parallax1 .content{
+		margin-top: 30px;
 	}
 
 	#headerBinary{
@@ -276,13 +397,13 @@
 	}
 
 	.header2{
-		font-size:12px;
+		font-size:14px;
 		height :16px;
 		margin-bottom: 15px;
 	}
 
 	.header3{
-		font-size:8px;
+		font-size:14px;
 		height :41px;
 		display:none;
 	}
@@ -291,7 +412,7 @@
 		height: 18px;
 		opacity: 0.5;
 		font-family: Avenir;
-		font-size: 6px;
+		font-size: 11px;
 		font-weight: 500;
 		font-style: normal;
 		font-stretch: normal;
@@ -306,8 +427,9 @@
 	.change-text{
 		width: 28vw !important;
 	}
-}
 
+	
+}
 /* iphone 6 7 8 */
 /* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 

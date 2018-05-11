@@ -35,6 +35,8 @@ angular.module('prototype', [])
         scene7.on("enter", function (event) {
           $scope.$parent.activeNav = 'prototype';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax7");
         });
 
         scene7.on("leave", function (event) {

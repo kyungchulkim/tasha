@@ -1,12 +1,15 @@
 #parallax7 {
 	background-position-x:center;
-	height: 1198px;
+	/* height: 1198px; */
 	position:relative;
 	z-index:999;
-	margin-top:-378px;
-	padding-top:300px;
+	margin-top:-278px;
+	/* padding-top:300px; */
 }
 
+/* #parallax7 .content{
+	width: 720px;
+} */
 
 #phone{
 	position:relative;z-index:2;
@@ -31,15 +34,17 @@
 	margin-bottom:105px;
 	margin-top:350px;
 	font-family: Avenir;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: -1.2px;
 	position:relative;
-	margin-left:250px;
 	color: #ffffff;
+
+	margin-right:125px;
+	margin-left:125px;
 }
 
 #download-button{
@@ -48,6 +53,12 @@
 	text-align:center;
     width: 255px;
     height: 71px;
+}
+
+.video720p{
+	max-width: 720px; 
+	max-height: 480px;
+	margin: 0 auto;
 }
 
 .videoWrapper {
@@ -71,7 +82,7 @@
 	}
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
 
 	#prototypeBGGraphic{
 		margin-left: -480px;
@@ -81,9 +92,22 @@
 		width:364px;
 	}
 
+	#prototypeHeader{
+		height: 24px;
+		margin-bottom:100px;
+		margin-left:25px;
+		margin-top:160px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 0.8;
+		position:relative;
+		color: #ffffff;
+		float: left;
+	}
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
 	
 	#phone{
 		width:320px;
@@ -107,7 +131,7 @@
 		top: -780px;
 	}
 
-}
+} */
 
 
 @media only screen and (max-width: 450px) {
@@ -122,15 +146,10 @@
 	}
 
 	#prototypeHeader{
-		margin-top: 150px;
-	}
-
-
-	#prototypeHeader{
 		height: 24px;
 		text-transform:uppercase;
 		margin-bottom:22px;
-		margin-top:160px;
+		margin-top:50px;
 		font-family: Avenir;
 		font-size: 14px;
 		font-weight: 900;

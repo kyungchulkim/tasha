@@ -4,7 +4,7 @@
 	/* margin-top:-516px; */
 	position:relative;
 	z-index:1002;
-	padding-top:550px;
+	padding-top:200px;
 	background-repeat: no-repeat;
 	/* min-height:1757px; */
 	background-size: auto 100%;
@@ -45,7 +45,7 @@
 
   height: 53px;
   font-family: Avenir;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
@@ -53,23 +53,24 @@
   letter-spacing: normal;
   text-align: justify;
   color: #ffffff;
-  float: left;
+  width: 355px;
+  margin: 0 auto;
 }
 
 .technologyText{
-	width: 503px;
-	height: 108px;
+	width: 700px;
+	height: 112px;
 	font-family: Avenir;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 1.5;
+	line-height: 1.4;
 	letter-spacing: normal;
 	text-align: justify;
 	color: #ffffff;
-	margin-top: 100px;
-	margin-left: 135px;
+	margin-top: 52px;
+	/* margin-left: 135px; */
 	margin-bottom: 106px;
 }
 
@@ -88,8 +89,7 @@
 }
 
 #technologyWeb{
-	/* order:4; */
-	float: left;
+	margin: 0 auto;
 }
 
 .techLine{
@@ -160,14 +160,30 @@
 }
 
 #techboxMT2{
-	margin-top: 360px;
+	margin-top: 178px;
+	margin-left: 200px;
 }
 
 #techboxMT3{
-	margin-top: 120px;
+	margin-top: 77px;
 }
 
-@media only screen and (max-width: 1050px) {
+#technologyImage{
+	max-width:843px; width:80vw; margin: 0 auto 300px auto;
+}
+
+/* @media only screen and (max-width: 1200px) {
+	#igTechnology img{
+		max-width: 383px;
+    	width: 65%;
+	}
+} */
+
+@media only screen and (max-width: 1024px) {
+
+	#technologyContent{
+		margin:0 auto;
+	}
 
 	#igTechnology {
 		max-width:802.8px;
@@ -201,30 +217,113 @@
 
 	#technologyWeb{
 		order:1;
-	}
-}
-
-@media only screen and (max-width: 900px) {
-
-	#igTechnology {
-		display:none;
+		float: none;
+		margin: 0 auto;
 	}
 
-	#igTechnologySmall {
-		display:block;
-		max-width:713.6px;
-	}
-
-	#dropTechnology{
-		height:245.6px;
-		margin-top:-106px;
+	#technologyHeader {
+		width: 400px;
+		height: 24px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
 		text-align: center;
+		color: #ffffff;
+		margin: 0 auto;
+		float: none;
 	}
 
+	.technologyText {
+		width: 500px;
+		height: 140px;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+		margin: 100px auto 100px auto;
+	}
+
+	.techBoxHeader{
+		height: 21.6px;
+		font-family: Avenir;
+		font-size: 9px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2.4;
+		letter-spacing: normal;
+		text-align: right;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	
+	.techLine{
+		width: 150px;
+		height: 2px;
+		border: solid 0.5px #ffffff;
+		margin: 0px;
+	}
+
+	.techBox{
+		width: 150px;
+		margin-left: 80px;
+	}
+
+	.techBoxSubHeader {
+		float: right;
+		position: absolute;
+		right: 0px;
+		top: -5px;
+		font-size: 7px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 3.09;
+		letter-spacing: normal;
+		text-align: right;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.techBoxText{
+		position: relative;
+		height: 21.6px;
+		font-family: Avenir;
+		font-size: 8px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2.7;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+		margin-bottom: 0px;
+		text-transform: uppercase;
+	}
+
+	#techboxMT1{
+		margin-top: 0px;
+	}
+	
+	#techboxMT2{
+		margin-top: 37px;
+	}
+	
+	#techboxMT3{
+		margin-top: 24px;
+	}
 }
 
-
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 767px) {
 
 	#parallax6 {
 		--height:1400px;
@@ -251,14 +350,49 @@
 		margin-top:-129px;
 		text-align: center;
 	}
+
+	#technologyHeader {
+		width: 300px;
+		height: 24px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.technologyText {
+		width: 500px;
+		height: 140px;
+		font-family: Avenir;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+		margin: 100px auto 100px auto;
+	}
 }
 
 
 @media only screen and (max-width: 450px) {
 
+	#technologyWeb{
+		margin-bottom: 30px;
+	}
+
 	#parallax6 {
 		--height:1400px;
-		padding-top: 105px;
+		padding-top: 55px;
 	}
 
 	#bgTechnologyTop{
@@ -285,7 +419,7 @@
 
 	#technologyWeb{
 		order:1;
-		margin-left: 15px;
+		margin-left: 0px;
 	}
 	
 	#technologyHeader{
@@ -311,19 +445,26 @@
 		height: 82px;
 		opacity: 0.8;
 		font-family: Avenir;
-		font-size: 8px;
+		font-size: 11px;
 		font-weight: 500;
 		font-style: normal;
 		font-stretch: normal;
 		line-height: normal;
 		letter-spacing: normal;
-		text-align: left;
 		color: #ffffff;
 		margin-top: 0px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 42px;
 		float: none;
+	}
+
+	#igTechnology{
+		display: none;
+	}
+
+	#igTechnologySmall{
+		display: block;
 	}
 
 	#igTechnology, #igTechnologySmall{
@@ -405,6 +546,10 @@
 	
 	#techboxMT3{
 		margin-top: 24px;
+	}
+
+	#technologyImage{
+		max-width:843px; width:80vw; margin: 0 auto 0 auto;
 	}
 }
 

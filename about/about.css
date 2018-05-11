@@ -3,7 +3,7 @@
 }
 
 #revolutionary-container{
-	margin-top:151px;
+	/* margin-top:151px; */
 }
 
 #parallax2{
@@ -30,7 +30,7 @@
 }
 
 #parallax4 {
-	margin-top: 847px;
+	margin-top: 307px;
 }
 
 .about-header{
@@ -46,8 +46,28 @@
 	text-align: left;
 	text-transform:uppercase;
 	color: #ffffff;
-	margin-left: 253px;
+	margin-left: 125px;
 }
+
+.about-header2{
+	height: 90px;
+	margin-top: 190px;
+	margin-right: 125px;
+	margin-bottom:70px;
+	font-family: Avenir;
+	font-size: 40px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	text-transform:uppercase;
+	color: #ffffff;
+	margin-left: 10px;
+}
+
+
 .accent4 {
 	font-family: Avenir;
 	font-size: 18px;
@@ -59,7 +79,7 @@
 	text-align: left;
 	color: #ffffff;
 	text-transform:uppercase;
-	margin-top: 33px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
@@ -69,36 +89,30 @@
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: normal;
 	letter-spacing: normal;
-	text-align: left;
+	line-height: normal;
+	text-align: justify;
 	color: #ffffff;
 }
 
 .icon-container {
 	float: left;
 	flex-wrap:nowrap;
-	margin-bottom: 31px;
-	/* margin-right: 27px; */
-	padding-left: 34px;
-	padding-right: 23px;
-	padding-top: 32px;
-	max-width: 255px;
-	/* min-width: 215px; */
-	height: 274px;
+	margin-bottom: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 29px;
+	/* max-width: 255px; */
+	height: 300px;
 	background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
 }
 
-/* .icon-container img{
-	margin:0 20px;
-} */
+.icon-container img{
+	width: 75px;
+}
 
 .icon-container div{
 	/* margin-bottom:5px; */
-}
-
-.icon-container div:first-child {
-	/* min-width:100px; */
 }
 
 .max{
@@ -115,13 +129,13 @@
 }
 
 #parallax2 .col-lg-4{
-	padding-left: 27px;
+	padding-left: 20px;
 	padding-right: 0px;
 }
 
 #parallax3 .col-lg-4{
 	padding-left: 0px;
-	padding-right: 27px;
+	padding-right: 20px;
 }
 
 .row .margin-r-50{
@@ -169,13 +183,13 @@
 
 #ourMissionText{
 	margin: 0 auto;
-	width: 616px;
+	width: 800px;
 	font-family: Raleway;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 24px;
+	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: normal;
+	line-height: 1.5;
 	letter-spacing: normal;
 	text-align: justify;
 	color: #ffffff;
@@ -200,12 +214,30 @@
 }  */
 
 .pl60{
-	padding-left: 60px;
+	padding-left: 11vw;
 }
 
 .pr60{
-	padding-right: 60px;
+	padding-right: 11vw;
 }
+
+@keyframes shining_star{
+	from{
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+	to{
+		opacity: 0;
+		transform: translate(-100px, 100px);
+	}
+}
+
+.shining_star{
+	animation-name: shining_star;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
@@ -214,8 +246,33 @@
 } 
 
 @keyframes bounce_cube {
-    0%, 100% {transform: translateY(30px);}
-	50% {transform: translateY(-30px);}
+    0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-40px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+} 
+
+@keyframes bounce_cube30 {
+    0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-30px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
 } 
 
 @keyframes glow {
@@ -254,12 +311,13 @@
 }
 
 .bounce_cube{
-	-webkit-animation-duration: 10s;
-    animation-duration: 10s;
+	/* -webkit-animation-duration: 7s;
+    animation-duration: 7s;
     -webkit-animation-name: bounce_cube;
 	animation-name: bounce_cube;
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite; */
 	/* animation: bounce_cube 10s infinite ease; */
+	animation: bounce_cube 6s ease-in-out infinite;
 }
 
 .bounce {
@@ -306,80 +364,275 @@
 	display: none;
 }
 
-@media only screen and (max-width: 1050px) {
+#about-row-desktop{
+	display: flex;
+}
 
-	.max{
-		width:80%;
+.aboutVideo{
+	text-align: center; 
+	margin-top: 260px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+@media only screen and (max-width: 1450px) {
+	.pl60{
+		padding-left: 8vw;
 	}
 
-	#dropOurMission{
-		margin-top: -234px;
+	.pr60{
+		padding-right: 8vw;
+	}
+
+	.icon-container{
+		height: 280px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+
+	.pl60{
+		padding-left: 5vw;
+	}
+
+	.pr60{
+		padding-right: 5vw;
+	}
+
+	.icon-container{
+		height: 290px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.pl60{
+		padding-left: 2vw;
+	}
+
+	.pr60{
+		padding-right: 2vw;
+	}
+
+	.icon-container{
+		height: 330px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#about-row-desktop{
+		display: none;
 	}
 
 	#about-mobile{
 		display: block;
-	}
-}
-
-@media only screen and (max-width: 900px) {
-
-	#igHeaderDesktop{
-		display: none;
-	}
-
-	#igHeaderMobile{
-		display: block;
-	}
-
-	.max{
-		display:none;
-	}
-
-	#igHeaderRight{
-		display: none;
-		position:relative;
-		top:0px;
+		margin: auto;
 	}
 
 	.about-header{
-		font-size:40px;
+		height: 90px;
+		margin-top: 190px;
+		margin-bottom:70px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		text-transform:uppercase;
+		color: #ffffff;
+		margin-left: 10px;
 	}
 
-	.ig-left{
-		flex:auto;
-		max-width:100%;
+
+	.about-header2{
+		height: 90px;
+		margin-top: 300px;
+		margin-bottom:70px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
 		text-align: right;
-		padding-left: 0px !important;
-		padding-right: 0px !important;
+		text-transform:uppercase;
+		color: #ffffff;
+		margin-right: 0px;
 	}
 
-	.accent4{
-		font-size:22px;
+	.icon-container {
+		max-width: none;
+		width: 390px;
+		height: 130px;
+		margin: 0px 0px 14.8px 0px;
+		padding: 0px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0));
+		text-align: left;
+		float: right;
 	}
 
-	.normal2{
-		font-size:14px;
+	.icon-container img{
+		width: 50px;
+		margin: 40px auto 0px auto; 
+		display: block;
 	}
+	
+	.icon-image-div{
+		width: 90px; 
+		height: 100%;
+		float: left; 
+	}
+	/* .icon-image{
+		margin: 18px auto 0px auto; 
+		display: block;
+	} */
 
-	#dropOurMission{
-		margin-top: -256px;
+	.parallax2-image{
+		float: left;
+		width: 40%;
+		margin-bottom: 20%;
 	}
 
 	#ourMissionHeader{
-		font-size:55px;
-		margin-bottom:38px;
+		width: 300px;
+		height: 24px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
+		color: #ffffff;
+		margin: 0px auto 36px auto;
+	}
+
+	#ourMissionText{
+		max-width: 500px;
+		/* height: 400px; */
+		font-family: Avenir;
+		font-size: 20px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: justify;
+		color: #ffffff;
+	}
+
+	#parallax3{
+		padding-top: 150px;
+	}
+	
+	#parallax4 {
+		margin-top: 250;
+	}
+
+	.aboutVideo{
+		text-align: center; 
+		margin-top: 880px;
+		
+	}
+
+	
+}
+
+@media only screen and (max-width: 767px) {
+
+	#about-row-desktop{
+		display: none;
+	}
+
+	#about-mobile{
+		display: block;
+		margin: auto;
+	}
+
+	.about-header{
+		height: 90px;
+		margin-top: 190px;
+		margin-bottom:70px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		text-transform:uppercase;
+		color: #ffffff;
+		margin-left: 10px;
+	}
+
+
+	/* .about-header2{
+		height: 90px;
+		margin-top: 150px;
+		margin-bottom:70px;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: right;
+		text-transform:uppercase;
+		color: #ffffff;
+		margin-right: 0px;
+	} */
+
+	/* .icon-container {
+		max-width: none;
+		width: 390px;
+		height: 110px;
+		margin: 0px 0px 14.8px 0px;
+		padding: 0px;
+		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0));
+		text-align: left;
+		float: right;
+	} */
+/* 
+	.icon-container img{
+		width: 38px;
+		height: 38px;
+	} */
+	
+	.parallax2-image{
+		display: none;
 	}
 
 }
 
 @media only screen and (max-width: 450px) {
 
+	.videoMobile{
+		padding-top: 70px !important;
+	}
+
+	.icon-image-div{
+		width: 60px; 
+		height: 100%;
+		float: left; 
+	}
+
 	#about-row-desktop{
 		display: none;
 	}
 
+	#parallax3 {
+		padding-top: 0px;
+	}
+
 	#parallax4 {
-		margin-top: 142px;
+		margin-top: 120px;
 	}
 
 	#parallax-video {
@@ -414,11 +667,11 @@
 	#pml4{
 		padding-left: 5px !important;;
 	}
-
+	
 	.icon-container {
 		max-width: none;
 		width: 100%;
-		height: 94px;
+		height: 123px;
 		margin: 0px 0px 14.8px 0px;
 		padding: 0px;
 		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0));
@@ -431,13 +684,40 @@
 	}
 	
 	.about-header{
-		font-size:14px;
+		height: 42px;
+		font-size: 14px;
+		text-align: left;
+		text-transform:uppercase;
+		color: #ffffff;
+		margin-top: 48px;
+		margin-bottom: 28px;
+		margin-left: 10px;
 	}
+
+
+	.about-header2{
+		height: 42px;
+		margin-top: 35px;
+		margin-right: 0px;
+		margin-bottom:22px;
+		font-size: 14px;
+		text-align: right;
+		text-transform:uppercase;
+		color: #ffffff;
+	}
+
+	.aboutVideo {
+		text-align: center;
+		margin-top: 680px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
 
 	.accent4{
 		height: 16px;
 		font-family: Avenir;
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: 900;
 		font-style: normal;
 		font-stretch: normal;
@@ -445,7 +725,7 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #ffffff;
-		margin-top: 18px;
+		margin-top: 12px;
 	}
 
 	.parallax2-image{
@@ -455,34 +735,35 @@
 	.normal2{
 		opacity: 0.7;
 		font-family: Avenir;
-		font-size: 8px;
+		font-size: 11px;
 		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
 		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: left;
 		color: #ffffff;
+		margin-right: 10px;
 	}
 
 	#dropOurMission{
 		margin-top: -307px;
 	}
 
-	#ourMissionHeader{
-		font-size:16px;
-		margin-bottom:38px;
+
+	#ourMissionHeader {
+		height: 24px;
+		font-size: 14px;
+		line-height: 1.71;
+		margin: 0px auto 36px auto;
 	}
 
 	#ourMissionText{
 		width: 260px;
+		height: 295px;
 		opacity: 0.8;
 		font-family: Avenir;
-		font-size: 10px;
+		font-size: 12px;
 		font-weight: 500;
 		font-style: normal;
 		font-stretch: normal;
-		line-height: 1.5;
+		line-height: 1.4;
 		letter-spacing: normal;
 		text-align: justify;
 		color: #ffffff;

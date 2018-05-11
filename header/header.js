@@ -23,16 +23,16 @@ angular.module('header', [])
 
 
         var textList = [{
-            item : "Process"
+            item : "Product"
           },
           {
             item : "Process"
           },
           {
-            item : "Process"
+            item : "Data"
           },
           {
-            item : "Process"
+            item : "Value"
           }
         ]
 

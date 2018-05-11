@@ -17,9 +17,9 @@ angular.module('nav', [])
           {
             title:'technology'
           },
-          {
-            title:'prototype'
-          },
+          // {
+          //   title:'prototype'
+          // },
           {
             title:'token'
           },

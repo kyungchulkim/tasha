@@ -9,5 +9,6 @@
   ],
   "img": "bio/data/saemi_profile.jpg",
   "linkedInUrl": "saemi-hong-b8272515b",
-  "isTeam": true
+  "isTeam": true,
+  "company" : ["lamaison","ey","mychelle","koreauniversity"]
 }

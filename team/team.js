@@ -7,13 +7,15 @@ angular.module('team', ['bio','advisor'])
       link: function($scope) {
 
         $scope.advisors = [
-          'gichae',
-          'dongjin',
-          'haneul',
+          'yongsik',
+          'hyungsik',
+          'Gyucheol',
           'yujin',
-          'hawool',
           'chris',
-          'jisun'
+          'jisun',
+          'gichae',
+          'haneul',
+          'dongjin'
         ];
         $scope.teamMembers = [
           'brian_lee',
@@ -22,7 +24,8 @@ angular.module('team', ['bio','advisor'])
           'yongchul',
           'saemi_hong',
           'natasha_woo',
-          'sunha_hwang'
+          'sunha_hwang',
+          'kyungchul_kim'
         ];
 
         var scene11 = new ScrollMagic.Scene({
@@ -54,6 +57,8 @@ angular.module('team', ['bio','advisor'])
         scene11.on("enter", function (event) {
           $scope.$parent.activeNav = 'team';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax11");
         });
 
         scene11.on("leave", function (event) {

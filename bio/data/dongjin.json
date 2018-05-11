@@ -1,13 +1,13 @@
 {
   "firstName":"Dongjin",
   "lastName":"Koo",
-  "position":"Investment Lead",
   "bio":[
-    "BSK Investment",
-    "Fund manager at Brain Asset Management",
+    "Investment Team Leader, BSK Investment",
+    "Fund Manager, Brain Asset Management",
     "M.S. in Accounting, UIUC",
-    "B.S. in Business, Seoul University"
+    "B.S in Business Administration, Seoul Nataional University"
   ],
   "linkedInUrl": "easternstar9",
-  "img": "bio/data/dongjin_profile.jpg"
+  "img": "bio/data/dongjin_profile.jpg",
+  "company" : ["bsk","brain","illinois","seoulna"]
 }

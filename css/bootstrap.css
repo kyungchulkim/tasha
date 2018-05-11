@@ -4405,8 +4405,10 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-toggler {
+  top: 15px;
+  z-index: 999;
   color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
+  /* border-color: rgba(255, 255, 255, 0.1); */
 }
 
 .navbar-dark .navbar-toggler-icon {

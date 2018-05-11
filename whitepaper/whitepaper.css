@@ -1,13 +1,14 @@
 #parallax5 {
 	/* background-image: url(../img/par5.png); */
 	background-position-x:center;
-	padding-top:590px;
+	padding-top:390px;
 	/* height: 1679px; */
 	max-width: 1650px;
 	margin : 0 auto;
 	/* margin-top: -350px; */
 	position:relative;
-	z-index:1001
+	z-index:1001;
+	padding-bottom: 100px;
 }
 
 .download{
@@ -18,8 +19,8 @@
 	font-style: normal;
   	font-stretch: normal;
   	line-height: normal;
-	  letter-spacing: normal;
-	  margin-left: 187px;
+	letter-spacing: normal;
+	margin-left: 7vw;
   	color: #00fff7;
 }
 
@@ -33,6 +34,7 @@
 #whitepaperGraphic{
 	margin-top: -350px;
 	margin-right: 50px;
+	width: 20vw;
 }
 
 #whitepaperHeader{
@@ -44,8 +46,8 @@
 	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
-	margin-top:125px;
-	margin-left: 187px;
+	margin-top:6.5vw;
+	margin-left: 7vw;
 	line-height: normal;
 	letter-spacing: -1.2px;
 	text-align: left;
@@ -78,67 +80,126 @@
 	z-index:2;
 	background-image: url('../img/anglerectangle-6.png');
 	max-width: 1650px;
-	height: 584px;
+	margin: 0px 134px;
+	height: 32vw;
     margin: 0px 134px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 100%;
 }
 
 .download-image{
 	display: none;
 }
 
-@media only screen and (max-width: 1050px) {
-	#whitepaperGraphic{
-		width:932px;
-	}
-	#whitepaperBGGraphic{
-		margin-left: 300px;
-		margin-top: 50px;
-	}
-
+.prototype-text{
+	font-size: 36px; 
+	font-family: Avinir; 
+	font-weight: 900;
+	color: white;
+	right: 35px;
+	bottom: -90px;
+	position: absolute;
 }
 
-@media only screen and (max-width: 900px) {
-	#whitepaperHeader{
-		margin-bottom:29px;
+.prototype-icon{
+	height: 68px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.prototype-text{
+		font-size: 24px; 
+		font-family: Avinir; 
+		font-weight: 900;
+		color: white;
+		right: 35px;
+		bottom: -70px;
+		position: absolute;
 	}
 
-	#whitepaperGraphic{
-		width:829px;
-		margin-top: -70px;
-		margin-right: -300px;
+	.prototype-icon{
+		height: 48px;
 	}
 
 	#whitepaperContainer{
-		/* position:relative; */
-		top:-200px;
-	}
-}
+		padding-top: 50px;
+		padding-bottom: 60px;
 
-@media only screen and (max-width: 770px) {
-
-	#whitepaperBGGraphic{
-		margin-left: 0px;
-		margin-top: 150px;
 	}
 
-	#whitepaperHeader{
-		font-size:38.5px;
+	#parallax5 {
+		background-position-x:center;
+		padding-top:200px;
+		position:relative;
+		z-index:1001
 	}
-}
-
-@media only screen and (max-width: 700px) {
-
-	#whitepaperContainer{
-		top: -300px;
-	}
-
-	#whitepaperGraphic{
-		width: 750px;
-		margin-top: 120px;
-	}
-}
 	
-@media only screen and (max-width: 450px) {
+	#whitepaperHeader{
+		height: 24px;
+		text-transform: uppercase;
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		margin-left: -50px;
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+
+	#whitepaperGraphic{
+		width: 39%;
+		position: absolute;
+		bottom: 75px;
+		right: 0px;
+	}
+
+	.download{
+		width: auto;
+		height: 36px;
+		font-family: Avenir;
+		font-size: 26px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #00fff7;
+		margin-left: 10%;
+		margin-top: 210px;
+	}
+
+	#whitepaperContent{
+		position:relative;
+		z-index:2;
+		background-image: url('../img/anglerectangle-6.png');
+		max-width: 1650px;
+		height: 475px;
+		margin: 0px 60px;
+		background-size: 95% 64%;
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+		background-position-x: right;
+	}
+
+	.download img{
+		width: 21px;
+		height: 21px;
+	}
+
+	.download-image{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
 
 	#whitepaperContainer{
 		padding-top: 50px;
@@ -160,6 +221,100 @@
 		height: 24px;
 		text-transform: uppercase;
 		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+		margin-left: -50px;
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+
+	#whitepaperGraphic{
+		width: 39%;
+		position: absolute;
+		bottom: 75px;
+		right: 0px;
+	}
+
+	.download{
+		width: auto;
+		height: 19px;
+		font-family: Avenir;
+		font-size: 14px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #00fff7;
+		margin-left: 10%;
+		margin-top: 230px;
+	}
+
+	#whitepaperContent{
+		position:relative;
+		z-index:2;
+		background-image: url('../img/anglerectangle-6.png');
+		max-width: 1650px;
+		height: 455px;
+		margin: 0px 60px;
+		background-size: 95% 230px;
+		background-position-y: bottom;
+		background-repeat: no-repeat;
+		background-position-x: right;
+	}
+
+	.download img{
+		width: 21px;
+		height: 21px;
+	}
+
+	.download-image{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+
+	.prototype-text{
+		font-size: 12px; 
+		font-family: Avenir; 
+		font-weight: 900;
+		color: white;
+		right: 0px;
+		bottom: -40px;
+		position: absolute;
+	}
+
+	.prototype-icon{
+		height: 24px;
+	}
+
+
+	#whitepaperContainer{
+		padding-top: 50px;
+		padding-bottom: 60px;
+
+	}
+
+	#parallax5 {
+		background-position-x:center;
+		padding-top:80px;
+		position:relative;
+		z-index:1001
+	}
+	
+	#whitepaperHeader{
+		height: 24px;
+		text-transform: uppercase;
+		font-family: Avenir;
 		font-size: 14px;
 		font-weight: 900;
 		font-style: normal;
@@ -170,20 +325,20 @@
 		color: #ffffff;
 		margin-left: 0px;
 		margin-top: 0px;
-		margin-bottom: 145px;
+		margin-bottom: 0px;
 	}
 
 	#whitepaperGraphic{
 		width: 115px;
-		margin-top: -260px;
-		margin-right: 0px;
+		margin-right: 20px;
+    	top: 475px;
 	}
 
 	.download{
 		height: 11px;
 		opacity: 0.7;
 		font-family: Avenir;
-		font-size: 8px;
+		font-size: 12px;
 		font-weight: 500;
 		font-style: normal;
 		font-stretch: normal;
@@ -192,16 +347,18 @@
 		text-align: left;
 		color: #00fff7;
 		margin-left: 0px;
+		margin-top: 180px;
+		margin-bottom: 10px;
 	}
 
 	#whitepaperContent{
 		position:relative;
 		z-index:2;
 		background-image: url('../img/anglerectangle-6.png');
-		max-width: 1650px;
+		max-width: 450px;
 		height: auto;
 		margin: 0px 30px;
-		background-size: auto 140px;
+		background-size: 100% 140px;
 		background-position-y: bottom;
 		background-repeat: no-repeat;
 	}
@@ -212,7 +369,7 @@
 	}
 
 	.download-image{
-		display: block;
+		display: inline-block;
 		margin-bottom: 5px;
 	}
 }

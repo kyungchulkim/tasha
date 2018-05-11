@@ -8,7 +8,7 @@ angular.module('token', [])
 
         var scene8 = new ScrollMagic.Scene({
           triggerElement: "#parallax8",
-          offset:0
+          offset:-300
         }).setVelocity("#parallax8 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -22,14 +22,14 @@ angular.module('token', [])
 
         var scene9 = new ScrollMagic.Scene({
           triggerElement: "#parallax9",
-          offset:150
+          offset:0
         }).setVelocity("#parallax9 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var scene10 = new ScrollMagic.Scene({
           triggerElement: "#parallax10",
-          offset:200
+          offset:-100
         }).setVelocity("#parallax10 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -66,49 +66,89 @@ angular.module('token', [])
         scene8.on("enter", function (event) {
           $scope.$parent.activeNav = 'token';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax8");
         });
 
         scene8.on("leave", function (event) {
           $scope.$parent.activeNav = 'prototype';
           $scope.$parent.$apply();
         });
+
+        scene9.on("enter", function (event) {
+          $scope.$parent.activeNav = 'token';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax9");
+        });
+
+        scene9.on("leave", function (event) {
+          $scope.$parent.activeNav = 'prototype';
+          $scope.$parent.$apply();
+        });
+             
+        scene10.on("enter", function (event) {
+          $scope.$parent.activeNav = 'token';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax10");
+        });
+
+        scene10.on("leave", function (event) {
+          $scope.$parent.activeNav = 'prototype';
+          $scope.$parent.$apply();
+        });
                     
-          $scope.roadmap = [
+
+        $scope.roadmap = [
             {
-              "year" : "2Q 2018",
-              "contents1" : "TEMCO Whitepaper Release",
-              "contents2" : "TEMCO Prototype Release"
+              "year" : "05 2018",
+              "contents1" : "TEMCO Website Launch",
+              "contents2" : "TEMCO Whitepaper Release"
+            },
+            {
+              "year" : "06 2018",
+              "contents1" : "TEMCO Prototype Release",
+              "contents2" : "Development of Adivsory Board"
             },
             {
               "year" : "3Q 2018",
-              "contents1" : "Crowd Sale"
+              "contents1" : "Partnership and Business Development"
             },
             {
               "year" : "4Q 2018",
-              "contents1" : "Exchange Listing of TEMCO Tokens",
-              "contents2" : "Development of Supply Chain Blockchain Network"
+              "contents1" : "Initiate TEMCO Platform Pilot Test with Partners"
             },
             {
               "year" : "1Q 2019",
-              "contents1" : "TEMCO Consumer App Launch",
-              "sub1" : "Smart Scan, Voting System"
+              "contents1" : "Begin Developing Decentralized Distribution Network"
             },
             {
               "year" : "2Q 2019",
-              "contents1" : "TEMCO Vendor App Launch",
+              "contents1" : "Consumer App Launch",
+              "sub1" : "Smart Scan and Voting System"
+            },
+            {
+              "year" : "3Q 2019",
+              "contents1" : "E-commerce Partner's Mall and Points Mall Launch",
+              "contents2" : "Initiate TEMCO Blockchain API Service"
+            },
+            {
+              "year" : "4Q 2019",
+              "contents1" : "Vendor App Launch",
               "sub1" : "Vendor Verification System",
-              "sub2" : "Smart Contract"
+              "sub2" : "Smart Contract (transfer, compensation, and penalty agreements etc.)"
             },
             {
-              "year" : "3Q~4Q 2019",
-              "contents1" : "TEMCO Consumer App Launch",
-              "sub1" : "Smart Scan, Voting System",
-              "sub2" : "Smart Contract",
-              "contents2" : "TEMCO Market (Partner’s, Point Mall) Launch",
+              "year" : "1Q 2020",
+              "contents1" : "TEMCO Big Data Platform & BI Tool Release",
+              "sub1" : "Data Warehouse(Hadoop), Analytic Engine(Spark)",
+              "sub2" : "Data Visualization Tool",
+              "sub3" : "PKI Tool"
             },
             {
-              "year" : "1~4Q 2019",
-              "contents1" : "Development of TEMCO Blockchain"
+              "year" : "2~4Q 2020",
+              "contents1" : "Development of TEMCO Blockchain​"
             }
           ];
 

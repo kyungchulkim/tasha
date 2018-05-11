@@ -7,7 +7,7 @@ angular.module('technology', [])
       link: function($scope) {
         var scene6 = new ScrollMagic.Scene({
           triggerElement: "#parallax6",
-          offset:300
+          offset:-100
         }).setVelocity("#parallax6 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -35,6 +35,8 @@ angular.module('technology', [])
         scene6.on("enter", function (event) {
           $scope.$parent.activeNav = 'technology';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax6");
         });
 
         scene6.on("leave", function (event) {

@@ -1,10 +1,11 @@
 {
   "firstName":"Gichae",
   "lastName":"Lim",
-  "position":"Head of Strategic Business Division",
   "bio":[
-      "Sejong Telecom",
+      "Head of Strategic Business Division, Sejong Telecom",
+      "General Manager of Nework Department, KT",
       "M.S, in Broadcasting communication at Yonsei University"
    ],
-   "img": "bio/data/gichae_profile.jpg"
+   "img": "bio/data/gichae_profile.jpg",
+   "company" : ["sejong","kt"]
 }

@@ -5,14 +5,14 @@
 <div id="parallax11" class="parallax">
 	<div class="content">
 		<div class="row">
-		<div class="text-category team-text-container" style="margin: 669px auto 207px auto;">
+		<div class="team-text-container team-margin animated" data-animate="fadeInUp" data-delay="0.3">
 			TEAM
-			<!-- <img id="dot-img" style="margin-top: 15px;" class="dot" src="img/copy9@2x.png" /> -->
-			<a name="team" style="top:-195px;" class="pin">&nbsp;</a>
+			<a name="team" class="pin">&nbsp;</a>
 		</div>
 	</div>
 		<div>
-			<div id="teamMembers" class="portrait-container" ng-repeat="teamMember in teamMembers">
+			<div id="teamMembers" class="portrait-container"
+			 ng-repeat="teamMember in teamMembers">
 				<bio data="{{teamMember}}" />
 			</div>			
 		</div>
@@ -20,12 +20,12 @@
 	
 	<div class="content">
 			<div class="row">
-			<div class="text-category team-text-container" style="margin: 410px auto 190px auto;">
-		ADVISORY
+			<div class="team-text-container advisor-margin">
+		ADVISOR
 		</div>
 	</div>	
 	<div>		
-		<div class="portrait-container-advisor" ng-repeat="advisor in advisors">
+		<div class="portrait-container-advisor animated" data-animate="fadeInUp" data-delay="0.3" ng-repeat="advisor in advisors">
 			<advisor data="{{advisor}}" />
 		</div>
 	</div>

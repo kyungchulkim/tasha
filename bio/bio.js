@@ -17,6 +17,19 @@ angular.module('bio', [])
             $scope.bios = resp.data.bio;
             $scope.company = resp.data.company;
           });
+
+          var opacityIndex = true;
+
+          $scope.portraitClick = function(){
+        
+            opacityIndex = !opacityIndex;
+            if(opacityIndex){
+              $scope.opacity = 	"transition: 1s ease; opacity: 1;"; 
+            }
+            
+           
+          }
       }
+      
     };
   });

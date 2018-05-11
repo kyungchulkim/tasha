@@ -10,5 +10,6 @@
   ],
   "img": "bio/data/natasha_profile.jpg",
   "linkedInUrl": "natashawoo",
-  "isTeam": true
+  "isTeam": true,
+  "company" : ["newsweek","parsons","nbc"]
 }

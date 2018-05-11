@@ -2,6 +2,7 @@ footer, footer .copyright{
 	color:#fff;
 	text-transform:uppercase;
 	font-size:14px;
+	padding-top: 31px;
 }
 
 footer{
@@ -12,7 +13,7 @@ footer{
 	line-height: 2.71;
 	letter-spacing: normal;
 	/* padding: 124px 20px 111px 20px; */
-	background-color:#202020;
+	/* background-color:#202020; */
 	text-align: center !important;
 	float:left;
 	width:100%;
@@ -33,16 +34,72 @@ footer .material-icons{
 footer a:hover{
 	text-decoration:none;
 }
-footer .social-media{display:inline-block;text-align:center;}
+footer .social-media{
+	display:inline-block;
+	text-align:center;
+	height: 100%;
+}
 footer .social-media a{font-size:0;display:inline-block;}
 footer .social-media img {
-	width: 50px;
-	height: 50px;
-	margin:7px;
+	max-width: 85px;
+	max-height: 85px;
+	margin: 0px 10px 0px 10px;
 }
 
 .footer-logo{
 	object-fit: contain;
 	font-family: 'object-fit: contain;';
+	height: 81px;
+	margin-bottom:38px;
 }
+
+.footer-backimage{
+	margin-bottom: 142px;
+}
+
+.footer-text{
+	font-family: Avenir;
+											text-transform:uppercase;
+											font-size: 24px;
+											font-weight: 600;
+											font-style: normal;
+											font-stretch: normal;
+											line-height: 1;
+											letter-spacing: 0.9px;
+											text-align: center;
+											color: #ffffff;
+}
+
 .white-line{width:100%;max-width: 330px;height: 2px;margin:29px auto;background-color: #ffffff;}
+
+@media only screen and (max-width: 767px) {
+	footer .social-media img {
+		max-width: 60px;
+		max-height: 60px;
+		margin: 0px 15px 0px 15px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	footer .social-media img {
+		max-width: 55px;
+		max-height: 55px;
+		margin: 0px 5px 0px 5px;
+	}
+
+	.footer-logo{
+		height: 40px;
+	}
+
+	.footer-backimage{
+		margin-bottom: 0px;
+	}
+
+	.footer-text{
+		font-size: 12px;
+	}
+
+	.copyright{
+		font-size: 10px;
+	}
+}

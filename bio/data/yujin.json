@@ -1,12 +1,12 @@
 {
     "firstName":"Yujin",
     "lastName":"Jang",
-    "position":"Lawyer",
     "bio":[
-      "Law Offices",
-      "Judicial notice",
-      "Judicial Research and Training Institute",
-      "B.S. in Business, Seoul University"
+      "Partner Lawyer, Je Ha Law Firm",
+      "55th Government Judicial Exam",
+      "45th Judicial Research and Training Institute Completion",
+      "B.S in Business Administration, Seoul National University"
     ],
-    "img": "bio/data/yujin_profile.jpg"    
+    "img": "bio/data/yujin_profile.jpg",
+    "company" : ["jh","seoulna"]    
   }

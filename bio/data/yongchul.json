@@ -9,5 +9,6 @@
     ],
     "img": "bio/data/yongchul_profile.jpg",
     "linkedInUrl": "yongchulkim",
-    "isTeam": true
+    "isTeam": true,
+    "company" : ["knoa","stonybrook"]
   }

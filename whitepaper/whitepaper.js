@@ -8,7 +8,7 @@ angular.module('whitepaper', [])
 
         var scene5 = new ScrollMagic.Scene({
           triggerElement: "#parallax5",
-          offset:250
+          offset:-150
         }).setVelocity("#parallax5 .content", {opacity: 1.0}, {duration: 400})
           //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -25,6 +25,8 @@ angular.module('whitepaper', [])
         scene5.on("enter", function (event) {
           $scope.$parent.activeNav = 'whitepaper';
           $scope.$apply();
+
+          $scope.$parent.aniDiv("#parallax5");
         });
 
         scene5.on("leave", function (event) {
@@ -42,6 +44,7 @@ angular.module('whitepaper', [])
           $scope.$parent.$apply();
         });
 
+        
       }
     };
   });

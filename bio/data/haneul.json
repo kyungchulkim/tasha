@@ -1,10 +1,10 @@
 {
   "firstName":"Haneul",
   "lastName":"Yoo",
-  "position":"Journalist",
   "bio":[
-    "The Korea Economic Daily",
-    "B.S, in Broadcasting communication at Yonsei University"
+    "Journalist of IT/Science Division, The Korea Economic Daily",
+    "B.S in Journalism and Mass Communication, Yonsei University"
   ],
-  "img": "bio/data/haneul_profile.jpg"
+  "img": "bio/data/haneul_profile.jpg",
+  "company" : ["knewpaper","yonsei"]
 }

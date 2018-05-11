@@ -2,16 +2,19 @@
 	<div id="about-container" class="content">
 
 			<div class="row" style="margin-left: 20px;">
-					<div class="align-left bright about-header" 
-					id="igHeaderMobile" style="color: #ffffff; line-height: 1.5;
+					<div class="align-left bright about-header animated fadeInUp" 
+					id="igHeaderMobile" 
+					
+					style="color: #ffffff; line-height: 1.5;
 					float: left; margin-left: 0px; margin-top: 45px; margin-bottom: 28px;
-					height: 42px;">
+					height: 42px; visibility: visible; animation-delay: 1.5s;">
 					REVOLUTIONARY<br />
 					SOLUTION
 			</div>
 		</div>
 
-		<div class="about-header" id="igHeaderDesktop">
+		<div class="about-header animated" id="igHeaderDesktop"
+			data-animate="fadeInUp" data-delay="0.3">
 					REVOLUTIONARY<br />
 					SOLUTION
 					<!-- <img id="dot-img" style="margin-top: 15px;
@@ -22,16 +25,17 @@
 		<div style="margin: auto; max-width: 1650px;">
 				
 
-		<div class="row">
+		<div class="row justify-content-between">
 			
 			
 
-			<div class="col-md-4">
+			<div class="col-md-4" id="about-row-desktop">
 				
 				<!-- <img class="max" style="mix-blend-mode: multiply;" src="img/ig-advantage-1@2x.png" /> -->
 			
-					<div class="parallax2-image" style="position:relative; float: left;">
-						<img src="img/group-4.png" style="width: 100%;"/>
+					<div class="parallax2-image animated" data-animate="fadeInLeft" data-delay="0.4"
+					style="float: left;">
+						<img src="img/about2.png" style="width: 100%;" class="bounce_cube"/>
 					<!-- <div class="glow-text">+</div>
 					<img class="bounce_cube" style="width: 100%" src="img/test/t2_2.png"/>
 					<img class="bounce s2" style="position: absolute; top:10%; left: 10%; max-height: 30%;" src="img/test/t1_2.png"/>
@@ -49,22 +53,18 @@
 			</div>
 		
 
-			<div class="col-lg-8 ig-left" style="padding-left: 60px">
-			
-
+			<!-- <div class="col-lg-7 ig-left" style="padding-left: 60px"> -->
+			<div class="col-lg-8 ig-left">
 
 			<div class="row justify-content-end pl60" id="about-row-desktop">
-			
-			<!-- <div class="col-4 col-lg-4">
-				<div class="icon-container" style="background-image:none">
-						
-				</div>
-			</div> -->
+
+				
 
 			<div class="col-12 col-lg-4" id="pmr4">
-				<div class="icon-container">
+				
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.5">
 					
-						<img src="img/icon_connected@2x.png" />
+						<img src="img/about_icon/connected.png" />
 				
 					<div>
 						<div class="accent4 text-sub-category">
@@ -78,9 +78,9 @@
 			</div>
 
 			<div class="col-12 col-lg-4" id="pml4">
-				<div class="icon-container" >
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.6" >
 					<div>
-						<img src="img/icon_credible@2x.png" />
+						<img src="img/about_icon/credible.png" />
 					</div>
 					<div>
 						<div class="accent4 text-sub-category">
@@ -96,9 +96,9 @@
 			<div class="row pl60" id="about-row-desktop">
 
 			<div class="col-6 col-lg-4" id="pmr4">
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.7">
 					<div>
-						<img src="img/icon_transparent@2x.png" />
+						<img src="img/about_icon/transparent.png" />
 					</div>
 					<div>
 						<div class="accent4 text-sub-category">
@@ -111,32 +111,31 @@
 				</div>
 			</div>
 				<div class="col-6 col-lg-4" id="pml4">
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.8">
 					<div>
-						<img src="img/icon_traceable@2x.png" />
+						<img src="img/about_icon/tracecable.png" />
 					</div>
 					<div>
 						<div class="accent4 text-sub-category">
 							Tracecable
 						</div>
 						<div class="normal2 text-desc">
-							Trace your purchase back to its origin.
-							<br /> Any dispute can be reliably and promptly resolved.
+							Trace your purchase back to its origin. Any dispute can be reliably and promptly resolved.
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-6 col-lg-4" id="pmr4">
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.9">
 					<div>
-						<img src="img/icon_secure@2x.png" />
+						<img src="img/about_icon/intelligence.png" />
 					</div>
 					<div>
 						<div class="accent4 text-sub-category">
-							Secure
+								INTELLIGENCE
 						</div>
 						<div class="normal2 text-desc" style="margin-bottom:120px;">
-							Blockchain data is distributed and therefore, unmodifiable.
+								Gain business intelligence by taming the big data beast.
 						</div>
 					</div>
 				</div>
@@ -154,84 +153,91 @@
 	</div>
 		<!-- 모바일 시작 -->
 		<div class="row" id="about-mobile">
-			
-				<div class="icon-container">
+
+			<div class="parallax2-image animated" data-animate="fadeInLeft" data-delay="0.4">
+				<img src="img/group-4.png" style="width: 100%;"/>
+			</div>
+			<div style="max-width: 380px; float: right;">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.5">
 					
-					
-							<div style="width: 90px; float: left; height: 94px;">
-									<img src="img/icon_connected@2x.png" style="margin: 0 auto; display: block;"/>
+							<div class="icon-image-div">
+									<img src="img/about_icon/connected.png" class="icon-image"/>
 							</div>
 							<div>
-								<div class="accent4 text-sub-category">
+								<div class="accent4">
 									Connected
 								</div>
-								<div class="normal2 text-desc">
+								<div class="normal2">
 									Track, share, and access real time data anywhere anytime through highly linked blockchain technology
 								</div>
 						</div>
 
 				</div>
 				
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.6">
 					
 					
-						<div style="width: 90px; float: left; height: 94px;">
-								<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					
+						<div class="icon-image-div">
+								<img src="img/about_icon/credible.png" class="icon-image"/>
 						</div>
 						<div>
-							<div class="accent4 text-sub-category">
-								Credible
+							<div class="accent4">
+									CREDIBLE
 							</div>
-							<div class="normal2 text-desc">
-								Vendors are background checked through our Vendor Verification System (VVS).
+							<div class="normal2">
+									Vendors are background checked through our Vendor Verification System (VVS).
 							</div>
 					</div>
 				</div>
 
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.7">
 					
-					
-					<div style="width: 90px; float: left; height: 94px;">
-							<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					<div class="icon-image-div">
+								<img src="img/about_icon/transparent.png" class="icon-image"/>
 					</div>
 					<div>
-						<div class="accent4 text-sub-category">
-							Credible
+						<div class="accent4">
+								TRANSPARENT
 						</div>
-						<div class="normal2 text-desc">
-							Vendors are background checked through our Vendor Verification System (VVS).
+						<div class="normal2">
+								Data collected through smart contract in blockchain is safe 
+								and transparent.
 						</div>
 				</div>
 				</div>
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.9">
 					
 					
-					<div style="width: 90px; float: left; height: 94px;">
-							<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					<div class="icon-image-div">
+							<img src="img/about_icon/tracecable.png"/>
 					</div>
 					<div>
-						<div class="accent4 text-sub-category">
-							Credible
+						<div class="accent4">
+								TRACECABLE
 						</div>
-						<div class="normal2 text-desc">
-							Vendors are background checked through our Vendor Verification System (VVS).
+						<div class="normal2">
+								Trace your purchase back to its origin. Any dispute can be reliably and promptly resolved.
+
 						</div>
 				</div>
 			</div>
-			<div class="icon-container">
+			<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.9">
 					
 					
-				<div style="width: 90px; float: left; height: 94px;">
-						<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+				<div class="icon-image-div">
+						<img src="img/about_icon/intelligence.png"/>
 				</div>
 				<div>
-					<div class="accent4 text-sub-category">
-						Credible
+					<div class="accent4">
+							INTELLIGENCE
 					</div>
-					<div class="normal2 text-desc">
-						Vendors are background checked through our Vendor Verification System (VVS).
+					<div class="normal2">
+							Gain business intelligence by taming the big data beast.
 					</div>
+				</div>
 			</div>
+
 		</div>
 
 			
@@ -242,20 +248,31 @@
 
 
 
-<div id="parallax3" class="parallax" style="padding-top:40px;">
+<div id="parallax3" class="parallax">
 
 	<div id="revolutionary-container" class="content" >
-			
+		
+		<div id="star_wrapper"
+		style="position: relative; left: 50px;">
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 0; animation-delay: 0s"/>
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 20px; animation-delay: 1s"/>
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 40px; animation-delay: 2s"/>
+		</div>
+
 		<div style="margin: auto; max-width: 1650px;">
 			<a name="about" class="pin">&nbsp;</a>
 			<!-- <div class="col-lg-6 ig-left" style="padding-bottom:250px;"> -->
 		<div class="row">
 				<div class="col-md-4">
-				<div class="align-left bright about-header" 
+				<div class="align-left bright about-header2 animated" 
+				data-animate="fadeInUp" data-delay="0.3"
 				id="igHeaderMobile" style="color: #ffffff; line-height: 1.5;
 				float: right; margin-left: 0px; margin-top: -30px; margin-bottom: 28px;
 				height: 42px; text-align: right;">
-				TEMCO 
+				TEMCO
 				<br />
 				ADVANTAGE
 				</div>
@@ -263,20 +280,21 @@
 			</div>
 		</div>
 
-		<div class="align-right bright about-header" id="igHeaderRight" style="color: #effbfd; margin-right: 252px;">
-				TEMCO 
+		<div class="align-right bright about-header2 animated" id="igHeaderRight"
+		data-animate="fadeInUp" data-delay="0.3">
+				TEMCO
 				<br />
 				ADVANTAGE
-			</div>
+		</div>
 
 	<div class="row">
-		<div class="col-lg-8 ig-left" style="padding-right: 60px;">
+		<div class="col-lg-8 ig-left">
 		<div class="row pr60" id="about-row-desktop">
 
 				<div class="col-6 col-lg-4" id="pmr4">
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.5"  >
 					<div>
-						<img src="img/icon_verifiedvendor@2x.png" />
+						<img src="img/about_icon/vendor.png" />
 					</div>
 					<div>
 						<div class="accent4 bright text-sub-category">
@@ -291,9 +309,9 @@
 			
 			
 			<div class="col-6 col-lg-4" id="pml4">
-					<div class="icon-container">
+					<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.6" >
 					<div>
-						<img src="img/icon_linkeddata@2x.png" />
+						<img src="img/about_icon/linkeddata.png" />
 					</div>
 					<div>
 						<div class="accent4 bright text-sub-category">
@@ -307,21 +325,22 @@
 				</div>
 			</div>
 
+			
+
 		</div>
 
 			<div class="row pr60" id="about-row-desktop" >
 				<div class="col-6 col-lg-4" id="pmr4">
-						<div class="icon-container">
+						<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.7" >
 					<div>
-						<img src="img/icon_realreviews@2x.png" />
+						<img src="img/about_icon/realreviews.png" />
 					</div>
 					<div>
 						<div class="accent4 bright text-sub-category">
 							Real Reviews
 						</div>
 						<div class="normal2 light-blue text-desc">
-							Consumers who purchased the product can post reviews. Using blockchain technology for verification, TEMCO eliminates the
-							risk of fake reviews.
+							Consumers who purchased the product can post reviews. Using blockchain technology for verification, TEMCO eliminates the risk of fake reviews.
 						</div>
 					</div>
 				</div>
@@ -329,9 +348,9 @@
 		
 		
 			<div class="col-6 col-lg-4" id="pml4">
-					<div class="icon-container">
+					<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.8" >
 					<div>
-						<img src="img/icon_marketplace@2x.png" />
+						<img src="img/about_icon/marketplace.png" />
 					</div>
 					<div>
 						<div class="accent4 bright text-sub-category">
@@ -339,36 +358,36 @@
 						</div>
 						<div class="normal2 light-blue text-desc">
 							TEMCO marketplace offers all the features above.
-							<br /> You don't have to look other places to get more
-							<br /> information.
+							You don't have to look other places to get more
+							information.
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-6 col-lg-4" id="pmr4">
-					<div class="icon-container">
+					<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.9" >
 					<div>
-						<img src="img/icon_marketplace@2x.png" />
+						<img src="img/about_icon/analytictool.png" />
 					</div>
 					<div>
 						<div class="accent4 bright text-sub-category">
-							Marketplace
+								Data Analytic Tool
 						</div>
 						<div class="normal2 light-blue text-desc">
-							TEMCO marketplace offers all the features above.
-							<br /> You don't have to look other places to get more
-							<br /> information.
+								BI Analytic Tool is built for the small and medium size business, offering enterprise level software that provides categorization and visualization of supply chain data. 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>		
 			</div>
-			<div class="col-md-4 align-right" id="igHeaderDesktop">
+			<div class="col-md-4 align-right" id="about-row-desktop">
 				
-				<div class="align-right">
-					<img src="img/asset-42.png" style="width: 100%">
+				<div class="align-right animated" data-animate="fadeInRight" data-delay="0.4" >
+					<img src="img/about3.png" style="width: 100%" class="bounce_cube">
+
+					
 				</div>
 			</div>
 		</div>
@@ -378,86 +397,95 @@
 	
 		<div class="row" id="about-mobile">
 			
-				<div class="icon-container">
+				
+			<div class="float-left" style="max-width: 390px;">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.5">
 					
 					
-							<div style="width: 90px; float: left; height: 94px;">
-									<img src="img/icon_connected@2x.png" style="margin: 0 auto; display: block;"/>
+							<div class="icon-image-div">
+									<img src="img/about_icon/vendor.png"/>
 							</div>
 							<div>
-								<div class="accent4 text-sub-category">
-									Connected
+								<div class="accent4">
+										VERIFIED VENDORS
 								</div>
-								<div class="normal2 text-desc">
-									Track, share, and access real time data anywhere anytime through highly linked blockchain technology
+								<div class="normal2">
+										TEMCO only partners with businesses cleared by the 
+										Vendor Verification System (VVS).
 								</div>
 						</div>
 
 				</div>
 				
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.6">
 					
 					
-						<div style="width: 90px; float: left; height: 94px;">
-								<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+						<div class="icon-image-div">
+								<img src="img/about_icon/linkeddata.png"/>
 						</div>
 						<div>
-							<div class="accent4 text-sub-category">
-								Credible
+							<div class="accent4">
+									LINKED DATA
 							</div>
-							<div class="normal2 text-desc">
-								Vendors are background checked through our Vendor Verification System (VVS).
+							<div class="normal2">
+									Smart tags track the entire supply chain process from point of origin to the final consumer, helping companies boost efficiency and 
+									cut costs.									
 							</div>
 					</div>
 				</div>
 
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.7">
 					
 					
-					<div style="width: 90px; float: left; height: 94px;">
-							<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					<div class="icon-image-div">
+							<img src="img/about_icon/realreviews.png"/>
 					</div>
 					<div>
-						<div class="accent4 text-sub-category">
-							Credible
+						<div class="accent4">
+								REAL REVIEWS
 						</div>
-						<div class="normal2 text-desc">
-							Vendors are background checked through our Vendor Verification System (VVS).
+						<div class="normal2">
+								Consumers who purchased the product can post reviews. Using blockchain technology for verification, TEMCO eliminates 
+								the risk of fake reviews.
 						</div>
 				</div>
 				</div>
-				<div class="icon-container">
+				<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.8">
 					
 					
-					<div style="width: 90px; float: left; height: 94px;">
-							<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					<div class="icon-image-div">
+							<img src="img/about_icon/marketplace.png"/>
 					</div>
 					<div>
-						<div class="accent4 text-sub-category">
-							Credible
+						<div class="accent4">
+								MARKET PLACE
 						</div>
-						<div class="normal2 text-desc">
-							Vendors are background checked through our Vendor Verification System (VVS).
+						<div class="normal2">
+								TEMCO marketplace offers all the features above. You don't have to look other places to get more information.
 						</div>
 				</div>
 			</div>
-			<div class="icon-container">
+			<div class="icon-container animated" data-animate="fadeInUp" data-delay="0.9">
 					
 					
-				<div style="width: 90px; float: left; height: 94px;">
-						<img src="img/icon_credible@2x.png" style="margin: 0 auto; display: block;"/>
+					<div class="icon-image-div">
+						<img src="img/about_icon/analytictool.png"/>
 				</div>
 				<div>
-					<div class="accent4 text-sub-category">
-						Credible
+					<div class="accent4">
+							Data Analytic Tool
 					</div>
-					<div class="normal2 text-desc">
-						Vendors are background checked through our Vendor Verification System (VVS).
+					<div class="normal2">
+							BI Analytic Tool is built for the small and medium size business, offering enterprise level software that provides categorization and visualization of supply chain data. 
 					</div>
 			</div>
 		</div>
+	</div>
 
-			
+		<div class="parallax2-image float-right animated" data-animate="fadeInRight" data-delay="0.4">
+			<img src="img/about3.png" style="width: 100%;"/>
+		</div>
+	</div>
 		
 		</div>
 </div>
@@ -467,22 +495,25 @@
 <!-- <div id="dropOurMission">
 	<img class="mission-top-img" src="img/logo_drop.png" />
 </div> -->
-<div id="parallax-video">
-		<iframe width="854" height="480" src="https://www.youtube.com/embed/J_CFBjAyPWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-		</iframe>
+<div class="content videoMobile" style="opacity: 1;">
+	<div class="video720p">
+	<div class="aboutVideo videoWrapper">
+			<iframe src="https://player.vimeo.com/video/269160110?title=0&byline=0&portrait=0" width="853" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			</iframe>
+	</div>
 </div>
-
+</div>
 <div id="parallax4" class="parallax">
 
 
-		
+		<img src="img/effect/oval.png" style="position: absolute; top:3400px; left:100px;"/>
 	<!-- <div class="content oval-gradient" style="text-align:center;"> -->
-	<div class="content oval-gradient" style="text-align:center; padding: 0px; margin : 0 auto; ">
-		<div id="ourMissionHeader">
+	<div class="content" style="text-align:center; padding: 0px; margin : 0 auto; ">
+		<div id="ourMissionHeader" class="animated" data-animate="fadeInUp" data-delay="0.3">
 					Our Mission
 		</div>
 		
-		<div id="ourMissionText">
+		<div id="ourMissionText" class="animated" data-animate="fadeInUp" data-delay="0.4	">
 			Most companies do not have sufficient infrastructure to provide supply chain
 			management data to their customers. Consumers want more information about their
 			purchases, but they only have access to basic shipping logs and estimated data.
@@ -495,6 +526,14 @@
 			the entire supply chain process to deliver trustworthy information that
 			empowers businesses and consumers.
 		</div>
-
+		<div id="star_wrapper"
+		style="position: relative; left: 50px;">
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 0; animation-delay: 0s"/>
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 20px; animation-delay: 1s"/>
+			<img src="img/star_line.png" class="shining_star"
+			style="margin-left: 100px; position: absolute; left: 40px; animation-delay: 2s"/>
+		</div>
 	</div>
 </div>

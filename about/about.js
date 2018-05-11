@@ -5,6 +5,7 @@ angular.module('about', [])
       },
       templateUrl: 'about/about.tpl.html',
       link: function($scope) {
+
         var scene2 = new ScrollMagic.Scene({
           triggerElement: "#parallax2",
           offset:250
@@ -28,7 +29,7 @@ angular.module('about', [])
 
         var scene4 = new ScrollMagic.Scene({
           triggerElement: "#parallax4",
-          offset:0
+          offset:-200
         }).setVelocity("#parallax4 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -50,12 +51,14 @@ angular.module('about', [])
 
         $scope.$parent.navLoaded.push('about');
 
-        sceneTop3.on("enter", function (event) {
+        scene3.on("enter", function (event) {
           $scope.$parent.activeScene = 'dark';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax3");
         });
 
-        sceneTop3.on("leave", function (event) {
+        scene3.on("leave", function (event) {
           $scope.$parent.activeScene = 'default';
           $scope.$parent.$apply();
         });
@@ -63,6 +66,8 @@ angular.module('about', [])
         sceneTop4.on("enter", function (event) {
           $scope.$parent.activeScene = 'default';
           $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax4");
         });
 
         sceneTop4.on("leave", function (event) {
@@ -73,6 +78,9 @@ angular.module('about', [])
         scene2.on("enter", function (event) {
           $scope.$parent.activeNav = 'about';
           $scope.$parent.$apply();
+          
+          $scope.$parent.aniDiv("#parallax2");
+          
         });
 
         scene2.on("leave", function (event) {
@@ -80,6 +88,8 @@ angular.module('about', [])
           $scope.$parent.$apply();
         });
 
+
       }
+
     };
   });

@@ -1,5 +1,5 @@
 #parallax11 {
-	/* background-color:#fff; */
+	background-color:transparent;
 	margin-bottom:250px;
 	float:left;
 	width:100%;
@@ -27,17 +27,163 @@
 	margin-top: -209px;
 }
 
-@media only screen and (max-width: 770px) {
+.team-text-container{
+	font-family: Avenir;
+	font-size: 40px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;  
+}
+
+.team-margin{
+	margin: 309px auto 207px auto;
+}
+
+.advisor-margin{
+	margin: 210px auto 190px auto;
+}
+
+@media only screen and (max-width: 1260px) {
+
+	.portrait-container-advisor{
+		width:25%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 90px;
+	}
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+	.portrait-container{
+		width:33%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 90px;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.portrait-container{
+		width:33%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 90px;
+	}
+
+	.portrait-container-advisor{
+		width:33%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 90px;
+	}
+
+	.team-text-container{
+		font-family: Avenir;
+		font-size: 30px;
+		font-weight: 900;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;  
+	}
+	
+	.team-margin{
+		margin: 250px auto 70px auto;
+	}
+	
+	.advisor-margin{
+		margin: 251px auto 70px auto;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.portrait-container{
+		width:50%;
+	
+	}
+
+	.portrait-container-advisor{
+		width:50%;
+		
+	}
+}
+
+@media only screen and (max-width: 610px) {
 
 	.portrait-container{
 		width:50%;
 	}
 
+	.portrait-container-advisor{
+		width:100%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 90px;
+	}
+
+	
+	#teamDropImg{
+		height: 170px;
+		margin-left: 25px !important;
+    	width: 50px !important;
+    	margin-top: 0px;
+	}
+
+	#teamDropContainer{
+		margin-top: 0px;
+	}
+
+	#dot-img{
+		width: 7px !important;		
+		margin-right: 0px !important;		
+		margin-bottom: 10px;
+	}
+
+	#parallax11{
+		margin-bottom: 20px !important;
+	}
+
 }
 
+@media only screen and (max-width: 450px) {
+
+	.portrait-container{
+		width:100%;
+	}
+
+	.team-margin {
+		margin: 120px auto 32px auto;
+	}
+
+	.team-text-container {
+		font-size: 14px;
+		line-height: 1.71;
+	}
+
+	.advisor-margin {
+		margin: 110px auto 32px auto;
+	}
+}
 
 /* iphone 6 7 8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
 	#teamDropImg{
 		height: 170px;
 		margin-left: 25px !important;
@@ -63,10 +209,10 @@
 	#parallax11{
 		margin-bottom: 20px !important;
 	}
-}
+} */
 
 /* iphone 6 7 8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 	#teamDropImg{
 		height: 170px;
 		margin-left: 25px !important;
@@ -92,11 +238,11 @@
 	#parallax11{
 		margin-bottom: 20px !important;
 	}
-}
+} */
 
 
 /* iphone x  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
 	#teamDropImg{
 		height: 170px;
 		margin-left: 25px !important;
@@ -122,10 +268,10 @@
 	#parallax11{
 		margin-bottom: 20px !important;
 	}
-}
+} */
 
 /* galxay  */
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
 	#teamDropImg{
 		height: 170px;
 		margin-left: 25px !important;
@@ -151,4 +297,4 @@
 	#parallax11{
 		margin-bottom: 20px !important;
 	}
-}
+} */
