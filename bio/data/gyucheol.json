@@ -1,0 +1,12 @@
+{
+    "firstName":"Gyucheol",
+    "lastName":"Shin",
+    "bio":[      
+      "Chief researcher, Samsung Advanced Institute of Technology",
+      "Senior researcher, Samsung Electonics",
+      "M.S in Electrical Engineering, Seoul National University",
+      "B.S in Electrical Engineering, Seoul National University"
+    ],
+    "img": "bio/data/gyucheol_shin.png",
+    "company" : ["sait","samelec","seoulna"]
+  }

@@ -1,0 +1,11 @@
+{
+    "firstName":"Hyungsik",
+    "lastName":"Kim",
+    "bio":[      
+      "Ex-Professor, National Education Training Institute (Ministry of Education)",
+      "Human Resource Director, Korail",
+      "Human Resource  Leader, Samsung SDS"
+    ],
+    "img": "bio/data/hyungsik_kim.png",
+    "company" : ["edu","korail","sds","yonsei","kbuniv"]
+  }

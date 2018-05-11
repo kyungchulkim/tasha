@@ -1,0 +1,14 @@
+{
+    "firstName":"Yongsik",
+    "lastName":"Kim",
+    "bio":[      
+      "CEO, INNO Healthcare",
+      "Evaluation Commissioner, Institute for ICT Promotion",
+      "Managing Director, Ernst & Young Advisory",
+      "Strategic Marketing Principal, Samsung SDS",
+      "M.E in Electrical and Computer Engineering, University of Missouri at Columbia",
+      "B.S in Computer Science, University of Missouri at Columbia"
+    ],
+    "img": "bio/data/yongsik_kim.png",
+    "company" : ["inno","iitp","ey","sds","mu"]
+  }
