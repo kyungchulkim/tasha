@@ -9,7 +9,6 @@ angular.module('team', ['bio','advisor'])
         $scope.advisors = [
           'yongsik',
           'hyungsik',
-          'Gyucheol',
           'yujin',
           'chris',
           'jisun',
