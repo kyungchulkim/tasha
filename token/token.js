@@ -148,7 +148,7 @@ angular.module('token', [])
             },
             {
               "year" : "2~4Q 2020",
-              "contents1" : "Development of TEMCO Blockchain​"
+              "contents1" : "Development of TEMCO Blockchain"
             }
           ];
 
