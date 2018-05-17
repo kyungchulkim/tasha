@@ -240,9 +240,18 @@
 
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-20px);}
+    0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-40px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
 } 
 
 @keyframes bounce_cube {
@@ -252,7 +261,7 @@
 	}
 	50% {
 		
-		transform: translatey(-40px);
+		transform: translatey(-30px);
 	}
 	100% {
 		
@@ -311,21 +320,30 @@
 }
 
 .bounce_cube{
-	/* -webkit-animation-duration: 7s;
-    animation-duration: 7s;
-    -webkit-animation-name: bounce_cube;
-	animation-name: bounce_cube;
-	animation-iteration-count: infinite; */
-	/* animation: bounce_cube 10s infinite ease; */
-	animation: bounce_cube 6s ease-in-out infinite;
+	animation: bounce_cube 18s ease-in-out infinite;
 }
 
+.bounce_cube_header{
+	animation: bounce_cube 12s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-40px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+} 
+
 .bounce {
-    -webkit-animation-duration: 12s;
-    animation-duration: 12s;
-    -webkit-animation-name: bounce;
-	animation-name: bounce;
-	animation-iteration-count: infinite;
+	animation: bounce 6s ease-in-out infinite;
 }
 
 .glow {
@@ -337,19 +355,23 @@
 }
 
 .s2{
-	animation-delay: 4s;
+	animation-delay: -2s;
 }
 
 .s3{
-	animation-delay: 6s;
+	animation-delay: -3s;
 }
 
 .s4{
-	animation-delay: 8s;
+	animation-delay: -4s;
 }
 
 .s5{
-	animation-delay: 10s;
+	animation-delay: -5s;
+}
+
+.s6{
+	animation-delay: -6s;
 }
 #img_container img {
    position:absolute;

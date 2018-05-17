@@ -1,5 +1,5 @@
 {
-  "firstName":"Jaeseob",
+  "firstName":"Scott Jaeseob",
   "lastName":"Yoon",
   "position":"Co-Founder, CEO",
   "bio":[
@@ -12,7 +12,7 @@
     "B.S in Business Administration, Economics, SUNY at Stony Brook"
   ],
   "img": "bio/data/jaeseob_profile.jpg",
-  "linkedInUrl": "jaeseob-yoon-0b1ab612",
+  "linkedInUrl": "jsyoontemco",
   "isTeam": true,
   "company" : ["posco","illinois","stonybrook"]          
 }
