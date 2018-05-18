@@ -72,7 +72,7 @@
 			<!-- end of header -->
 
 			<!-- container -->
-			<div class="container">
+			<div class="container" onclick="myFunction()">
 
 				<header></header>
 
@@ -95,7 +95,7 @@
 												cursor:pointer;
 												text-align: center;"
 								 ng-click="navClicked($event,'home')">
-							<img src="img/go_to_top@2x.png" />
+							<img src="img/go_to_top_white@2x.png" />
 							<div style="font-family: Avenir;
 													font-size: 10px;
 													font-weight: 800;
@@ -104,7 +104,7 @@
 													line-height: 3.8;
 													letter-spacing: 0.3px;
 													text-align: center;
-													color: #202020;" id="go_to_top_text">
+													color: #ffffff;" id="go_to_top_text">
 								TOP
 							</div>
 						</div>
@@ -116,7 +116,7 @@
 			<!-- /container -->
 
 			<!-- footer -->
-			<footer>
+			<footer onclick="myFunction()">
 
 			</footer>
 
@@ -164,5 +164,16 @@
 		<script src="/js/owl.carousel.min.js"></script>
 		<!-- support cross broswer-->
 		<script src="js/ofi.min.js"></script>
+
+		<script>
+		
+		function myFunction() {
+			let ariaIndex = document.getElementsByClassName('navbar-toggler')[0].getAttribute("aria-expanded");
+			
+			if(ariaIndex === "true"){
+				$('.navbar-toggler').trigger('click');
+			}
+		}
+		</script>
 	</body>
 </html>

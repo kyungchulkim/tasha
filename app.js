@@ -76,7 +76,7 @@ app.controller('TashaCtrl', function ($scope, $timeout) {
       });
     }
     $('.nav-item').removeClass('active');
-
+    
     if(linkId === 'home') {
       return;
     }

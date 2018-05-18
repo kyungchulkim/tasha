@@ -8,13 +8,14 @@
 					data-target="#navbarsExampleDefault"
 					aria-controls="navbarsExampleDefault"
 					aria-expanded="false"
-					aria-label="Toggle navigation">
+					aria-label="Toggle navigation"
+					ng-click="navbarClick()">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item" ng-repeat="item in $parent.navBars">
-				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)">{{item.title}}</a>
+				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)" onclick="myFunction()">{{item.title}}</a>
 			</li>
 		</ul>
 	</div>
