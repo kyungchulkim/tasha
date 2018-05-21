@@ -22,6 +22,7 @@ angular.module('team', ['bio','advisor'])
           'hongsub_lim',
           'yongchul',
           'saemi_hong',
+          'jongseong_kim',
           'natasha_woo',
           'sunha_hwang',
           'kyungchul_kim'

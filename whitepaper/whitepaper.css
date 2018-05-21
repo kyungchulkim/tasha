@@ -78,7 +78,7 @@
 #whitepaperContent{
 	position:relative;
 	z-index:2;
-	background-image: url('../img/anglerectangle-6.png');
+	background-image: url('../img/whitepaper-bg.png');
 	max-width: 1650px;
 	margin: 0px 134px;
 	height: 32vw;
@@ -178,7 +178,7 @@
 	#whitepaperContent{
 		position:relative;
 		z-index:2;
-		background-image: url('../img/anglerectangle-6.png');
+		/* background-image: url('../img/anglerectangle-6.png'); */
 		max-width: 1650px;
 		height: 475px;
 		margin: 0px 60px;
@@ -260,7 +260,7 @@
 	#whitepaperContent{
 		position:relative;
 		z-index:2;
-		background-image: url('../img/anglerectangle-6.png');
+		/* background-image: url('../img/anglerectangle-6.png'); */
 		max-width: 1650px;
 		height: 455px;
 		margin: 0px 60px;
@@ -354,7 +354,7 @@
 	#whitepaperContent{
 		position:relative;
 		z-index:2;
-		background-image: url('../img/anglerectangle-6.png');
+		/* background-image: url('../img/anglerectangle-6.png'); */
 		max-width: 450px;
 		height: auto;
 		margin: 0px 30px;

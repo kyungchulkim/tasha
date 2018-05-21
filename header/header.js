@@ -13,14 +13,34 @@ angular.module('header', [])
         //.addIndicators()
           .addTo($scope.$parent.controller);
 
-        var headerTransform = new ScrollMagic.Scene({
-          triggerElement: "#headerTransform",
-          offset:500
-        }).setClassToggle(".navbar", "navbar-color")
-        //.addIndicators()
-          .addTo($scope.$parent.controller);
 
 
+       // navbar color 바뀌는 위치를 정하기 위해서 설정
+
+        if(window.innerWidth < 1024)
+        {
+          var headerTransform = new ScrollMagic.Scene({
+            triggerElement: "#headerTransform",
+            offset:400
+          }).setClassToggle(".navbar", "navbar-color")
+            .addTo($scope.$parent.controller);
+        }
+        else if(window.innerWidth < 450)
+        {
+          var headerTransform = new ScrollMagic.Scene({
+            triggerElement: "#headerTransform",
+            offset:350
+          }).setClassToggle(".navbar", "navbar-color")
+            .addTo($scope.$parent.controller);
+        }
+        else{
+          var headerTransform = new ScrollMagic.Scene({
+            triggerElement: "#headerTransform",
+            offset:500
+          }).setClassToggle(".navbar", "navbar-color")
+            .addTo($scope.$parent.controller);
+        }
+        
 
         var textList = [{
             item : "Product"

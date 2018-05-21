@@ -167,7 +167,7 @@
 
 
 #tokenText1{
-	width: 700px;
+	width: 800px;
 	height: 151.2px;
 	font-family: Avenir;
 	font-size: 20px;
@@ -274,7 +274,7 @@
 
 .roadmapBG{
 	height: 660px;
-	background-image: url('../img/10@2x.png');
+	background-image: url('../img/roadmap-bg.png');
 	background-size: 100% 500px;
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -465,7 +465,7 @@
 
 	.roadmapBG{
 		height: 450px;
-		background-image: url('../img/10@2x.png');
+		/* background-image: url('../img/10@2x.png'); */
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -554,124 +554,6 @@
 		right: -33px;
 	}
 }
-/* 
-@media only screen and (max-width: 900px) {
-
-	.timeline-text{
-		font-size:20px;
-	}
-
-	#tokenContent{
-		border:0px;
-		padding:0px;
-	}
-	
-	#igTokenSmall{
-		display:block;
-	}
-
-	#tokenText1{
-		font-size:23px;
-	}
-	#dropToken{
-		height: 245px;
-		width:80px;
-	}
-
-} */
-/* 
-@media only screen and (max-width: 850px) {
-
-	.timeline-text{
-		font-size:20px;
-	}
-
-	#parallax9{
-		height: 1450px;
-	}
-
-} */
-/* 
-@media only screen and (max-width: 800px) {
-
-	#phase1Roadmap{
-		background-image: url(../img/roadmap_line_combined.png) !important;
-		height:1322px !important;
-		margin-top:-50px;
-	}
-
-	#phase2Roadmap{
-		background-image: url(../img/roadmap_line_combined2.png) !important;
-		height:829px !important;
-		margin-top:-50px;
-	}
-
-	/
-	#phase2Header{
-		margin-top: 150px !important;
-	}
-	#roadmapHeader{
-	
-	}
-
-	.timeline-left-container{
-		padding-right:65px;
-	}
-
-	.timeline-right-container{
-		padding-left:65px;
-	}
-
-	.timeline-left-container .timeline-text{
-		position:relative;
-		top:-5px;
-		right:-40px;
-	}
-
-	.timeline-right-container .timeline-text{
-		position:relative;
-		top:-5px;
-		left:-35px;
-	}
-
-	
-	#apr2018{
-		margin-top:109px !important;
-		height: 214px !important;
-	}
-
-	#_4q2018{
-		height:550px !important;
-	}
-
-	#_2q2019{
-		height:417px !important;
-	}
-
-	
-	#mar2018{
-		height:218px !important;
-	}
-
-	#sept2018{
-		height:296px !important;
-	}
-
-	#_1q2019{
-		height:579px !important;
-	}
-
-	
-	#apr2018_2{
-		margin-top:622px !important;
-	}
-
-	
-	#mar2018_2{
-		height:801px !important;
-	}
-} */
-
 
 @media only screen and (max-width: 767px) {
 
@@ -784,24 +666,9 @@
 		/* height: 3560px ; */
 	}
 
-	/* #tokenText1{		
-		width: 500px;
-		font-family: Avenir;
-		font-size: 16px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: justify;
-		color: #ffffff;
-		padding-top: 22px;
-		margin: 0 auto;
-	} */
-
 	.roadmapBG{
 		height: 450px;
-		background-image: url('../img/10@2x.png');
+		/* background-image: url('../img/10@2x.png'); */
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -990,7 +857,7 @@
 	}
 
 	#tokenText1{
-			width: 240px;
+			width: 260px;
 			height: auto;
 			font-family: Avenir;
 			font-size: 11px;
@@ -1007,7 +874,7 @@
 
 	.roadmapBG{
 		height: 455px;
-		background-image: url('../img/10@2x.png');
+		/* background-image: url('../img/10@2x.png'); */
 		background-size: 100% 400px;
 		background-repeat: no-repeat;
 		background-position: bottom;

@@ -54,15 +54,6 @@
 	opacity: 0.9;
 }
 
-/* .navbar-collapse {
-	display: block;
-	background-color: #021146;
-	opacity: 0.9;
-	width: 100%;
-	position: fixed;
-	top:0px;
-} */
-
 #navContainer {
 	max-width:1650px;
 	width:100%;
@@ -71,15 +62,10 @@
 	margin: 0 auto;
 	vertical-align: middle;
 }
-/* 
-.fixed-top{
-	right:inherit;
-	left:inherit;
-} */
 
 .nav-link{
 	color:#fff !important;
-    --margin-right: 0.5rem;
+	--margin-right: 0.5rem;
 	padding-left: 25px;
 }
 
@@ -90,6 +76,16 @@
 .nav-item{
 	margin-left:10px;
 	font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+	.navbar-brand{
+		margin-left:35px;
+	}
+	.nav-item:last-child{
+		padding-right:40px;
+	}
+
 }
 
 @media (min-width: 1025px) {
@@ -115,24 +111,73 @@
 }
 
 @media (max-width: 1024px) {
-
-	.navbar-brand{
-		margin-left:35px;
+	
+	.navbar-collapse {
+		display: block;
+		height: 102vh;
+		width: 0;
+		position: absolute;
+		right: 0px;
 	}
-	.nav-item:last-child{
-		padding-right:40px;
+	
+	.collapsing {
+		position: absolute;	
+		right: 0;
+		width: 0px;
+		height: 102vh !important;
+		overflow: hidden;
+		transition: width 0.35s ease;
+		background-color:#021146;
+		margin-top:-25px;
+		opacity: 0.95;
+	}
+	
+	button[aria-expanded="false"] ~ .collapsing {
+		width: 0;
+	}
+	
+	button[aria-expanded="true"] ~ .collapsing {
+		width: 70%;
+		opacity: 0.95;
+	}
+	
+	button[aria-expanded="true"] ~ .navbar-color {
+		opacity: 1;
 	}
 
 	.navbar-collapse{
-		padding-top:75px;
-		padding-left:30px;
+		padding-top:120px;
+		/* padding-left:30px; */
 		padding-bottom:25px;
 	}
+
+	.nav-item{
+		margin-left: 30px;
+    	font-size: 20px;
+	}
+
+	.collapse.show{
+		background-color:#021146;
+		margin-top:-25px;
+		opacity: 0.95;
+		display:block !important;
+		width: 70%;
+		height: 102vh;
+		position: absolute;
+		right: 0px;
+	}
+
+	/* 
 	.collapse.show, .collapsing{
 		background-color:#021146;
-		/* margin-top:-25px; */
+		margin-top:-25px;
 		opacity: 0.9;
-	}
+		display:block !important;
+		width: 80%;
+		height: 100vh;
+		position: absolute;
+		right: 0px;
+	} */
 
 	#navContainer {
 		width: 100%;
@@ -143,14 +188,6 @@
 		vertical-align: middle;
 	}
 
-	.navbar-collapse {
-		/* display: block; */
-		background-color: #021146;
-		opacity: 0.9;
-		width: 100%;
-		position: fixed;
-		top:0px;
-	}
 	
 }
 @media only screen and (max-width: 768px) {
@@ -161,6 +198,7 @@
 @media only screen and (max-width: 450px) {
 
 	#navContainer {
+		width:100%;
 		height: 75px;
 		margin: 0 auto;
 		vertical-align: middle;

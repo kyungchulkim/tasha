@@ -9,7 +9,7 @@ main, .parallax, #ploygon4, #base3{
 
 body,html{
 	font-family: "Avenir";	
-	background-size: 100% 100%; 
+	background-size: cover; 
 	background-image: url('../img/bg-min.png');
 	overflow-x:hidden;	
 }
@@ -17,7 +17,7 @@ body,html{
 @media only screen and (max-width: 1650px) {
 body,html{
 	font-family: "Avenir";	
-	background-size: auto; 
+	
 	background-image: url('../img/bg-min.png');
 	overflow-x:hidden;	
 }
