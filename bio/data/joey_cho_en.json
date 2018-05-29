@@ -1,0 +1,15 @@
+{
+  "firstName":"Joey",
+  "lastName":"Cho",
+  "position":"Business Develpment Manager",
+  "bio":[
+    "Senior Business Manager, Outr?",
+    "John Jay College (Leave of Absence)",
+    "Borough Of Manhattan Community College",
+    "CUNY Bronx Community College"
+  ],
+  "img": "bio/data/joey_cho_profile.jpg",
+  "linkedInUrl": "brianleenj",
+  "isTeam": true,
+  "company" : ["outre","bmcc","bcc"]
+}

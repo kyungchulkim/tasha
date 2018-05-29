@@ -16,7 +16,7 @@
 	margin-top:114px;
 	margin-bottom:22px;
 	/* text-transform:uppercase; */
-	font-family: Avenir;
+	
 	font-size: 70px;
 	font-weight: 900;
 	font-style: normal;
@@ -31,7 +31,7 @@
 	height: 41px;
 	margin-bottom:41px;
 	/* text-transform:uppercase; */
-	font-family: Avenir;
+	
 	font-size: 30px;
 	font-weight: 500;
 	font-style: normal;
@@ -45,7 +45,7 @@
 .header3{
 	/* height: 42px; */
 	text-transform:uppercase;
-	font-family: Raleway;
+
 	font-size: 14px;
 	font-weight: 500;
 	font-style: normal;
@@ -245,7 +245,7 @@
 		height :82px;
 		margin-bottom: 28px;
 		margin-top: 0px;
-		font-family: Avenir;
+		
 		font-size: 60px;
 		font-weight: 900;
 		font-style: normal;
@@ -268,7 +268,7 @@
 	.header3m{
 		height: 36px;
 		opacity: 0.5;
-		font-family: Avenir;
+		
 		font-size: 12px;
 		font-weight: 500;
 		font-style: normal;
@@ -320,7 +320,7 @@
 		height :7.5vw;
 		margin-bottom: 7vw;
 		margin-top: 0px;
-		font-family: Avenir;
+		
 		font-size: 7.5vw;
 		font-weight: 900;
 		font-style: normal;
@@ -343,7 +343,7 @@
 	.header3m{
 		height: 36px;
 		opacity: 0.5;
-		font-family: Avenir;
+		
 		font-size: 2vw;
 		font-weight: 500;
 		font-style: normal;
@@ -386,7 +386,7 @@
 		height :34px;
 		margin-bottom: 18px;
 		margin-top: 0px;
-		font-family: Avenir;
+		
 		font-size: 25px;
 		font-weight: 900;
 		font-style: normal;
@@ -411,7 +411,7 @@
 	.header3m{
 		height: 18px;
 		opacity: 0.5;
-		font-family: Avenir;
+		
 		font-size: 11px;
 		font-weight: 500;
 		font-style: normal;

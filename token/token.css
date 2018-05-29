@@ -57,7 +57,7 @@
 }
 
 .token-header{
-	font-family: Avenir;
+	
 	text-transform: uppercase;
 	height: 55px;
 	font-size: 40px;
@@ -101,7 +101,7 @@
 
 .timeline-date{
 	height: 28px;
-	font-family: Avenir;
+	
 	font-size: 28px;
 	font-weight: 600;
 	font-style: normal;
@@ -114,7 +114,7 @@
 }
 
 .timeline-text{
-	font-family: Avenir;
+	
 	font-size: 22px;
 	font-weight: 500;
 	font-style: normal;
@@ -169,7 +169,7 @@
 #tokenText1{
 	width: 800px;
 	height: 151.2px;
-	font-family: Avenir;
+	
 	font-size: 20px;
 	font-weight: 500;
 	font-style: normal;
@@ -187,7 +187,7 @@
 .token-header1{
 	width: 400px;
 	height: 68px;
-	font-family: Avenir;
+	
 	font-size: 50px;
 	font-weight: 900;
 	font-style: normal;
@@ -205,7 +205,7 @@
 .token-header2{
 	text-transform: uppercase;
 	height: 68px;
-	font-family: Avenir;
+	
 	font-size: 50px;
 	font-weight: 900;
 	font-style: normal;
@@ -220,7 +220,7 @@
 
 #roadmapHeader{
 	height: 68px;
-	font-family: Avenir;
+	
 	font-size: 50px;
 	font-weight: 900;
 	font-style: normal;
@@ -234,7 +234,7 @@
 
 .roadmapTitle{
 	height: 27px;
-	font-family: Avenir;
+	
 	font-size: 20px;
 	font-weight: 900;
 	font-style: normal;
@@ -247,7 +247,7 @@
 }
 .roadmapContents{
 	height: 40px;
-	font-family: Avenir;
+	
 	font-size: 15px;
 	font-weight: 500;
 	font-style: normal;
@@ -260,7 +260,7 @@
 }
 .roadmapSub{
 	opacity: 0.5;
-	font-family: Avenir;
+	
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;
@@ -330,7 +330,7 @@
 	
 	#roadmapHeader{
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 30px;
 		font-weight: 900;
 		font-style: normal;
@@ -383,7 +383,7 @@
 	.token-header1{
 		width: 400px;
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 30px;
 		font-weight: 900;
 		font-style: normal;
@@ -399,7 +399,7 @@
 
 	.token-header2{
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 30px;
 		font-weight: 900;
 		font-style: normal;
@@ -422,7 +422,7 @@
 		float: none;
 		width: 190px;
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 16px;
 		font-weight: 900;
 		font-style: normal;
@@ -450,7 +450,7 @@
 
 	#tokenText1{	
 		width: 500px;
-		font-family: Avenir;
+		
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -482,7 +482,7 @@
 
 	.roadmapTitle{
 		height: 12px;
-		font-family: Avenir;
+		
 		font-size: 16px;
 		font-weight: 900;
 		font-style: normal;
@@ -496,7 +496,7 @@
 
 	.roadmapContents{
 		height: auto;
-		font-family: Avenir;
+		
 		font-size: 13px;
 		font-weight: 500;
 		font-style: normal;
@@ -510,7 +510,7 @@
 
 	.roadmapSub{
 		opacity: 0.5;
-		font-family: Avenir;
+		
 		font-size: 11px;
 		font-weight: normal;
 		font-style: normal;
@@ -562,7 +562,7 @@
 	.token-header{
 		width: 140px;
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 16px;
 		font-weight: 900;
 		font-style: normal;
@@ -612,7 +612,7 @@
 	.token-header{
 		width: 400px;
 		height: 24px;
-		font-family: Avenir;
+		
 		font-size: 30px;
 		font-weight: 900;
 		font-style: normal;
@@ -635,7 +635,7 @@
 
 		width: 190px;
   height: 24px;
-  font-family: Avenir;
+  
   font-size: 16px;
   font-weight: 900;
   font-style: normal;
@@ -687,7 +687,7 @@
 
 	.roadmapTitle{
 		height: 12px;
-		font-family: Avenir;
+		
 		font-size: 16px;
 		font-weight: 900;
 		font-style: normal;
@@ -701,7 +701,7 @@
 
 	.roadmapContents{
 		height: auto;
-		font-family: Avenir;
+		
 		font-size: 13px;
 		font-weight: 500;
 		font-style: normal;
@@ -715,7 +715,7 @@
 
 	.roadmapSub{
 		opacity: 0.5;
-		font-family: Avenir;
+		
 		font-size: 11px;
 		font-weight: normal;
 		font-style: normal;
@@ -824,7 +824,7 @@
 
 		width: 190px;
   height: 24px;
-  font-family: Avenir;
+  
   font-size: 16px;
   font-weight: 900;
   font-style: normal;
@@ -859,7 +859,7 @@
 	#tokenText1{
 			width: 260px;
 			height: auto;
-			font-family: Avenir;
+			
 			font-size: 11px;
 			font-weight: 500;
 			font-style: normal;
@@ -891,7 +891,7 @@
 	}
 .roadmapTitle{
 	height: 12px;
-	font-family: Avenir;
+	
 	font-size: 14px;
 	font-weight: 900;
 	font-style: normal;
@@ -904,7 +904,7 @@
 }
 .roadmapContents{
 	height: auto;
-	font-family: Avenir;
+	
 	font-size: 12px;
 	font-weight: 500;
 	font-style: normal;
@@ -917,7 +917,7 @@
 }
 .roadmapSub{
 	opacity: 0.5;
-	font-family: Avenir;
+	
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;
