@@ -1,37 +1,17 @@
 <!-- <div id="dropToken"></div> -->
 
 <div id="parallax8" class="parallax">
-	<!-- <div style="margin-top: -307px;"
-			 class="tokenBackground">
-		<img src="img/BG ELEMENTS_TOKEN01-TOP.png" />
-	</div> -->
+	
 	<div class="content" style="z-index:2;position:relative;">
 		<div class="row">
 				
-<!-- 		
-			<div class="col-lg-7 col-md-7 order-2" id="force-100">
-			<a name="token" class="pin">&nbsp;</a>
-			
-			
-				<div style="text-align:center;margin-top:22px;">
-					<img id="igToken"
-							src="img/asset-39.png" />
-					<img id="igTokenSmall"
-							src="img/asset-39@2x.png" style="width: 246px; margin: 0 auto;" />
-				</div>
-			</div> -->
-
-
-			<!-- <div class="col-lg-5 col-md-5 order-3" id="force-100"> -->
 			<div class="col-12">
 					<a name="token" class="pin">&nbsp;</a>
-					<div class="token-header1 animated" data-animate="fadeInUp" data-delay="0.3">
-						Token Model
+					<div class="token-header1 animated" translate data-animate="fadeInUp" data-delay="0.3">
+						{{'tokenModel.title'}}
 					</div>
-						<div id="tokenText1" class="animated" data-animate="fadeInUp" data-delay="0.4">
-							TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a
-							sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can 
-							spend the tokens in the TEMCO marketplace for your next purchase.
+						<div id="tokenText1" translate class="animated" data-animate="fadeInUp" data-delay="0.4">
+							{{'tokenModel.contents'}}
 						</div>
 						<div id="star_wrapper"
 							style="position: relative; top:-700px;left: 1050px;">
@@ -49,11 +29,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div style="margin-top: -680px;
-							right: 0px;"
-				class="tokenBackground">
-		<img src="img/BG ELEMENTS_TOKEN02-BTM.png" />
-	</div> -->
+	
 </div>
 
 <!-- 
@@ -94,7 +70,7 @@
 		<div class="roadmap-owl-wrapper animated" style="margin: 0px 50px;"
 			data-animate="fadeInUp" data-delay="0.4">
 
-			<data-owl-carousel class="token-roadmap owl-carousel" style="color:white;" 
+			<!-- <data-owl-carousel id="owl-roadmap" class="token-roadmap owl-carousel" style="color:white;" 
 			data-options="{	nav: true, pagination: false, rewindNav : false,
 							responsive:{
 								0:{
@@ -114,7 +90,7 @@
 								}
 							}
 						}">
-			<div owl-carousel-item="" ng-repeat="roadmap in roadmap" class="item">
+			<div owl-carousel-item="" ng-repeat="roadmap in roadmaps" class="item">
 				<div class="each-road-map">
 					<div class="roadmapTitle">{{roadmap.year}}</div>		
 					<div class="roadmapContents" style="margin-top: 48px;">{{roadmap.contents1}}</div>	
@@ -124,8 +100,105 @@
 					<div class="roadmapContents">{{roadmap.contents2}}</div>
 				</div>
 			</div>
-			</data-owl-carousel>
-		</div>
+
+			
+				</div>
+			</data-owl-carousel> -->
+
+			<div class="token-roadmap owl-carousel" sytle="color:white">
+					
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.0.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.0.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.0.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.0.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.0.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.0.contents2'}}</div>
+					</div>
+					
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.1.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.1.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.1.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.1.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.1.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.1.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.2.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.2.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.2.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.2.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.2.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.2.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.3.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.3.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.3.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.3.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.3.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.3.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.4.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.4.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.4.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.4.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.4.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.4.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.5.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.5.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.5.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.5.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.5.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.5.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.6.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.6.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.6.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.6.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.6.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.6.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.7.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.7.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.7.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.7.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.7.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.7.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.8.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.8.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.8.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.8.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.8.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.8.contents2'}}</div>
+					</div>
+
+					<div class="each-road-map">
+						<div class="roadmapTitle" translate>{{'roadMap.9.year'}}</div>		
+						<div class="roadmapContents" style="margin-top: 48px;" translate>{{'roadMap.9.contents1'}}</div>	
+						<div class="roadmapSub" style="margin-top: 20px;" translate>{{'roadMap.9.sub1'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.9.sub2'}}</div>	
+						<div class="roadmapSub" translate>{{'roadMap.9.sub3'}}</div>
+						<div class="roadmapContents" translate>{{'roadMap.9.contents2'}}</div>
+					</div>
+			</div>
+
+		
 	</div>
 	
 	<!-- <div class="text-sub-category" style="height: 34px;

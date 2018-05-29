@@ -4,7 +4,9 @@
     "bio":[      
       "Ex-Professor, National Education Training Institute (Ministry of Education)",
       "Human Resource Director, Korail",
-      "Human Resource  Leader, Samsung SDS"
+      "Human Resource  Leader, Samsung SDS",
+      "MBA, Yonsei University",
+      "B.S in Electrical Engineering, Kyungpook National University "
     ],
     "img": "bio/data/hyungsik_kim.png",
     "company" : ["edu","korail","sds","yonsei","kbuniv"]

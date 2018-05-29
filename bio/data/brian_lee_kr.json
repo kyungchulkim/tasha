@@ -1,0 +1,16 @@
+{
+  "firstName":"Brian",
+  "lastName":"Lee",
+  "position":"Co-Founder, CTO",
+  "bio":[
+    "10+ years 데이터 플랫폼 개발 IT 전문가",
+    "RBC GC&R 책임 엔지니어",
+    "NOMURA 리스크 플랫폼 책임 엔지니어",
+    "BLOOMBERG 풀스택 엔지니어",
+    "뉴욕 주립대 컴퓨터 공학 학사"
+  ],
+  "img": "bio/data/brian_lee_profile.jpg",
+  "linkedInUrl": "brianleenj",
+  "isTeam": true,
+  "company" : ["bloomberg","nomura","rbcroyal","stonybrook"]
+}

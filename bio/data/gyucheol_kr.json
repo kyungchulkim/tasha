@@ -1,0 +1,12 @@
+{
+    "firstName":"Gyucheol",
+    "lastName":"Shin",
+    "bio":[      
+      "삼성기술원 수석연구원",
+      "삼성전자 수석연구원",
+      "서울대 전기공학 석사",
+      "서울대 전기공학 학사"
+    ],
+    "img": "bio/data/gyucheol_shin.png",
+    "company" : ["sait","samelec","seoulna"]
+  }

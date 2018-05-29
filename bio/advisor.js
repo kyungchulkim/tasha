@@ -6,7 +6,12 @@ angular.module('advisor', [])
       },
       templateUrl: 'bio/advisor.tpl.html',
       link: function($scope) {
-        $http.get('bio/data/' + $scope.data + '.json')
+
+        $scope.language = 'en';
+
+        function advisorHttp()
+        {
+        $http.get('bio/data/' + $scope.data  + '_' + $scope.language + '.json')
           .then(function(resp){
             $scope.firstName = resp.data.firstName.toUpperCase();
             $scope.lastName = resp.data.lastName.toUpperCase();
@@ -17,6 +22,16 @@ angular.module('advisor', [])
             $scope.bios = resp.data.bio;
             $scope.company = resp.data.company;
           });
+        }
+
+        advisorHttp();
+
+        $scope.$on("language", function (event,message){
+
+          $scope.language = message;
+          advisorHttp();
+          
+        });
 
           var opacityIndex = true;
 
@@ -31,5 +46,5 @@ angular.module('advisor', [])
           }
       }
       
-    };
-  });
+  };
+});

@@ -2,6 +2,20 @@
 	<div class="navbar-brand TEMCO-LOGO"
 		 ng-click="$parent.navClicked($event,'home')">
 	</div>
+	
+	<div class="language-change" style="color: #ffffff">
+			<span ng-click="$parent.changeLanguage('en')">
+				English
+			</span>
+			&nbsp;|&nbsp;
+			<span ng-click="$parent.changeLanguage('kr')">
+				힌글
+			</span>
+			<span ng-click="$parent.$ctrl.open()">
+				로그인
+			</span>
+	</div>
+
 	<button class="navbar-toggler"
 					type="button"
 					data-toggle="collapse"
@@ -12,11 +26,19 @@
 					ng-click="navbarClick()">
 		<span class="navbar-toggler-icon"></span>
 	</button>
+
 	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item" ng-repeat="item in $parent.navBars">
 				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)" onclick="myFunction()">{{item.title}}</a>
+				<!-- <a class="nav-link" data={{item.subtitle1}} ng-click="$parent.$parent.navClicked($event,item.subtitle1)" 
+				 style="margin-left: 20px;" onclick="myFunction()">{{item.subtitle1}}</a>
+				 <a class="nav-link" data={{item.subtitle2}} ng-click="$parent.$parent.navClicked($event,item.subtitle2)" 
+				 style="margin-left: 20px;" onclick="myFunction()">{{item.subtitle2}}</a> -->
+				 
 			</li>
+			<!-- <button type="button" class="btn btn-default" ng-click="$parent.open();">Open me!</button>		 -->
 		</ul>
 	</div>
+	
 </div>

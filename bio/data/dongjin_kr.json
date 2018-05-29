@@ -1,0 +1,13 @@
+{
+  "firstName":"Dongjin",
+  "lastName":"Koo",
+  "bio":[
+    "BSK 인베스트먼트 투자 팀장",
+    "브레인 자산운용 펀드 매니저",
+    "UIUC 회계학 석사",
+    "서울대 경영학 학사"
+  ],
+  "linkedInUrl": "easternstar9",
+  "img": "bio/data/dongjin_profile.jpg",
+  "company" : ["bsk","brain","illinois","seoulna"]
+}

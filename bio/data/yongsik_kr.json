@@ -1,0 +1,14 @@
+{
+    "firstName":"Yongsik",
+    "lastName":"Kim",
+    "bio":[      
+      "이노헬스케어 대표이사",
+      "정보통신기술진흥원 평가위원",
+      "Ernst & Young Advisory 상무",
+      "삼성SDS 전략마케팅실 Principal",
+      "University of Missouri at Columbia 컴퓨터공학 석사",
+      "University of Missouri at Columbia 컴퓨터공학 학사"
+    ],
+    "img": "bio/data/yongsik_kim.png",
+    "company" : ["inno","iitp","ey","sds","mu"]
+  } 

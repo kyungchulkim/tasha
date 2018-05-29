@@ -1,0 +1,153 @@
+  {
+  "login" : {
+    "title" : "Login"
+  },
+  
+  "header" :{
+    "main_title":["Make","Visible"],
+    "title":["Supply Chain Management Reimagined",
+             "TEMCO delivers trusted data from the point of origin<br>to the point of consumption"
+            ],
+    "title_m":
+      "TEMCO delivers trusted data from<br>the point of origin to the point of consumption"
+    
+  },
+    
+  "about1" : {
+    "title":"REVOLUTIONARY<br />SOLUTION",
+    "icon_title":["Connected","Credible","Transparent","Tracecable","INTELLIGENCE"],
+    "icon_contents":["Track, share, and access real time data anywhere anytime through highly linked blockchain technology",
+                    "Vendors are background checked through our Vendor Verification System (VVS).",
+                    "Data collected through smart contract in blockchain is safe and transparent.",
+                    "Trace your purchase back to its origin. Any dispute can be reliably and promptly resolved.",
+                    "Gain business intelligence by taming the big data beast."]
+  },
+    
+  "about2" : {
+    "title":"TEMCO<br />ADVANTAGE",
+    "icon_title":["Verified Vendors","Linked Data","Real Reviews","Marketplace","Data Analytic Tool"],
+    "icon_contents":["TEMCO only partners with businesses cleared by the Vendor Verification System (VVS)",
+                    "Smart tags track the entire supply chain process from point of origin to the final consumer, helping companies boost efficiency and cut costs.",
+                    "Consumers who purchased the product can post reviews. Using blockchain technology for verification, TEMCO eliminates the risk of fake reviews.",
+                    "TEMCO marketplace offers all the features above. You don't have to look other places to get more information.",
+                    "BI Analytic Tool is built for the small and medium size business, offering enterprise level software that provides categorization and visualization of supply chain data."]
+  },
+  
+  "ourMission" : {
+    "title":"our mission",
+    "contents":"Most companies do not have sufficient infrastructure to provide supply chain management data to their customers. Consumers want more information about their  purchases, but they only have access to basic shipping logs and estimated data.<br /><br />The Transportation Enterprise Merchandise Customer Organization (TEMCO)  Project will revolutionize supply chain management through innovative technology-smart contracts and blockchain.<br /><br />Our project will provide greater transparency and highly-linked data across the entire supply chain process to deliver trustworthy information that empowers businesses and consumers."
+  },
+  
+  "whitePaper" : {
+    "title":"white paper",
+    "download":"download"
+    
+  },
+
+  "protoType" : {
+    "title" : "prototype"
+  },
+
+  "technology" : {
+    "title" : "technology",
+    "contents" : "TEMCO pairs proven system with innovative technology by adopting a hybrid model that combines blockchain technology and Interplanetary File System (IPFS). Smart contracts are based on Blockchain. The design will achieve efficient storage and efficient data processing."
+  },
+
+  "tokenModel" : {
+    "title" : "token model",
+    "contents" : "TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can spend the tokens in the TEMCO marketplace for your next purchase."
+  },
+
+  "roadMap" : [
+    {
+      "year" : "05 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "TEMCO Website Launch",
+      "contents2" : "TEMCO Whitepaper Release"
+    },
+    {
+      "year" : "06 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "TEMCO Prototype Release",
+      "contents2" : "Development of Adivsory Board"
+    },
+    {
+      "year" : "3Q 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Partnership and Business Development",
+      "contents2" : ""
+    },
+    {
+      "year" : "4Q 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Initiate TEMCO Platform Pilot Test with Partners",
+      "contents2" : ""
+    },
+    {
+      "year" : "1Q 2019",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Begin Developing Decentralized Distribution Network",
+      "contents2" : ""
+    },
+    {
+      "year" : "2Q 2019",
+      "sub1" : "Smart Scan and Voting System",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Consumer App Launch",
+      "contents2" : ""
+    },
+    {
+      "year" : "3Q 2019",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "E-commerce Partner's Mall and Points Mall Launch",
+      "contents2" : "Initiate TEMCO Blockchain API Service"
+    },
+    {
+      "year" : "4Q 2019",
+      "sub1" : "Vendor Verification System",
+      "sub2" : "Smart Contract (transfer, compensation, and penalty agreements etc.)",
+      "sub3" : "",
+      "contents1" : "Vendor App Launch",
+      "contents2" : ""
+    },
+    {
+      "year" : "1Q 2020",
+      "sub1" : "Data Warehouse(Hadoop), Analytic Engine(Spark)",
+      "sub2" : "Data Visualization Tool",
+      "sub3" : "PKI Tool",
+      "contents1" : "TEMCO Big Data Platform & BI Tool Release",
+      "contents2" : ""
+    },
+    {
+      "year" : "2~4Q 2020",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Development of TEMCO Blockchain",
+      "contents2" : ""
+    }
+  ],
+
+  "team" : {
+    "teamTitle" : "team",
+    "advisorTitle" : "advisor"
+  },
+
+  "footer" : {
+    "contents":"SUPPLY CHAIN MANAGEMENT REIMAGINED",
+    "copyright":"2018 COPYRIGHT TEMCO"
+  }
+}

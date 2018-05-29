@@ -1,0 +1,13 @@
+{
+  "firstName":"Kyungchul",
+  "lastName":"Kim",
+  "position":"Front-End Developer",
+  "bio":[
+    "Sumit 애플리케이션 웹 디벨로퍼",
+    "단국대(천안) 컴퓨터과학 학사"
+  ],
+  "img": "bio/data/kyungchul_kim.png",
+  "linkedInUrl": "kyungchulkim",
+  "isTeam": true,
+  "company" : ["dku"]
+}

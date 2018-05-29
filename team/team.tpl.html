@@ -5,23 +5,23 @@
 <div id="parallax11" class="parallax">
 	<div class="content">
 		<div class="row">
-		<div class="team-text-container team-margin animated" data-animate="fadeInUp" data-delay="0.3">
-			TEAM
-			<a name="team" class="pin">&nbsp;</a>
+		<div class="team-text-container team-margin animated" translate data-animate="fadeInUp" data-delay="0.3">
+			{{'team.teamTitle'}}
 		</div>
 	</div>
+	<a name="team" class="pin">&nbsp;</a>
 		<div>
 			<div id="teamMembers" class="portrait-container"
 			 ng-repeat="teamMember in teamMembers">
-				<bio data="{{teamMember}}" />
+				<bio data="{{teamMember}}" language="{{language}}"/>
 			</div>			
 		</div>
 	</div>
 	
 	<div class="content">
 			<div class="row">
-			<div class="team-text-container advisor-margin">
-		ADVISOR
+			<div class="team-text-container advisor-margin" translate>
+		{{'team.advisorTitle'}}
 		</div>
 	</div>	
 	<div>		

@@ -1,0 +1,14 @@
+{
+  "firstName":"Saemi",
+  "lastName":"Hong",
+  "position":"Marketing Director",
+  "bio":[
+    "La Maison du Chocolat Korea 마케팅 매니저",
+    "MyChelle dermaceuticals Korea 마케팅 스페셜리스트",
+    "고려대 경영학 학사"
+  ],
+  "img": "bio/data/saemi_profile.jpg",
+  "linkedInUrl": "saemi-hong-b8272515b",
+  "isTeam": true,
+  "company" : ["lamaison","ey","mychelle","koreauniversity"]
+}

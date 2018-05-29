@@ -38,10 +38,6 @@
 		<link href="footer/footer.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 
-		<!-- test -->
-		<!-- <link href="nav/menu.css" rel="stylesheet"> -->
-
-		<!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
 		<link rel="stylesheet" href="/js/owl.carousel.min.css" />
 
 		<style type="text/css">
@@ -65,11 +61,34 @@
 	</head>
 	<body ng-app="TashaApp" ng-controller="TashaCtrl">
 
+			
 		<main role="main">
 
+			<div ng-controller="ModalCtrl as $ctrl" class="modal-demo">
+				
 			<!-- header -->
 			<nav class="navbar navbar-dark fixed-top navbar-expand-custom"></nav>
 			<!-- end of header -->
+
+				<script type="text/ng-template" id="myModalContent.html">
+					<div class="modal-header">
+						<h3 class="modal-title" id="modal-title" translate>
+							{{'login.title'}}</h3>
+					</div>
+					<div class="modal-body" id="modal-body">
+						<ul>
+							<li ng-repeat="item in $ctrl.items">
+								<a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
+							</li>
+						</ul>
+						Selected: <b>{{ $ctrl.selected.item }}</b>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+						<button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+					</div>
+				</script>
+			</div>
 
 			<!-- container -->
 			<div class="container" onclick="myFunction()">
@@ -116,14 +135,13 @@
 			<!-- /container -->
 
 			<!-- footer -->
-			<footer onclick="myFunction()">
+			<footer></footer>
 
-			</footer>
-
-			<!-- <div class="copyright text-desc">
-				&copy; 2018 Copyright TEMCO
-			</div> -->
 			<!-- end of footer -->
+			<login></login>
+
+
+				
 
 		</main>
 
@@ -135,7 +153,15 @@
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-animate.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.js"></script>
+		
 		<script src="js/bootstrap.bundle.js"></script>
+		<!-- <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script> -->
+		<!-- <script src="js/ui-bootstrap-tpls-2.5.0.js"></script> -->
+		<script src="js/ui-bootstrap-tpls-3.0.3.js"></script>
+		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
 
 		<!-- parallax -->
 		<script src="js/velocity.min.js"></script>
@@ -144,7 +170,9 @@
 		<script src="js/animation.gsap.js"></script>
 		<script src="js/animation.velocity.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+		<script src="js/angular-translate.min.js"></script>
+		<script src="js/angular-translate-loader-static-files.min.js"></script>
+		
 		<!-- Custom JavaScript for this template -->
 		<script src="nav/nav.js"></script>
 		<script src="header/header.js"></script>
@@ -159,12 +187,14 @@
 		<script src="footer/footer.js"></script>
 		<script src="app.js"></script>
 		
+		<script src="login/login.js"></script>
+
 		<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 		<!-- <script src="/js/owl.carousel/dist/owl.carousel.min.js"></script> -->
 		<script src="/js/owl.carousel.min.js"></script>
 		<!-- support cross broswer-->
 		<script src="js/ofi.min.js"></script>
-
+		
 		<script>
 		
 		function myFunction() {

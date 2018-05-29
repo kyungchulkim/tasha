@@ -1,0 +1,11 @@
+{
+  "firstName":"Gichae",
+  "lastName":"Lim",
+  "bio":[
+    "세종텔레콤 전략사업본부장",
+    "KT 네트워크부문 부장",
+    "연세대 방송통신 석사"
+   ],
+   "img": "bio/data/gichae_profile.jpg",
+   "company" : ["sejong","kt"]
+}

@@ -1,0 +1,13 @@
+{
+    "firstName":"Hyungsik",
+    "lastName":"Kim",
+    "bio":[      
+      "교육부 중앙교육연수원 전임교수",
+      "한국철도공사 인재개발처장",
+      "삼성 SDS 인재파트장",
+      "연세대 MBA",
+      "경북대학교 전자공학 학사"
+    ],
+    "img": "bio/data/hyungsik_kim.png",
+    "company" : ["edu","korail","sds","yonsei","kbuniv"]
+  } 

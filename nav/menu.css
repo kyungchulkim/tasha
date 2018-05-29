@@ -49,21 +49,16 @@
 	padding-right:0px !important;
 }
 
-.navbar-color, .navbar-color .navbar-collapse {
-	background-color: #021146;
-	opacity: 0.9;
-}
-
-/* .navbar-collapse {
+.navbar-collapse {
 	display: block;
 	background-color: #021146;
 	opacity: 0.9;
 	width: 100%;
 	position: fixed;
 	top:0px;
-} */
+}
 
-#navContainer {
+#menuContainer {
 	max-width:1650px;
 	width:100%;
 	padding-top:20px;
@@ -92,13 +87,14 @@
 	font-size: 12px;
 }
 
-.language-change{
-	color: #fff;
-	position: absolute;
-	top: 18px;
-	right: 570px;
-	z-index: 10;
-	cursor: pointer;
+@media (max-width: 1024px) {
+	.navbar-brand{
+		margin-left:35px;
+	}
+	.nav-item:last-child{
+		padding-right:40px;
+	}
+
 }
 
 @media (min-width: 1025px) {
@@ -124,18 +120,6 @@
 }
 
 @media (max-width: 1024px) {
-
-	.language-change{
-		right: 85px;
-	}
-
-	.navbar-brand{
-		margin-left:35px;
-	}
-	.nav-item:last-child{
-		padding-right:40px;
-	}
-
 	.navbar-collapse{
 		padding-top:75px;
 		padding-left:30px;
@@ -143,7 +127,7 @@
 	}
 	.collapse.show, .collapsing{
 		background-color:#021146;
-		/* margin-top:-25px; */
+		margin-top:-25px;
 		opacity: 0.9;
 	}
 
@@ -156,14 +140,6 @@
 		vertical-align: middle;
 	}
 
-	.navbar-collapse {
-		/* display: block; */
-		background-color: #021146;
-		opacity: 0.9;
-		width: 100%;
-		position: fixed;
-		top:0px;
-	}
 	
 }
 @media only screen and (max-width: 768px) {
@@ -174,6 +150,7 @@
 @media only screen and (max-width: 450px) {
 
 	#navContainer {
+		width:80%;
 		height: 75px;
 		margin: 0 auto;
 		vertical-align: middle;

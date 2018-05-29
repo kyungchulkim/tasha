@@ -15,7 +15,9 @@ angular.module('nav', [])
             title:'whitepaper'
           },
           {
-            title:'technology'
+            title:'technology',
+            subtitle1: 'test1',
+            subtitle2: 'test2'
           },
           // {
           //   title:'prototype'
@@ -30,6 +32,10 @@ angular.module('nav', [])
           {
             title:'community'
           }
+          // ,
+          // {
+          //   title:'login'
+          // }
         ];
 
         // $scope.navbarClick = function() {

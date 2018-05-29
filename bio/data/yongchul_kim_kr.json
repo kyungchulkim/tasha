@@ -1,0 +1,14 @@
+{
+    "firstName":"Yongchul",
+    "lastName":"Kim",
+    "position":"Lead Developer",
+    "bio":[      
+      "10+ years Java 개발 전문가",
+      "Knoa Software 수석 Java 엔지니어",      
+      "뉴욕주립대 컴퓨터공학 학사"
+    ],
+    "img": "bio/data/yongchul_profile.jpg",
+    "linkedInUrl": "yongchulkim",
+    "isTeam": true,
+    "company" : ["knoa","stonybrook"]
+  }  

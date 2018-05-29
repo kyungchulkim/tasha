@@ -1,0 +1,14 @@
+{
+  "firstName":"Hongsub",
+  "lastName":"Lim",
+  "position":"Co-Founder, COO",
+  "bio":[
+    "4+ years B2B 마케팅 전문가",
+    "POSCO 철강사업본부 에너지소재마케팅실 기획/영업 매니저",
+    "연세대 경영학 학사"
+  ],
+  "img": "bio/data/hongsub_profile.jpg",
+  "linkedInUrl": "hslimtemco",
+  "isTeam": true,
+  "company" : ["posco","yonsei"]
+}

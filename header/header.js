@@ -41,8 +41,9 @@ angular.module('header', [])
             .addTo($scope.$parent.controller);
         }
         
-
-        var textList = [{
+        var textList;
+        
+        var textListEn = [{
             item : "Product"
           },
           {
@@ -54,13 +55,58 @@ angular.module('header', [])
           {
             item : "Value"
           }
-        ]
+        ];
 
+        var textListKr = [{
+          item : "Product"
+        },
+        {
+          item : "Process"
+        },
+        {
+          item : "Data"
+        },
+        {
+          item : "Value"
+        }
+      ];
+
+        // var textListKr = [{
+        //     item : "제품"
+        //   },
+        //   {
+        //     item : "진행"
+        //   },
+        //   {
+        //     item : "데이터"
+        //   },
+        //   {
+        //     item : "가치"
+        //   }
+        // ];
         // 3초 타이머에 따라서 글씨 변환되는 기능
-        
+
+        textList = textListEn;
         $scope.index = textList[0].item;
 
-        let i =1;
+        // $scope.$on("language", function (event,message){
+
+        //   if(message === 'en'){
+            
+        //     textList = textListEn;
+        //     $scope.index = textListEn[textListIndex-1].item;
+          
+        //   }else if(message === 'kr'){
+            
+        //     textList = textListKr;
+        //     console.log(textListIndex-1);
+        //     $scope.index = textListKr[textListIndex-1].item;
+          
+        //   }
+
+        // });
+
+        let textListIndex =1;
 
         $interval(function() {
 
@@ -73,10 +119,11 @@ angular.module('header', [])
             "animation": "fadein 3s infinite"
           }
 
-          $scope.index = textList[i].item;
-          i++;
-          if(i==3){
-            i=0;
+          $scope.index = textList[textListIndex].item;
+          textListIndex++;
+
+          if(textListIndex==3){
+            textListIndex=0;
           }
           
         }, 3000);

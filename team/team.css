@@ -28,15 +28,11 @@
 }
 
 .team-text-container{
-	font-family: Avenir;
 	font-size: 40px;
 	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
 	text-align: center;
 	color: #ffffff;  
+	text-transform: uppercase;
 }
 
 .team-margin{
@@ -90,15 +86,7 @@
 	}
 
 	.team-text-container{
-		font-family: Avenir;
 		font-size: 30px;
-		font-weight: 900;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: center;
-		color: #ffffff;  
 	}
 	
 	.team-margin{

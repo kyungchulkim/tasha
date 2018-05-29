@@ -1,0 +1,10 @@
+{
+  "firstName":"Haneul",
+  "lastName":"Yoo",
+  "bio":[
+    "前 한국경제신문  IT/과학부 기자",
+    "연세대 신문방송학 학사"
+  ],
+  "img": "bio/data/haneul_profile.jpg",
+  "company" : ["knewpaper","yonsei"]
+}

@@ -98,8 +98,12 @@ main .container{
 	font-size:1px;
 }
 
+about .pin{
+	top: -100px;
+}
+
 whitepaper .pin{
-	top: -500px;
+	top: -350px;
 }
 
 team .pin{
@@ -143,6 +147,16 @@ team .pin{
 }
 /* end of zeplin */
 
+.header-title {
+	font-size: 50px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+
 /* mobile */
 
 
@@ -163,6 +177,10 @@ team .pin{
 	main .container{
 		background-size: auto;
 		
+	}
+
+	.header-title {
+		font-size: 30px;
 	}
 }
 /* 
@@ -186,6 +204,11 @@ team .pin{
 }
 
 @media only screen and (max-width: 450px) {
+
+	.header-title {
+		font-size: 14px;
+	}
+
 	.content{
 		padding-left:30px;
 		padding-right:30px;

@@ -5,6 +5,11 @@ angular.module('team', ['bio','advisor'])
       },
       templateUrl: 'team/team.tpl.html',
       link: function($scope) {
+        // console.log($scope.$parent.language);
+
+        
+        // $scope.language = $scope.$parent.language;
+
 
         $scope.advisors = [
           'yongsik',
@@ -16,11 +21,12 @@ angular.module('team', ['bio','advisor'])
           'haneul',
           'dongjin'
         ];
+
         $scope.teamMembers = [
           'brian_lee',
           'jaeseob_yoon',
           'hongsub_lim',
-          'yongchul',
+          'yongchul_kim',
           'saemi_hong',
           'jongseong_kim',
           'natasha_woo',
@@ -65,6 +71,13 @@ angular.module('team', ['bio','advisor'])
           $scope.$parent.activeNav = 'prototype';
           $scope.$parent.$apply();
         });
+
+        // $scope.$on("language", function (event,message){
+        //   console.log($scope.language);
+        //   $scope.language = message;
+        //   console.log($scope.language);
+        // });
+
 
       }
     };

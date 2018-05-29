@@ -1,0 +1,15 @@
+{
+  "firstName":"JongSeong",
+  "lastName":"Kim",
+  "position":"Marketing Manager",
+  "bio":[
+    "Assistant Sales Manager at Swatch Time Square",
+    "Field Test Engineer, Samsung Electronics Contractor at BTI Solutions",
+    "Guest Agent at Korean Air",
+    "B.A. in Psychology, Sensation & Perception"
+  ],
+  "img": "bio/data/jongseong_profile.png",
+  "linkedInUrl": "jong-seong-kim-a62a9767",
+  "isTeam": true,
+  "company" : ["swatch","btisolution","koreanair","uconn"]
+}
