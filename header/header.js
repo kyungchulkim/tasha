@@ -127,7 +127,62 @@ angular.module('header', [])
           }
           
         }, 3000);
+
         
+        if(window.innerWidth<1024){
+          console.log("t");
+          $scope.en = {
+            "display" : "none"
+          }
+        }
+        else{
+          $scope.en = {
+            "display" : "block",
+            "visibility": "visible",
+            "animation-delay": "1.2s"
+         }
+        }
+          
+
+        $scope.kr = {
+          "display" : "none"
+        }
+
+        $scope.$on("language", function (event,message){
+
+          
+          if(message === "en"){
+            $scope.en = {
+              "display" : "block",
+              "animation" : "none",
+            }
+
+            $scope.kr = {
+              "display" : "none"
+            }
+          }else if(message === "kr"){
+            $scope.en = {
+              "display" : "none"
+            }
+
+            $scope.kr = {
+              "display" : "block"
+            }
+          }
+          
+          if(window.innerWidth<1024){
+            $scope.en = {
+              "display" : "none"
+            }
+
+            $scope.kr = {
+              "display" : "none"
+            }
+          }
+          
+          
+        });
+
       }
     };
   });

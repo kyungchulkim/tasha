@@ -38,6 +38,40 @@ angular.module('nav', [])
           // }
         ];
 
+        $scope.click_en = {
+          "color":"#00fff7",
+          "font-weight":"900"
+        }
+
+        $scope.click_kr = {
+          "color":"#ffffff",
+          "font-weight":"500"
+        }
+        
+        $scope.$on("language", function (event,message){
+
+          if(message === "en"){
+            $scope.click_en = {
+              "color":"#00fff7",
+              "font-weight":"900"
+            }
+
+            $scope.click_kr = {
+              "color":"#ffffff",
+              "font-weight":"500"
+            }
+          }else if(message === "kr"){
+            $scope.click_kr = {
+              "color":"#00fff7",
+              "font-weight":"900"
+            }
+
+            $scope.click_en = {
+              "color":"#ffffff",
+              "font-weight":"500"
+            }
+          }
+        });
         // $scope.navbarClick = function() {
         //   if(document.getElementsByClassName('navbar-toggler')[0].getAttribute("aria-expanded") === "false"){
         //     $('.navbar-color').css('opacity','1');

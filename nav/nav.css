@@ -70,6 +70,7 @@
 	padding-bottom:20px;
 	margin: 0 auto;
 	vertical-align: middle;
+	position: relative;
 }
 /* 
 .fixed-top{
@@ -95,10 +96,11 @@
 .language-change{
 	color: #fff;
 	position: absolute;
-	top: 18px;
+	top: 19px;
 	right: 570px;
 	z-index: 10;
 	cursor: pointer;
+	font-size: 12px;
 }
 
 @media (min-width: 1025px) {

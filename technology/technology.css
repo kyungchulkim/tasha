@@ -153,7 +153,7 @@
 }
 
 #technologyContent{
-	margin:0 125px;
+	margin:0 auto;
 }
 
 #techboxMT1{
@@ -241,7 +241,6 @@
 	.technologyText {
 		width: 500px;
 		height: 140px;
-		
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -250,7 +249,7 @@
 		letter-spacing: normal;
 		text-align: justify;
 		color: #ffffff;
-		margin: 100px auto 100px auto;
+		margin: 72px auto 100px auto;
 	}
 
 	.techBoxHeader{

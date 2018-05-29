@@ -76,17 +76,25 @@
 							{{'login.title'}}</h3>
 					</div>
 					<div class="modal-body" id="modal-body">
-						<ul>
-							<li ng-repeat="item in $ctrl.items">
-								<a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
-							</li>
-						</ul>
-						Selected: <b>{{ $ctrl.selected.item }}</b>
+						<form name="signUpForm" class="form" role="form">
+							<div class="form-group">
+								<input type="email" class="form-control" id="exampleInputEmail1" 
+								aria-describedby="emailHelp" placeholder="Enter email" ng-required="true">
+
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="exampleInputPassword1" name="password"
+								placeholder="Password" ng-required="true"  ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/"/>
+								<!-- <div ng-show="signUpForm.password.$error.pattern" class="alert alert-warning" role="alert">최소 4글자, 최대 8글자이고 적어도 1나의 소문자, 대문자, 숫자를 포함해야합니다.</div> -->
+								<input type="password" class="form-control" id="exampleInputPassword1" 
+								placeholder="Password" ng-required="true" />
+
+								
+							</div>
+							<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">회원가입</button>
+						</form>
 					</div>
-					<div class="modal-footer">
-						<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
-						<button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-					</div>
+					
 				</script>
 			</div>
 
