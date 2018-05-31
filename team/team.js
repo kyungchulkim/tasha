@@ -5,17 +5,11 @@ angular.module('team', ['bio','advisor'])
       },
       templateUrl: 'team/team.tpl.html',
       link: function($scope) {
-        // console.log($scope.$parent.language);
-
-        
-        // $scope.language = $scope.$parent.language;
-
 
         $scope.advisors = [
           'yongsik',
           'hyungsik',
           'yujin',
-          'chris',
           'jisun',
           'gichae',
           'haneul',
@@ -27,11 +21,14 @@ angular.module('team', ['bio','advisor'])
           'jaeseob_yoon',
           'hongsub_lim',
           'yongchul_kim',
+          'chris',
+          'joey_cho',
           'saemi_hong',
           'jongseong_kim',
           'natasha_woo',
           'sunha_hwang',
           'kyungchul_kim'
+          
         ];
 
         var scene11 = new ScrollMagic.Scene({

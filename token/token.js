@@ -29,7 +29,7 @@ angular.module('token', [])
 
         var scene10 = new ScrollMagic.Scene({
           triggerElement: "#parallax10",
-          offset:-100
+          offset:-200
         }).setVelocity("#parallax10 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
@@ -40,6 +40,27 @@ angular.module('token', [])
           offset:200
         })//.addIndicators()
           .addTo($scope.$parent.controller);
+
+          var scene12 = new ScrollMagic.Scene({
+            triggerElement: "#parallax12",
+            offset:-300
+          }).setVelocity("#parallax12 .content", {opacity: 1.0}, {duration: 400})
+          //.addIndicators()
+            .addTo($scope.$parent.controller);
+  
+          var sceneTop12 = new ScrollMagic.Scene({
+            triggerElement: "#parallax12",
+            triggerHook:1,
+            offset:200
+          })//.addIndicators()
+            .addTo($scope.$parent.controller);
+
+            var scene13 = new ScrollMagic.Scene({
+              triggerElement: "#parallax13",
+              offset:-300
+            }).setVelocity("#parallax13 .content", {opacity: 1.0}, {duration: 400})
+            //.addIndicators()
+              .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('token');
 
@@ -98,7 +119,31 @@ angular.module('token', [])
           $scope.$parent.activeNav = 'prototype';
           $scope.$parent.$apply();
         });
+
+        scene12.on("enter", function (event) {
+          $scope.$parent.activeNav = 'token';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax12");
+        });
+
+        scene12.on("leave", function (event) {
+          $scope.$parent.activeNav = 'prototype';
+          $scope.$parent.$apply();
+        });
         
+        scene13.on("enter", function (event) {
+          $scope.$parent.activeNav = 'token';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax12");
+        });
+
+        scene13.on("leave", function (event) {
+          $scope.$parent.activeNav = 'prototype';
+          $scope.$parent.$apply();
+        });
+
         // var languageCheck = 'en'
         
         // $owl = $('body').find('#owl-roadmap');
@@ -137,7 +182,14 @@ angular.module('token', [])
         //   }
 
         // });
-        
+        $('.use-case').owlCarousel({
+          nav:true,
+          pagination: false,
+          rewindNav : false,
+          dots: true,
+          items:1
+        })
+
         $('.owl-carousel').owlCarousel({
           nav:true,
           pagination: false,
@@ -153,10 +205,10 @@ angular.module('token', [])
               items:2
             },
             768:{
-              items:4
+              items:3
             },
             1025:{
-              items:6
+              items:4
             }
           }
       })

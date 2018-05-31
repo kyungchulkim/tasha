@@ -38,12 +38,12 @@ footer .social-media{
 	display:inline-block;
 	text-align:center;
 	height: 100%;
+	margin-bottom: 10px;
 }
 footer .social-media a{font-size:0;display:inline-block;}
 footer .social-media img {
-	max-width: 85px;
-	max-height: 85px;
-	margin: 0px 10px 0px 10px;
+	max-width: 70x;
+	max-height: 70px;
 }
 
 .footer-logo{

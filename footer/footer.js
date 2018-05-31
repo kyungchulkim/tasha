@@ -5,7 +5,14 @@ angular.module('footer', [])
       },
       templateUrl: 'footer/footer.tpl.html',
       link: function($scope) {
-      
+
+        $scope.kakaoClick = function(){
+          alert("카카오톡 비밀번호는 1004 입니다.");
+          window.open(
+            'https://open.kakao.com/o/gkG9IoK',
+            '_blank'
+          );
+        };
       }
     };
   });

@@ -36,11 +36,11 @@
 }
 
 .team-margin{
-	margin: 309px auto 207px auto;
+	margin: 250px auto 100px auto;
 }
 
 .advisor-margin{
-	margin: 210px auto 190px auto;
+	margin: 200px auto 110px auto;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -90,11 +90,11 @@
 	}
 	
 	.team-margin{
-		margin: 250px auto 70px auto;
+		margin: 200px auto 70px auto;
 	}
 	
 	.advisor-margin{
-		margin: 251px auto 70px auto;
+		margin: 200px auto 70px auto;
 	}
 
 }
@@ -169,120 +169,3 @@
 		margin: 110px auto 32px auto;
 	}
 }
-
-/* iphone 6 7 8 */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
-	#teamDropImg{
-		height: 170px;
-		margin-left: 25px !important;
-    	width: 50px !important;
-    	margin-top: 0px;
-	}
-
-	#teamDropContainer{
-		margin-top: 0px;
-	}
-
-	.team-text-container{
-		margin-top:40px !important;
-		margin-bottom: 20px !important;
-	}
-
-	#dot-img{
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#parallax11{
-		margin-bottom: 20px !important;
-	}
-} */
-
-/* iphone 6 7 8 plus */
-/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-	#teamDropImg{
-		height: 170px;
-		margin-left: 25px !important;
-    	width: 50px !important;
-    	margin-top: 0px;
-	}
-
-	#teamDropContainer{
-		margin-top: 0px;
-	}
-	
-	.team-text-container{
-		margin-top:40px !important;
-		margin-bottom: 20px !important;
-	}
-
-	#dot-img{
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#parallax11{
-		margin-bottom: 20px !important;
-	}
-} */
-
-
-/* iphone x  */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
-	#teamDropImg{
-		height: 170px;
-		margin-left: 25px !important;
-    	width: 50px !important;
-    	margin-top: 0px;
-	}
-
-	#teamDropContainer{
-		margin-top: 0px;
-	}
-
-	.team-text-container{
-		margin-top:40px !important;
-		margin-bottom: 20px !important;
-	}
-
-	#dot-img{
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#parallax11{
-		margin-bottom: 20px !important;
-	}
-} */
-
-/* galxay  */
-/* @media only screen and (max-width: 360px) {
-	#teamDropImg{
-		height: 170px;
-		margin-left: 25px !important;
-    	width: 50px !important;
-    	margin-top: 0px;
-	}
-
-	#teamDropContainer{
-		margin-top: 0px;
-	}
-
-	.team-text-container{
-		margin-top:40px !important;
-		margin-bottom: 20px !important;
-	}
-
-	#dot-img{
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#parallax11{
-		margin-bottom: 20px !important;
-	}
-} */

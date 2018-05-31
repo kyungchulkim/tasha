@@ -1,6 +1,7 @@
 {
     "firstName":"Chris",
     "lastName":"Hong",
+    "position":"Lead Developer",
     "bio":[
       "Product Market Architecture",
       "MBA, Chicago University",
@@ -8,5 +9,6 @@
       "B.S. in Business Administration, Washington University"
     ],
     "img": "bio/data/chris_profile.jpg",
+    "isTeam": true,
     "company" : ["chicagobooth","chiuniv","wuniv"]
   }

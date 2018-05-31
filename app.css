@@ -159,6 +159,18 @@ team .pin{
 	color: #ffffff;
 }
 
+.header-text{
+	height: auto;
+	font-size: 50px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	/* text-align: center; */
+	color: #ffffff;
+}
+
 /* mobile */
 
 
@@ -181,8 +193,10 @@ team .pin{
 		
 	}
 
-	.header-title {
+	.header-text{
 		font-size: 30px;
+		font-weight: 900;
+		line-height: 0.8;
 	}
 }
 /* 
@@ -207,10 +221,11 @@ team .pin{
 
 @media only screen and (max-width: 450px) {
 
-	.header-title {
+	.header-text{
 		font-size: 14px;
+		line-height: 1.71;
 	}
-
+	
 	.content{
 		padding-left:30px;
 		padding-right:30px;

@@ -1,6 +1,7 @@
 {
     "firstName":"Chris",
     "lastName":"Hong",
+    "position":"Lead Developer",
     "bio":[
       "프로덕트 마켓 아키텍쳐",
       "시카고대 MBA",
@@ -8,5 +9,6 @@
       "워싱턴대 경영학 학사"       
     ],
     "img": "bio/data/chris_profile.jpg",
+    "isTeam": true,
     "company" : ["chicagobooth","chiuniv","wuniv"]
   }

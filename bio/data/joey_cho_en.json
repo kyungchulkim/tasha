@@ -3,13 +3,11 @@
   "lastName":"Cho",
   "position":"Business Develpment Manager",
   "bio":[
-    "Senior Business Manager, Outr?",
-    "John Jay College (Leave of Absence)",
-    "Borough Of Manhattan Community College",
-    "CUNY Bronx Community College"
+    "7+ Years of b2b sales and marketing experience in US, Canada and South America.",
+    "Senior Sales Consultant / Marketing Manager in Outre."
   ],
   "img": "bio/data/joey_cho_profile.jpg",
-  "linkedInUrl": "brianleenj",
+  "linkedInUrl": "",
   "isTeam": true,
-  "company" : ["outre","bmcc","bcc"]
+  "company" : ["outre"]
 }

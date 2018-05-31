@@ -8,14 +8,14 @@ angular.module('about', [])
 
         var scene2 = new ScrollMagic.Scene({
           triggerElement: "#parallax2",
-          offset:250
+          offset:150
         }).setVelocity("#parallax2 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var scene3 = new ScrollMagic.Scene({
           triggerElement: "#parallax3",
-          offset:0
+          offset:-50
         }).setVelocity("#parallax3 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);

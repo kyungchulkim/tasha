@@ -129,27 +129,49 @@ angular.module('header', [])
         }, 3000);
 
         
-        if(window.innerWidth<1024){
-          console.log("t");
-          $scope.en = {
-            "display" : "none"
+        window.onresize = function(event) {
+        
+          if(languageFlag === "en"){
+            $scope.en = {
+              "display" : "block",
+              "animation" : "none",
+            }
+
+            $scope.kr = {
+              "display" : "none"
+            }
+          }else if(languageFlag === "kr"){
+            $scope.en = {
+              "display" : "none"
+            }
+
+            $scope.kr = {
+              "display" : "block"
+            }
           }
-        }
-        else{
-          $scope.en = {
-            "display" : "block",
-            "visibility": "visible",
-            "animation-delay": "1.2s"
-         }
-        }
           
+          if(window.innerWidth<1024){
+            $scope.en = {
+              "display" : "none"
+            }
+
+            $scope.kr = {
+              "display" : "none"
+            }
+          }
+
+        };
+
 
         $scope.kr = {
           "display" : "none"
         }
 
+        var languageFlag = "en";
+
         $scope.$on("language", function (event,message){
 
+          languageFlag = message;
           
           if(message === "en"){
             $scope.en = {
