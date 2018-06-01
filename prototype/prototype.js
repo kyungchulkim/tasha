@@ -3,7 +3,7 @@ angular.module('prototype', [])
     return{
       scope:{
       },
-      templateUrl: 'prototype/prototype.tpl.html',
+      templateUrl: 'prototype/prototype.tpl.html?version=0601',
       link: function($scope) {
 
         var scene7 = new ScrollMagic.Scene({

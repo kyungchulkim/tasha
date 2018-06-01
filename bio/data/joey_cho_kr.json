@@ -3,10 +3,11 @@
   "lastName":"Cho",
   "position":"Business Develpment Manager",
   "bio":[
-    "OUTRE 글로벌 B2B 세일츠 부서 아랍/남미/북중미권 세일즈 책임자",
-    "B2B 세일즈 부서",
+    "OUTRE 글로벌 B2B 세일즈 부서" ,
+    "아랍/남미/북중미권 세일즈 책임자",
+    "OUTRE B2B 세일즈 부서",
     "온/오프라인 및 리테일 세일즈 담당",
-    "B2B 마케팅 부서 ",
+    "OUTRE B2B 마케팅 부서 ",
     "컨벤션 및 프로모션 매니저"
   ],
   "img": "bio/data/joey_cho_profile.jpg",

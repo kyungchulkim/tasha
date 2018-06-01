@@ -3,7 +3,7 @@ angular.module('token', [])
     return{
       scope:{
       },
-      templateUrl: 'token/token.tpl.html',
+      templateUrl: 'token/token.tpl.html?version=0601',
       link: function($scope) {
 
         var scene8 = new ScrollMagic.Scene({

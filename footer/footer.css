@@ -82,9 +82,9 @@ footer .social-media img {
 
 @media only screen and (max-width: 450px) {
 	footer .social-media img {
-		max-width: 55px;
-		max-height: 55px;
-		margin: 0px 5px 0px 5px;
+		max-width: 32px;
+		max-height: 32px;
+		margin: 0px 0px 0px 0px;
 	}
 
 	.footer-logo{

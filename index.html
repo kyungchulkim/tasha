@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		
 		<meta name="author" content="TEMCO">
 		<meta name="description" content="Supply Chain Management Reimagined, TEMCO delivers trusted data from the point of origin to the point of consumption">
 		<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"  />
@@ -14,13 +18,13 @@
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.css?ver=0601" rel="stylesheet">
 
 		<!-- Animate CSS-->
-		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/animate.css?ver=0601">
 		
 		<!-- google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Avenir:400,600,700,800" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Avenir:400,600,700,800" rel="stylesheet"> -->
 		<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 		
 		<!-- google icons -->
@@ -28,19 +32,19 @@
 					rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="nav/nav.css" rel="stylesheet">
-		<link href="header/header.css" rel="stylesheet">
-		<link href="about/about.css" rel="stylesheet">
-		<link href="whitepaper/whitepaper.css" rel="stylesheet">
-		<link href="technology/technology.css" rel="stylesheet">
-		<link href="prototype/prototype.css" rel="stylesheet">
-		<link href="token/token.css" rel="stylesheet">
-		<link href="team/team.css" rel="stylesheet">
-		<link href="bio/bio.css" rel="stylesheet">
-		<link href="footer/footer.css" rel="stylesheet">
-		<link href="app.css" rel="stylesheet">
+		<link href="nav/nav.css?ver=0601" rel="stylesheet">
+		<link href="header/header.css?ver=0601" rel="stylesheet">
+		<link href="about/about.css?ver=0601" rel="stylesheet">
+		<link href="whitepaper/whitepaper.css?ver=0601" rel="stylesheet">
+		<link href="technology/technology.css?ver=0601" rel="stylesheet">
+		<link href="prototype/prototype.css?ver=0601" rel="stylesheet">
+		<link href="token/token.css?ver=0601" rel="stylesheet">
+		<link href="team/team.css?ver=0601" rel="stylesheet">
+		<link href="bio/bio.css?ver=0601" rel="stylesheet">
+		<link href="footer/footer.css?ver=0601" rel="stylesheet">
+		<link href="app.css?ver=0601" rel="stylesheet">
 
-		<link rel="stylesheet" href="/js/owl.carousel.min.css" />
+		<link rel="stylesheet" href="/js/owl.carousel.min.css?ver=0601" />
 
 		<style type="text/css">
 
@@ -72,7 +76,9 @@
 			<nav class="navbar navbar-dark fixed-top navbar-expand-custom"></nav>
 			<!-- end of header -->
 
-				<script type="text/ng-template" id="myModalContent.html">
+			<!-- modal -->
+
+				<script type="text/ng-template" id="login.html">
 					<div class="modal-header">
 						<h3 class="modal-title" id="modal-title" translate>
 							{{'login.title'}}</h3>
@@ -95,7 +101,18 @@
 					</div>
 					
 				</script>
-			</div>
+			
+				<script type="text/ng-template" id="kakao.html">
+					<div class="modal-header">
+						카카오톡 비밀번호는 1234 입니다.
+					</div>
+					<div class="modal-body" id="modal-body">
+							<button class="btn btn-lg btn-primary btn-block signup-btn">확인</button>
+					</div>
+					
+				</script>
+				
+				<!-- end of modal -->
 
 			<!-- container -->
 			<div class="container" onclick="myFunction()">
@@ -147,7 +164,7 @@
 			<!-- end of footer -->
 			<login></login>
 
-
+		</div>
 				
 
 		</main>
@@ -164,10 +181,10 @@
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.js"></script>
 		
-		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/bootstrap.bundle.js?ver=0601"></script>
 		<!-- <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script> -->
 		<!-- <script src="js/ui-bootstrap-tpls-2.5.0.js"></script> -->
-		<script src="js/ui-bootstrap-tpls-3.0.3.js"></script>
+		<script src="js/ui-bootstrap-tpls-3.0.3.js?ver=0601"></script>
 		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
 
 		<!-- parallax -->
@@ -177,30 +194,31 @@
 		<script src="js/animation.gsap.js"></script>
 		<script src="js/animation.velocity.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-		<script src="js/angular-translate.min.js"></script>
-		<script src="js/angular-translate-loader-static-files.min.js"></script>
+		
+		<!-- translate-->
+		<script src="js/angular-translate.min.js?ver=0601"></script>
+		<script src="js/angular-translate-loader-static-files.min.js?ver=0601"></script>
 		
 		<!-- Custom JavaScript for this template -->
-		<script src="nav/nav.js"></script>
-		<script src="header/header.js"></script>
-		<script src="about/about.js"></script>
-		<script src="whitepaper/whitepaper.js"></script>
-		<script src="technology/technology.js"></script>
-		<script src="prototype/prototype.js"></script>
-		<script src="token/token.js"></script>
-		<script src="team/team.js"></script>
-		<script src="bio/bio.js"></script>
-		<script src="bio/advisor.js"></script>
-		<script src="footer/footer.js"></script>
-		<script src="app.js"></script>
+		<script src="nav/nav.js?ver=0601"></script>
+		<script src="header/header.js?ver=0601"></script>
+		<script src="about/about.js?ver=0601"></script>
+		<script src="whitepaper/whitepaper.js?ver=0601"></script>
+		<script src="technology/technology.js?ver=0601"></script>
+		<script src="prototype/prototype.js?ver=0601"></script>
+		<script src="token/token.js?ver=0601"></script>
+		<script src="team/team.js?ver=0601"></script>
+		<script src="bio/bio.js?ver=0601"></script>
+		<script src="bio/advisor.js?ver=0601"></script>
+		<script src="footer/footer.js?ver=0601"></script>
+		<script src="app.js?ver=0601"></script>
 		
-		<script src="login/login.js"></script>
+		<script src="login/login.js?ver=0601"></script>
 
-		<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
-		<!-- <script src="/js/owl.carousel/dist/owl.carousel.min.js"></script> -->
-		<script src="/js/owl.carousel.min.js"></script>
+
+		<script src="/js/owl.carousel.min.js?ver=0601"></script>
 		<!-- support cross broswer-->
-		<script src="js/ofi.min.js"></script>
+		<script src="js/ofi.min.js?ver=0601"></script>
 		
 		<script>
 		
