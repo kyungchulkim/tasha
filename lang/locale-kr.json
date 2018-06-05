@@ -2,7 +2,11 @@
   "login" : {
       "title" : "로그인"
   },
-    
+  "kakao_modal": {
+    "password" : "0801",
+    "contents" : "카카오톡 비밀번호는 0801 입니다.",
+    "btn" : "들어가기"
+  },
   "header" :{
     "title":["블록체인 물류 플랫폼의 혁신! TEMCO",
              "세상을 변화시킬 물류의 미래<br/>누구는 상상하지만 TEMCO는 실현합니다!"

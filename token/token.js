@@ -3,7 +3,7 @@ angular.module('token', [])
     return{
       scope:{
       },
-      templateUrl: 'token/token.tpl.html?version=0601',
+      templateUrl: 'token/token.tpl.html?ver=0605',
       link: function($scope) {
 
         var scene8 = new ScrollMagic.Scene({
@@ -61,6 +61,13 @@ angular.module('token', [])
             }).setVelocity("#parallax13 .content", {opacity: 1.0}, {duration: 400})
             //.addIndicators()
               .addTo($scope.$parent.controller);
+
+          var scene14 = new ScrollMagic.Scene({
+              triggerElement: "#parallax14",
+                offset:-300
+              }).setVelocity("#parallax14 .content", {opacity: 1.0}, {duration: 400})
+              //.addIndicators()
+                .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('token');
 
@@ -136,7 +143,7 @@ angular.module('token', [])
           $scope.$parent.activeNav = 'token';
           $scope.$parent.$apply();
 
-          $scope.$parent.aniDiv("#parallax12");
+          $scope.$parent.aniDiv("#parallax13");
         });
 
         scene13.on("leave", function (event) {
@@ -144,6 +151,17 @@ angular.module('token', [])
           $scope.$parent.$apply();
         });
 
+        scene14.on("enter", function (event) {
+          $scope.$parent.activeNav = 'token';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax14");
+        });
+
+        scene14.on("leave", function (event) {
+          $scope.$parent.activeNav = 'prototype';
+          $scope.$parent.$apply();
+        });
         // var languageCheck = 'en'
         
         // $owl = $('body').find('#owl-roadmap');
@@ -182,6 +200,26 @@ angular.module('token', [])
         //   }
 
         // });
+
+        $('.press').owlCarousel({
+          nav:true,
+          pagination: false,
+          rewindNav : false,
+          dots: true,
+          responsive:{
+            0:{
+              items:2
+            },
+            450:{
+              items:3
+            },
+            1025:{
+              items:4
+            }
+          }
+        })
+
+
         $('.use-case').owlCarousel({
           nav:true,
           pagination: false,

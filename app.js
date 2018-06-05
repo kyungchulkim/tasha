@@ -20,7 +20,7 @@ app.config(['$translateProvider', function ($translateProvider) {
   
   $translateProvider.useStaticFilesLoader({
     prefix: 'lang/locale-',
-    suffix: '.json'
+    suffix: '.json?ver=0605'
   });
 
   $translateProvider.fallbackLanguage('en');
@@ -38,7 +38,6 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
   $scope.language = 'en';
 
   $scope.changeLanguage = function (langKey) {
-    
     $scope.$broadcast('language',language = langKey);
     $translate.use(langKey);
   };
@@ -146,11 +145,9 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
   }
 });
 
-app.controller('ModalCtrl', function ($uibModal, $log, $document) {
+app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
   var $ctrl = this;
-  
-  $ctrl.items = ['item1', 'item2', 'item3'];
-  
+
   $ctrl.animationsEnabled = true;
 
   $ctrl.open = function (size, parentSelector) {
@@ -168,28 +165,23 @@ app.controller('ModalCtrl', function ($uibModal, $log, $document) {
       appendTo: parentElem,
       resolve: {
         items: function () {
-          return $ctrl.items;
+          return $ctrl;
         }
       }
     });
 
-    modalInstance.result.then(function (selectedItem) {
-      $ctrl.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
   };
   
   $ctrl.openkakao = function (size, parentSelector) {
     var parentElem = parentSelector ? 
       angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-
+   
     var modalInstance = $uibModal.open({
       animation: $ctrl.animationsEnabled,
       ariaLabelledBy: 'modal-title',
       ariaDescribedBy: 'modal-body',
       templateUrl: 'kakao.html',
-      controller: 'KakaoModalInstanceCtrl',
+      controller: 'ModalInstanceCtrl',
       controllerAs: '$ctrl',
       size: size,
       appendTo: parentElem,
@@ -199,7 +191,28 @@ app.controller('ModalCtrl', function ($uibModal, $log, $document) {
         }
       }
     });
+  };
 
+  $ctrl.signup = function (size, parentSelector) {
+    var parentElem = parentSelector ? 
+      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+   
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'signup.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      appendTo: parentElem,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+  
     modalInstance.result.then(function (selectedItem) {
       $ctrl.selected = selectedItem;
     }, function () {
@@ -254,37 +267,59 @@ app.controller('ModalCtrl', function ($uibModal, $log, $document) {
   };
 });
 
-app.controller('ModalInstanceCtrl', function ($uibModalInstance, items) {
+app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
   var $ctrl = this;
-  $ctrl.items = items;
-  $ctrl.selected = {
-    item: $ctrl.items[0]
-  };
+  
+  $ctrl.kakaoLink = function() {
+    $uibModalInstance.dismiss();
+    window.open(
+      'https://open.kakao.com/o/gkG9IoK',
+      '_blank'
+    );
+  }
 
-  $ctrl.ok = function () {
-    $uibModalInstance.close($ctrl.selected.item);
-  };
+  $ctrl.login = function() {
+    $ctrl.loginCheck();
+  }
 
-  $ctrl.cancel = function () {
-    $uibModalInstance.dismiss('cancel');
-  };
+  $ctrl.loginCheck = function() {
+
+    var passwordReg = new RegExp("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/","i");
+    
+    if($ctrl.user === undefined)
+    {
+      
+    }else{
+      console.log($ctrl.user.password);
+      passwordReg.test($ctrl.user.password) ? $ctrl.check = true : $ctrl.check = false;
+      console.log(passwordReg.test("Aa12324534"));
+      console.log(passwordReg.test("sds"));
+    }
+
+  }
+
+  $ctrl.toSignup = function() {
+    $uibModalInstance.dismiss();
+    items.signup();
+  }
+
 });
 
-app.controller('KakaoModalInstanceCtrl', function ($uibModalInstance, items) {
-  var $ctrl = this;
-  $ctrl.items = items;
-  $ctrl.selected = {
-    item: $ctrl.items[0]
-  };
+// app.controller('KakaoModalInstanceCtrl', function ($uibModalInstance, items) {
+//   var $ctrl = this;
+//   $ctrl.items = items;
+//   $ctrl.selected = {
+//     item: $ctrl.items[0]
+//   };
 
-  $ctrl.ok = function () {
-    $uibModalInstance.close($ctrl.selected.item);
-  };
+//   $ctrl.ok = function () {
+//     uibModalInstance.close($ctrl.selected.item);
+//   };
 
-  $ctrl.cancel = function () {
-    $uibModalInstance.dismiss('cancel');
-  };
-});
+//   $ctrl.cancel = function () {
+//     $uibModalInstance.dismiss('cancel');
+//   };
+// });
 
 app.component('modalComponent', {
   templateUrl: 'login.html',
@@ -305,6 +340,7 @@ app.component('modalComponent', {
 
     $ctrl.ok = function () {
       $ctrl.close({$value: $ctrl.selected.item});
+      console.log("loginok");
     };
 
     $ctrl.cancel = function () {

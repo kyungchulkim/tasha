@@ -2,6 +2,11 @@
   "login" : {
     "title" : "Login"
   },
+  "kakao_modal": {
+    "password" : "0801",
+    "contents" : "KakaoTalk password is 0801",
+    "btn" : "Join us"
+  },
   
   "header" :{
     "main_title":["Make","Visible"],

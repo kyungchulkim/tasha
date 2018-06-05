@@ -51,7 +51,7 @@ main .container{
 	position:fixed;
 	bottom: 0px;
 	width:100%;
-	z-index:10000;
+	z-index:0;
 	display:none;
 }
 
@@ -171,6 +171,74 @@ team .pin{
 	color: #ffffff;
 }
 
+/* kakao modal */
+
+.kakao-modal{
+	max-width: 500px;
+	width: 90vw;
+}
+
+.kakao-modal .btn{
+	background-color: #00cadb;
+	height: 62px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	border: none;
+}
+
+.kakao-modal-body{
+	padding: 2rem;
+	padding-top: 0px;
+}
+
+.kakao-modal-header{
+	height: 160px;
+	background-color: #021146;
+	text-align: center;
+	font-size: 60px;
+	color:#ffffff;
+	line-height: 160px;
+	border-top-left-radius: 0.3rem;
+	border-top-right-radius: 0.3rem
+}
+
+.kakao-modal-contents{
+	height: 96px;
+	text-align: center;
+	font-size: 20px;
+	color:#929699;
+	line-height: 96px;
+	font-weight: 600;
+}
+
+/* modal center, size */
+
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+  
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	/* margin-right: -4px; */
+}
+  
+.modal-dialog {
+	/* max-width: 522px;
+	width: 90vw; */
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.modal-content{
+	border: none;
+	opacity: 0.9;
+}
 /* mobile */
 
 

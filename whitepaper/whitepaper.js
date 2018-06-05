@@ -3,7 +3,7 @@ angular.module('whitepaper', [])
     return{
       scope:{
       },
-      templateUrl: 'whitepaper/whitepaper.tpl.html?version=0601',
+      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0605',
       link: function($scope) {
 
         var scene5 = new ScrollMagic.Scene({
@@ -44,7 +44,17 @@ angular.module('whitepaper', [])
           $scope.$parent.$apply();
         });
 
+        $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
         
+        $scope.$on("language", function(event,message){
+
+          if(message === "en"){
+            $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
+          }else if(message === "kr"){
+            $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
+            // $scope.whitepaper = "templates/temco_whitepaper_kr.pdf";
+          }
+        })
       }
     };
   });
