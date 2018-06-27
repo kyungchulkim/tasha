@@ -3,7 +3,7 @@ angular.module('team', ['bio','advisor'])
     return{
       scope:{
       },
-      templateUrl: 'team/team.tpl.html?ver=0605',
+      templateUrl: 'team/team.tpl.html?ver=0627',
       link: function($scope) {
 
         $scope.advisors = [

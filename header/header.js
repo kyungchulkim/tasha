@@ -3,7 +3,7 @@ angular.module('header', [])
     return{
       scope:{
       },
-      templateUrl: 'header/header.tpl.html?ver=0605',
+      templateUrl: 'header/header.tpl.html?ver=0627',
       link: function($scope) {
         var scene1 = new ScrollMagic.Scene({
           triggerElement: "#parallax1",
@@ -17,29 +17,29 @@ angular.module('header', [])
 
        // navbar color 바뀌는 위치를 정하기 위해서 설정
 
-        if(window.innerWidth < 1024)
-        {
-          var headerTransform = new ScrollMagic.Scene({
-            triggerElement: "#headerTransform",
-            offset:400
-          }).setClassToggle(".navbar", "navbar-color")
-            .addTo($scope.$parent.controller);
-        }
-        else if(window.innerWidth < 450)
-        {
-          var headerTransform = new ScrollMagic.Scene({
-            triggerElement: "#headerTransform",
-            offset:350
-          }).setClassToggle(".navbar", "navbar-color")
-            .addTo($scope.$parent.controller);
-        }
-        else{
-          var headerTransform = new ScrollMagic.Scene({
-            triggerElement: "#headerTransform",
-            offset:500
-          }).setClassToggle(".navbar", "navbar-color")
-            .addTo($scope.$parent.controller);
-        }
+        // if(window.innerWidth < 1024)
+        // {
+        //   var headerTransform = new ScrollMagic.Scene({
+        //     triggerElement: "#headerTransform",
+        //     offset:400
+        //   }).setClassToggle(".navbar", "navbar-color")
+        //     .addTo($scope.$parent.controller);
+        // }
+        // else if(window.innerWidth < 450)
+        // {
+        //   var headerTransform = new ScrollMagic.Scene({
+        //     triggerElement: "#headerTransform",
+        //     offset:350
+        //   }).setClassToggle(".navbar", "navbar-color")
+        //     .addTo($scope.$parent.controller);
+        // }
+        // else{
+        //   var headerTransform = new ScrollMagic.Scene({
+        //     triggerElement: "#headerTransform",
+        //     offset:500
+        //   }).setClassToggle(".navbar", "navbar-color")
+        //     .addTo($scope.$parent.controller);
+        // }
         
         var textList;
         

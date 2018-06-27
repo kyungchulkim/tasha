@@ -3,7 +3,7 @@ angular.module('whitepaper', [])
     return{
       scope:{
       },
-      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0605',
+      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0627',
       link: function($scope) {
 
         var scene5 = new ScrollMagic.Scene({

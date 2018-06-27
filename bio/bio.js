@@ -5,7 +5,7 @@ angular.module('bio', [])
         data:'@',
         language:'@'
       },
-      templateUrl: 'bio/bio.tpl.html?ver=0605',
+      templateUrl: 'bio/bio.tpl.html?ver=0627',
       link: function($scope) {
         
         $scope.language = 'en';

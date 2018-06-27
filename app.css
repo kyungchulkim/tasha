@@ -212,6 +212,41 @@ team .pin{
 	font-weight: 600;
 }
 
+/* login modal */
+.modal-body{
+	max-width: 500px;
+	width: 90vw;
+}
+
+.loginDiv .login-btn{
+	height: 74px;
+	font-size: 26px;
+	background-color: #00cadb;
+	margin-bottom: 16px;
+	border : none;
+}
+
+.signup-btn{
+	height: 74px;
+	font-size: 26px;
+	background-color: #001950;
+	border : none;
+}
+
+form .form-control {
+	height: 60px;
+	border: solid 1px #001950;
+	padding-left: 33px;
+	font-size: 20px;
+}
+
+.loginDiv {
+	padding: 67px 48px 51px 48px;
+}
+
+.singupDiv {
+	padding: 67px 48px 51px 48px;
+}
 /* modal center, size */
 
 .modal {

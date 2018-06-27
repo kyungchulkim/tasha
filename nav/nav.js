@@ -3,7 +3,7 @@ angular.module('nav', [])
     return{
       scope:{
       },
-      templateUrl: 'nav/nav.tpl.html?ver=0605',
+      templateUrl: 'nav/nav.tpl.html?ver=0627',
       link: function($scope) {
 
         //navbar
@@ -32,10 +32,10 @@ angular.module('nav', [])
           {
             title:'community'
           }
-          // ,
-          // {
-          //   title:'login'
-          // }
+          ,
+          {
+            title:'usecase'
+          }
         ];
 
         $scope.click_en = {
@@ -45,7 +45,8 @@ angular.module('nav', [])
 
         $scope.click_kr = {
           "color":"#ffffff",
-          "font-weight":"500"
+          "font-weight":"500",
+          "opacity":"0.8"
         }
         
         $scope.$on("language", function (event,message){
@@ -58,7 +59,8 @@ angular.module('nav', [])
 
             $scope.click_kr = {
               "color":"#ffffff",
-              "font-weight":"500"
+              "font-weight":"500",
+              "opacity":"0.8"
             }
           }else if(message === "kr"){
             $scope.click_kr = {
@@ -68,7 +70,8 @@ angular.module('nav', [])
 
             $scope.click_en = {
               "color":"#ffffff",
-              "font-weight":"500"
+              "font-weight":"500",
+              "opacity":"0.8"
             }
           }
         });

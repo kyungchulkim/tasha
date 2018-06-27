@@ -4,7 +4,6 @@
 }
 
 .navbar{
-	
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -97,7 +96,7 @@
 	color: #fff;
 	position: absolute;
 	top: 19px;
-	right: 570px;
+	right: 670px;
 	z-index: 10;
 	cursor: pointer;
 	font-size: 12px;

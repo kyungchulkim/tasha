@@ -18,6 +18,11 @@
 	margin-top: 200px;    
 }
 
+#parallax14 {
+	margin-top: 200px;
+	text-align: center;    
+}
+
 .token-header{
 	text-transform: uppercase;
 	height: 55px;
@@ -326,6 +331,7 @@
 
 .use-case-web{
 	display: block !important;
+	max-width: 100%;
 }
 
 .use-case-mobile{
@@ -337,14 +343,60 @@
 }
 .press-title{
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 10px;
 }
 
 .press-content{
 	color:white;
+	font-size: 14px;
 	font-weight: 300;
+	text-align: left;
 }
 
+#parallax14 ul{
+	padding: 0px;
+}
+
+#parallax14 .item{
+	width: 236px;
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+#parallax14 .item-left{
+	width: 236px;
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.press-image-wrapper{
+	height: 174px;
+}
+
+.press-image{
+	background-position: 50% 50%;
+	background-origin: border-box!important;
+	background-size: cover!important;
+	height: 172px;
+	width: 100%;
+}
+.press-image1{
+	background-image: url("https://cdn-images-1.medium.com/max/1000/1*opdvNM8V6jYg9taXJBTTzw.jpeg");
+}
+
+.press-image2{
+	background-image: url("https://cdn-images-1.medium.com/max/500/1*9z0UFdch2IcnsK-J43Ot0A.png");
+}
+
+.press-image3{
+	background-image: url("https://cdn-images-1.medium.com/max/500/1*6IPo-Rvhmexsi4DVn6SwTw.jpeg");
+}
+
+.press-image4{
+	background-image: url("https://cdn-images-1.medium.com/max/500/1*c49c1V8e6A3gqPLXYr2sGA.png")
+}
 @media only screen and (max-width: 1380px) {
 	/* #parallax9{
 		height: 1900px;
@@ -374,6 +426,27 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+	
+#parallax14 .item{
+	width: 236px;
+	display: inline-block;
+	float: left;
+}
+
+#parallax14 .item-left{
+	width: 236px;
+	display: inline-block;
+	float: right;
+}
+
+#parallax14 ul{
+	columns: 2;
+	padding: 0px;
+	width: 600px;
+	margin: 0 auto;
+}
+
 	.partners-item{
 		width: 33%;
 	}
@@ -586,12 +659,32 @@
 @media only screen and (max-width: 767px) {
 
 	
-	.use-case-web{
+	/* .use-case-web{
 		display: none !important;
 	}
 
 	.use-case-mobile{
 		display: block !important;
+	} */
+
+	#parallax14 ul {
+		width: 320px;
+	}
+
+	#parallax14 .item{
+		width: 140px;
+	}
+
+	#parallax14 .item-left{
+		width: 140px;
+	}
+
+	.press-title{
+		font-size: 16px;
+	}
+
+	.press-content{
+		font-size: 12px;
 	}
 
 	.partners-item{

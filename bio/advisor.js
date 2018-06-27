@@ -4,7 +4,7 @@ angular.module('advisor', [])
       scope:{
         data:'@'
       },
-      templateUrl: 'bio/advisor.tpl.html?ver=0605',
+      templateUrl: 'bio/advisor.tpl.html?ver=0627',
       link: function($scope) {
 
         $scope.language = 'en';

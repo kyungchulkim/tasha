@@ -1,5 +1,5 @@
 var app = angular.module('TashaApp', [
-  'ui.bootstrap','ngAnimate', 'ngSanitize',
+  'ui.bootstrap','ngAnimate', 'ngSanitize', 'ngRoute',
   'pascalprecht.translate',
   'nav',
   'header',
@@ -16,11 +16,10 @@ var app = angular.module('TashaApp', [
 ]);
 
 app.config(['$translateProvider', function ($translateProvider) {
-  // add translation tables
   
   $translateProvider.useStaticFilesLoader({
     prefix: 'lang/locale-',
-    suffix: '.json?ver=0605'
+    suffix: '.json?ver=0627'
   });
 
   $translateProvider.fallbackLanguage('en');
@@ -28,7 +27,21 @@ app.config(['$translateProvider', function ($translateProvider) {
 
   // Enable escaping of HTML
   $translateProvider.useSanitizeValueStrategy('sce');
+
 }]);
+
+app.config(function ($routeProvider,$locationProvider) {
+ 
+  $routeProvider
+    .when("/", {
+      templateUrl:"home/home.tpl.html"
+    })  
+    .when("/usecase", {
+      templateUrl:"usecase/usecase.tpl.html"
+    })
+    .otherwise({redirectTo: '/'});
+  
+});
 
 app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
 
@@ -46,21 +59,8 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
   //nav
 
   function updateTop(mode){
-    // if(mode === 'dark'){
-    //   $('#go_to_top img').attr('src','img/go_to_top_white@2x.png');
-    //   $('#go_to_top_text').css('color','#fff');
-    // }
-    // else{
-    //   $('#go_to_top img').attr('src','img/go_to_top@2x.png');
-    //   $('#go_to_top_text').css('color','#202020');
-  
         $('#go_to_top img').attr('src','img/go_to_top_white@2x.png');
         $('#go_to_top_text').css('color','#fff');
-      // }
-      // else{
-      //   $('#go_to_top img').attr('src','img/go_to_top@2x.png');
-      //   $('#go_to  _top_text').css('color','#202020');
-    
   }
 
   $scope.aniDiv = function(div){
@@ -97,17 +97,30 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
   var isLoading = false;
   $scope.navClicked = function($event,linkId,noScroll){
     
-    if(linkId === 'login'){
-      console.log(linkId);
+    if(linkId === 'usecase'){
+      window.location.href = "/#/usecase";
+      window.scroll(0,0);
       return;
     }
-
     else if(!noScroll){
-      isLoading = true;
-      $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 300, function(){
-        updateTop($scope.activeScene);
-        isLoading = false;
-      });
+      
+      if(window.location.hash != "#/"){
+        window.location.href = "/#/";
+        setTimeout(function() {
+           animateScroll();
+        },100);
+      }else{
+        animateScroll();
+      }
+      
+      function animateScroll(){
+        isLoading = true;
+        $("html, body").animate({scrollTop: $('a[name=' + linkId + ']').offset().top }, 300, function(){
+          updateTop($scope.activeScene);
+          isLoading = false;
+        });
+      }
+
     }
     $('.nav-item').removeClass('active');
     
@@ -153,7 +166,7 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
   $ctrl.open = function (size, parentSelector) {
     var parentElem = parentSelector ? 
       angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-
+    console.log(parentElem);
     var modalInstance = $uibModal.open({
       animation: $ctrl.animationsEnabled,
       ariaLabelledBy: 'modal-title',
@@ -267,7 +280,7 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
   };
 });
 
-app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
+app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, $http) {
   var $ctrl = this;
   
   $ctrl.kakaoLink = function() {
@@ -283,18 +296,88 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) 
   }
 
   $ctrl.loginCheck = function() {
-
-    var passwordReg = new RegExp("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/","i");
     
+    // 패스워드 정규식 
+    // 영문 대소문자 1개 이상 6자리이상 20자리 이하 
+    var passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    // 이메일 정규식
+    var emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
     if($ctrl.user === undefined)
     {
+      $ctrl.passwordErrorCheck = false;
+      $ctrl.emailRequireCheck = false;
       
     }else{
-      console.log($ctrl.user.password);
-      passwordReg.test($ctrl.user.password) ? $ctrl.check = true : $ctrl.check = false;
-      console.log(passwordReg.test("Aa12324534"));
-      console.log(passwordReg.test("sds"));
+      if($ctrl.user.email === undefined){
+        $ctrl.emailRequireCheck = false;
+      }else{
+        $ctrl.emailRequireCheck = true;
+        emailReg.test($ctrl.user.email) ? $ctrl.emailErrorCheck = true : $ctrl.emailErrorCheck = false;
+      }
+      passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
+      
     }
+
+  }
+
+  $ctrl.signup = function($http) {
+    // 패스워드 정규식 
+    // 영문 대소문자 1개 이상 6자리이상 20자리 이하 
+    var passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    // 이메일 정규식
+    var emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+    if($ctrl.user === undefined)
+    {
+      $ctrl.passwordErrorCheck = false;
+      $ctrl.emailRequireCheck = false;
+      console.log("user");
+      return;
+    }
+    else{
+      if($ctrl.user.email === undefined){
+        $ctrl.emailRequireCheck = false;
+      }else{
+        $ctrl.emailRequireCheck = true;
+        emailReg.test($ctrl.user.email) ? $ctrl.emailErrorCheck = true : $ctrl.emailErrorCheck = false;
+      }
+
+      passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
+      if($ctrl.passwordErrorCheck){
+        if($ctrl.user.passwordCheck !== undefined){
+          $ctrl.user.password === $ctrl.user.passwordCheck ? $ctrl.passwordEqualCheck = true : $ctrl.passwordEqualCheck = false;
+
+          if($ctrl.passwordEqualCheck === false)
+           return;
+        }else{
+          $ctrl.passwordEqualCheck = false;
+          return;
+        } 
+      }else{
+        return;
+      }
+    }
+
+    var req = {
+      method: 'POST',
+      url: 'localhost:8080/registerUserJson',
+      headers: {
+        'Content-Type': 'json'
+      },
+      data: $.param({
+        email: $ctrl.user.email,
+        password: $ctrl.user.password
+      })
+    }
+
+    console.log(req);
+    console.log($http);
+    $http.post(req).then(function(resp){
+      console.log(resp);
+    });
 
   }
 

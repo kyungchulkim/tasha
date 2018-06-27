@@ -1,0 +1,204 @@
+.usecase-container{
+    max-width: 1400px;
+    background-color: white;
+    color: black;
+    margin: 72px auto 160px auto;    
+}
+
+.usecase-header{
+    width: 100%;
+    height: 810px;
+    background:url('../img/use_case/nenia/DSC_5197.jpg');
+    position: relative;
+}
+
+.usecase-header-background{
+    background-color: rgba(0, 167, 225, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.usecase-header-title{
+    margin: 224px auto 0px auto;
+    color: white;
+    font-size: 150px;
+    max-width: 840px;
+    padding: 0 20px;
+}
+
+.usecase-header-subtitle{
+    margin: 50px auto 0px auto;
+    color: white;
+    font-size: 60px;
+    max-width: 840px;
+    padding: 0 20px;
+}
+
+.usecase-content{
+    font-family: TimesNewRomanWGL;
+    max-width: 840px;
+    margin: 110px auto 110px auto;
+    padding: 0 20px;
+}
+
+.usecase-content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.usecase-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.usecase-content br {
+    line-height: 50px;
+}
+
+.usecase-subparagraph {
+    font-family: TimesNewRomanWGL;
+    height: 100%;
+    background-color: #eceef1;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.usecase-subparagraph img {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.usecase-subparagraph h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.usecase-subparagraph .row {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.usecase-subparagraph .img-alt{
+  max-width: 800px;
+  margin: 70px auto 0 auto;
+  text-align: left;
+}
+
+.advantage-item {
+  max-width: 220px;
+  margin: 20px auto;
+}
+
+.advantage-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.advantage-item p {
+    font-size: 16px;
+}
+
+.usecase-height850{
+    height: 850px;
+    background-color: #eceef1;
+}
+
+.usecase-subheader{
+    width: 100%;
+    height: 590px;
+    background:url('../img/use_case/nenia/DSC_4832.jpg');
+    background-position-y: 50%;
+    position: relative;
+}
+
+.usecase-subheader2{
+    width: 100%;
+    height: 590px;
+    background:url('../img/use_case/nenia/DSC_4513.jpg');
+    background-position-y: 50%;
+    position: relative;
+}
+
+.usecase-subheader3{
+    width: 100%;
+    height: 590px;
+    background:url('../img/use_case/nenia/DSC_4889.jpg');
+    background-position-y: 50%;
+    position: relative;
+}
+
+.usecase-subheader-background{
+    background-color: rgba(0, 123, 193, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.usecase-subheader-title{
+    margin: 90px auto 30px auto;
+    padding: 0 20px;
+    max-width: 840px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.usecase-subheader-subtitle{
+    margin: 0px auto 0px auto;
+    padding: 0 20px;
+    max-width: 840px;
+    color: white;
+    font-size: 50px;
+    line-height: normal;
+}
+
+.usecase-img{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.img-alt {
+    font-size: 16px !important;
+    color: #504d4d;
+}
+
+.vertical-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    padding : 0 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .usecase-header-title {
+        font-size: 60px;
+    }
+
+    .usecase-header-subtitle {
+        font-size: 30px;
+    }
+
+    .usecase-subheader-title {
+        font-size: 20px;
+    }
+
+    .usecase-subheader-subtitle {
+        font-size: 30px;
+    }
+
+    .vertical-content {
+        height: 80%;
+    }
+}

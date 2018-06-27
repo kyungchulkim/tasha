@@ -3,7 +3,7 @@ angular.module('footer', [])
     return{
       scope:{
       },
-      templateUrl: 'footer/footer.tpl.html?ver=0605',
+      templateUrl: 'footer/footer.tpl.html?ver=0627',
       link: function($scope) {
 
         $scope.kakaoClick = function(){

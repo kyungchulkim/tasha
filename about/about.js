@@ -3,7 +3,7 @@ angular.module('about', [])
     return{
       scope:{
       },
-      templateUrl: 'about/about.tpl.html?ver=0605',
+      templateUrl: 'about/about.tpl.html?ver=0627',
       link: function($scope) {
 
         var scene2 = new ScrollMagic.Scene({
