@@ -19,7 +19,7 @@ app.config(['$translateProvider', function ($translateProvider) {
   
   $translateProvider.useStaticFilesLoader({
     prefix: 'lang/locale-',
-    suffix: '.json?ver=0627'
+    suffix: '.json?ver=0703'
   });
 
   $translateProvider.fallbackLanguage('en');
@@ -163,10 +163,10 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
 
   $ctrl.animationsEnabled = true;
 
-  $ctrl.open = function (size, parentSelector) {
+  $ctrl.openlogin = function (size, parentSelector) {
     var parentElem = parentSelector ? 
       angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-    console.log(parentElem);
+    
     var modalInstance = $uibModal.open({
       animation: $ctrl.animationsEnabled,
       ariaLabelledBy: 'modal-title',
@@ -185,6 +185,27 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
 
   };
   
+  $ctrl.signup = function (size, parentSelector) {
+    var parentElem = parentSelector ? 
+      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+   
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'signup.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      appendTo: parentElem,
+      resolve: {
+        items: function () {
+          return $ctrl;
+        }
+      }
+    });
+  
+
   $ctrl.openkakao = function (size, parentSelector) {
     var parentElem = parentSelector ? 
       angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
@@ -206,26 +227,7 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
     });
   };
 
-  $ctrl.signup = function (size, parentSelector) {
-    var parentElem = parentSelector ? 
-      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-   
-    var modalInstance = $uibModal.open({
-      animation: $ctrl.animationsEnabled,
-      ariaLabelledBy: 'modal-title',
-      ariaDescribedBy: 'modal-body',
-      templateUrl: 'signup.html',
-      controller: 'ModalInstanceCtrl',
-      controllerAs: '$ctrl',
-      size: size,
-      appendTo: parentElem,
-      resolve: {
-        items: function () {
-          return $ctrl.items;
-        }
-      }
-    });
-  
+
     modalInstance.result.then(function (selectedItem) {
       $ctrl.selected = selectedItem;
     }, function () {
@@ -308,21 +310,63 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
     {
       $ctrl.passwordErrorCheck = false;
       $ctrl.emailRequireCheck = false;
-      
+      return;
+
     }else{
       if($ctrl.user.email === undefined){
         $ctrl.emailRequireCheck = false;
+        return;
       }else{
         $ctrl.emailRequireCheck = true;
         emailReg.test($ctrl.user.email) ? $ctrl.emailErrorCheck = true : $ctrl.emailErrorCheck = false;
       }
-      passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
-      
+      // passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
+      if(passwordReg.test($ctrl.user.password)){
+        $ctrl.passwordErrorCheck = true
+      }else{
+        $ctrl.passwordErrorCheck = false;
+        return;
+      }
     }
+
+    var req = {
+      method: 'POST',
+      url: 'http://localhost:8080/loginJson',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      transformRequest: function(obj) {
+          var str = [];
+          for(var p in obj)
+          str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+          return str.join("&");
+      },
+      data: {
+        email: $ctrl.user.email,
+        password: $ctrl.user.password
+      }
+    }
+
+    $http(req
+    ).then(function(resp){
+      console.log(resp.data);
+      let content = resp.data.content;
+      if(content === "successful"){
+        $uibModalInstance.dismiss();
+      }
+      else if(content === "failed_wrong_password"){
+        $ctrl.failed_wrong_password = false;
+      }else if(content === "failed_user_not_exists"){
+        $ctrl.failed_user_not_exists = false;
+      }
+    }, 
+    function(error) { // optional
+      console.log("error",error);
+    });
 
   }
 
-  $ctrl.signup = function($http) {
+  $ctrl.signup = function() {
+    console.log(items);
+    
     // 패스워드 정규식 
     // 영문 대소문자 1개 이상 6자리이상 20자리 이하 
     var passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
@@ -340,16 +384,22 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
     else{
       if($ctrl.user.email === undefined){
         $ctrl.emailRequireCheck = false;
+        return;
       }else{
         $ctrl.emailRequireCheck = true;
-        emailReg.test($ctrl.user.email) ? $ctrl.emailErrorCheck = true : $ctrl.emailErrorCheck = false;
+        // emailReg.test($ctrl.user.email) ? $ctrl.emailErrorCheck = true : $ctrl.emailErrorCheck = false;
+        if(emailReg.test($ctrl.user.email))
+          $ctrl.emailErrorCheck = true;
+        else{
+          $ctrl.emailErrorCheck = false;
+          return;
+        }
       }
 
       passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
       if($ctrl.passwordErrorCheck){
         if($ctrl.user.passwordCheck !== undefined){
           $ctrl.user.password === $ctrl.user.passwordCheck ? $ctrl.passwordEqualCheck = true : $ctrl.passwordEqualCheck = false;
-
           if($ctrl.passwordEqualCheck === false)
            return;
         }else{
@@ -363,25 +413,38 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
 
     var req = {
       method: 'POST',
-      url: 'localhost:8080/registerUserJson',
-      headers: {
-        'Content-Type': 'json'
+      url: 'http://localhost:8080/registerUserJson',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      transformRequest: function(obj) {
+          var str = [];
+          for(var p in obj)
+          str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+          return str.join("&");
       },
-      data: $.param({
+      data: {
         email: $ctrl.user.email,
         password: $ctrl.user.password
-      })
+      }
     }
 
-    console.log(req);
-    console.log($http);
-    $http.post(req).then(function(resp){
-      console.log(resp);
+    $http(req).then(function(resp){
+      console.log(resp.data);
+      if(resp.data.content === "successful"){
+    
+        $uibModalInstance.dismiss();
+        items.openlogin();
+      }else if(resp.data.content === "failed_user_exists"){
+        $ctrl.failed_user_exists = false;
+      }
+    }, 
+    function(error) { // optional
+      console.log("error",error);
     });
 
   }
 
   $ctrl.toSignup = function() {
+    console.log(items);
     $uibModalInstance.dismiss();
     items.signup();
   }

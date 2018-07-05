@@ -69,7 +69,8 @@
 	font-stretch: normal;
 	letter-spacing: normal;
 	line-height: normal;
-	text-align: justify;
+	/* Chris 요청 */
+	/* text-align: justify; */
 	color: #ffffff;
 }
 

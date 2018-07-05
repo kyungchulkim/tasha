@@ -1,4 +1,4 @@
-  {
+﻿  {
   "login" : {
     "title" : "Login"
   },
@@ -11,36 +11,36 @@
   "header" :{
     "main_title":["Make","Visible"],
     "title":["Supply Chain Management Reimagined",
-             "TEMCO delivers trusted data from the point of origin<br>to the point of consumption"
+             "TEMCO connects valuable product data from point of<br>origin to point of consumption"
             ],
     "title_m":
-      "TEMCO delivers trusted data from<br>the point of origin to the point of consumption"
+      "TEMCO connects valuable product data from<br>point of origin to point of consumption"
     
   },
   
   "about1" : {
     "title":"REVOLUTIONARY<br />SOLUTION",
-    "icon_title":["Connected","Credible","Transparent","Traceable","INTELLIGENCE"],
-    "icon_contents":["Track, share, and access real time data anywhere anytime through highly linked blockchain technology",
-                    "Vendors are background checked through our Vendor Verification System (VVS).",
-                    "Data collected through smart contract in blockchain is safe and transparent.",
-                    "Trace your purchase back to its origin. Any dispute can be reliably and promptly resolved.",
-                    "Gain business intelligence by taming the big data beast."]
+    "icon_title":["Connected","Credible","Transparent","Traceable","Insightful"],
+    "icon_contents":["Track, share, and access real-time data anywhere anytime through highly linked blockchain.",
+                    "Trust your product vendors. They are verfied by our Vendor Verification System (VVS).",
+                    "Data collected through smart contract in blockchain is immutable and transparent.",
+                    "Trace your product back to its origin. Problems are reliably and quickly resolved.",
+                    "Develope new business insights using Big data."]
   },
     
   "about2" : {
     "title":"TEMCO<br />ADVANTAGE",
-    "icon_title":["Verified Vendors","Linked Data","Real Reviews","Marketplace","Data Analytic Tool"],
-    "icon_contents":["TEMCO only partners with businesses cleared by the Vendor Verification System (VVS)",
-                    "Smart tags track the entire supply chain process from point of origin to the final consumer, helping companies boost efficiency and cut costs.",
-                    "Consumers who purchased the product can post reviews. Using blockchain technology for verification, TEMCO eliminates the risk of fake reviews.",
-                    "TEMCO marketplace offers all the features above. You don't have to look other places to get more information.",
-                    "BI Analytic Tool is built for the small and medium size business, offering enterprise level software that provides categorization and visualization of supply chain data."]
+    "icon_title":["Verified Vendors","Linked Data","Real Reviews","Marketplace","Business Intelligence"],
+    "icon_contents":["TEMCO only partners with proven businesses using the Vendor Verification System (VVS).",
+                    "Smart tags track the entire supply chain process from point of origin to final consumers. We help companies operate efficiently while reducing cost.",
+                    "Consumers who purchased a product can post reviews. Using blockchain for verification, TEMCO eliminates the risk of fake reviews.",
+                    "Everything comes together at TEMCO marketplace. You don't have to look other places to get more information.",
+                    "Business Intelligence Tool offers business insights and new opportunities. Information is organized and visualized for decision making."]
   },
   
   "ourMission" : {
     "title":"our mission",
-    "contents":"Most companies do not have sufficient infrastructure to provide supply chain management data to their customers. Consumers want more information about their  purchases, but they only have access to basic shipping logs and estimated data.<br /><br />The Transportation Enterprise Merchandise Customer Organization (TEMCO)  Project will revolutionize supply chain management through innovative technology-smart contracts and blockchain.<br /><br />Our project will provide greater transparency and highly-linked data across the entire supply chain process to deliver trustworthy information that empowers businesses and consumers."
+    "contents":"Small and medium-sized enterprises (SMEs) do not have sufficient infrastructure or financial flexibility to offer supply chain management data to their customers. On the other hand, customers want more information about their orders more than ever. In the existing system, they only have access to basic shipping logs and estimations.<br /><br />Using blockchain and smart contracts, the Transportation Enterprise Merchandise Customer Organization (TEMCO) Project will revolutionize supply chain management through innovative technology.<br /><br />Our project will provide greater transparency and reliability across the entire supply chain process to deliver trustworthy information that empowers businesses and consumers."
   },
   
   "whitePaper" : {
@@ -55,12 +55,12 @@
 
   "technology" : {
     "title" : "technology",
-    "contents" : "TEMCO pairs proven system with innovative technology by adopting a hybrid model that combines blockchain technology and Interplanetary File System (IPFS). Smart contracts are based on Blockchain. The design will achieve efficient storage and efficient data processing."
+    "contents" : "TEMCO combines innovative technologies - smart contracts, blockchain, and big data. Data is uploaded to blockchain using smart contracts and then migrated to big data. This design enables businesses to maximize the use of valuable information."
   },
 
   "tokenModel" : {
     "title" : "token model",
-    "contents" : "TEMCO tokens and incentive points are awarded as a token of appreciation for your participation in the community. To maintain a sustainable system, monthly top reviewers, highly ranked businesses, and community-voted feedback writers are rewarded. You can spend the tokens in the TEMCO marketplace for your next purchase."
+    "contents" : "TEMCO tokens and incentive points are rewarded to users when they participate in the community. To motivate users, we give more TEMCO tokens and incentive points to monthly top reviewers, highly rated businesses, and community-voted feedback writers. They can spend the tokens in the TEMCO marketplace."
   },
 
   "roadMap" : [
@@ -93,15 +93,15 @@
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Initiate TEMCO Platform Pilot Test with Partners",
-      "contents2" : ""
+      "contents1" : "Prototype TEMCO Platform",
+      "contents2" : "Pilot Test with Partners"
     },
     {
       "year" : "1Q 2019",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Begin Developing Decentralized Distribution Network",
+      "contents1" : "Begin Developing Decentralized Supply Chain Network",
       "contents2" : ""
     },
     {
@@ -109,31 +109,31 @@
       "sub1" : "Smart Scan and Voting System",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Consumer App Launch",
-      "contents2" : ""
+      "contents1" : "Release consumer application",
+      "contents2" : "Release business intelligence tool"
     },
     {
       "year" : "3Q 2019",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "E-commerce Partner's Mall and Points Mall Launch",
-      "contents2" : "Initiate TEMCO Blockchain API Service"
+      "contents1" : "Launch Partner's Mall and Points Mall",
+      "contents2" : "Begin TEMCO Blockchain API Service"
     },
     {
       "year" : "4Q 2019",
       "sub1" : "Vendor Verification System",
       "sub2" : "Smart Contract (transfer, compensation, and penalty agreements etc.)",
       "sub3" : "",
-      "contents1" : "Vendor App Launch",
+      "contents1" : "Launch vendor application",
       "contents2" : ""
     },
     {
       "year" : "1Q 2020",
-      "sub1" : "Data Warehouse(Hadoop), Analytic Engine(Spark)",
+      "sub1" : "Data Warehouse(Hadoop), Analytics Engine(Spark)",
       "sub2" : "Data Visualization Tool",
       "sub3" : "PKI Tool",
-      "contents1" : "TEMCO Big Data Platform & BI Tool Release",
+      "contents1" : "Begin TEMCO Big Data Service",
       "contents2" : ""
     },
     {
@@ -154,5 +154,114 @@
   "footer" : {
     "contents":"SUPPLY CHAIN MANAGEMENT REIMAGINED",
     "copyright":"2018 COPYRIGHT TEMCO"
+  },
+
+  "usecase" : {
+    "nenia" : {
+      "header-title" : "USE CASE"
+      ,"header-subtitle" : "NENIA X TEMCO"
+
+      ,"content-h2-1" : "TEMCO’s business operation"
+      ,"content-p-1" : "TEMCO is developing a blockchain based supply chain management platform. By using blockchain technology, isolated supply chain systems are connected under one platform. Based on the data stored in blockchain, TEMCO offers a business intelligence tool for companies to make better strategic decisions. For consumers, TEMCO provides real-time supply chain information and an ecommerce platform with cryptocurrency payment feature."
+      ,"content-h2-2" : "Why blockchain technology for supply chain network?"
+      ,"content-p-2" : "Existing supply chain management systems are siloed, and information is disconnected among supply chain participants. To solve this problem, TEMCO is taking advantage of blockchain technology to connect every participant under one platform from manufacturing to final consumers."
+      
+      ,"subparagraph1-title":"TEMCO ADVANTAGE"
+      ,"subparagraph1-h2-1":"Transparent"
+      ,"subparagraph1-p-1":"Data collected through smart contract in blockchain are immutable and transparent"
+      ,"subparagraph1-h2-2":"Connected"
+      ,"subparagraph1-p-2":"Track, share, and access real-time data anywhere, anytime through highly linked blockchain"
+      ,"subparagraph1-h2-3":"Trust"
+      ,"subparagraph1-p-3":"All the information from manufacturer to retail is visible & accessible"
+      
+      ,"content-h2-3" : "About the case study"
+      ,"content-p-3" : "Partnering with Nenia, a producer/retailer of eco-friendly organic products, TEMCO linked all the information from the initial production stage to final delivery step in blockchain. The TEMCO platform enables Nenia to depart from their siloed systems and to benefit from efficient data management and higher customer satisfaction."
+      ,"content-p-3-1" : "Nenia uses an ERP system for product management. Due to the isolated nature of ERP systems, connecting entire supply chain process is difficult to determine where the problems occur at each stage. In case of any problem, using the existing system is difficult to find and validate where and how the problem originated. Also, consumers were not able to realize and appreciate the company’s eco-friendly, organic value proposition. By using TEMCO platform, Nenia acquired transparency of their supply chain network and that information was also made available to consumers."
+     
+      ,"image-alt-1" : "Nenia’s current process mapping – product flow, data flow"
+      
+      ,"content-h2-4" : "Nenia’s current system & opportunities"
+      ,"content-p-4" : "Nenia was ideal for the use case study because the company is directly responsible for the entire supply chain process from purchasing of organic ingredients to delivery of the products at retail stores. However, under the current system, it was not easy to communicate eco-friendly image to consumers. To strengthen Nenia’s unique value proposition, TEMCO suggested blockchain technology that allows all supply chain participants to access each product’s journey to final consumers."
+      
+      ,"subheader1-title":"Pilot Phase 1"
+      ,"subheader1-subtitle":"Manufacturing Facility:<br>QR Code Generation &<br>Product Information Registration"
+      
+      ,"content-p-5" : "All Nenia’s products are sourced from organic ingredients. One of the most popular items is “Woori-mil dumplings”, which are made from 100% pesticide-free Korean wheat and antibiotic-free pork."
+      
+      ,"image-alt-2" : "Locally grown organic wheat and antibiotic-free pig"
+      
+      ,"content-p-6" : "Although Nenia is producing high quality, healthy food products from organic ingredients such as certified antibiotic-free pork and locally produced Korean wheat, do consumers trust Nenia’s products and purchase from them?"
+      ,"content-p-6-1" : "According to the Label Insight Food Revolution study in 2016, 94% of consumers picked product ingredient and transparency in product production as important criteria for purchasing food products."
+      
+      ,"image-alt-3" : "Certifications for antibiotic-free pork and pesticide-free wheat"
+     
+      ,"content-p-7" : "Imagine how the world will change if manufacturers, supply chain participants, and final consumers can all share the same information. TEMCO and Nenia are working together to solve problems progressively solving problems through supply chain management on blockchain. As a start, raw ingredient information for “Woori-mil dumplings” was uploaded to blockchain."
+
+      ,"content-h2-8" : "Food Washing Process"
+      ,"content-p-8" : "Organic vegetables are thoroughly washed with clean water and peeled off prior to the manufacturing process"
+
+      ,"content-p-9" : "Verified by data stored in blockchain, organic raw ingredients are transformed into highly trusted food products through an eco-friendly manufacturing process. All products go through HACCP and are manufactured in a sanitary and quality-controlled environment. They are also packaged in the same manner. Because of such effort, consumers no longer worry about the food quality."
+
+      ,"image-alt-4" : "Dumplings are processed in a sanitary and quality-controlled environment"
+      ,"content-p-10" : "In the existing system, product information such as an antibiotic-free label is lightly displayed on the product packages. However, that information is limited in offering details to the consumers, so it is not effective for communicating the quality. Using blockchain enables storing complete product information including various certifications (eg. Antibiotic-free, pesticide-free, GAP, etc.) and other important facts. Through sharing such information on public blockchain, Nenia’s products become more accessible and trusted by final consumers."
+
+      ,"image-alt-5" : "Dumpling manufacturing process ends with sanitary packaging"
+      ,"content-p-11" : "To make this process possible, QR code is created and printed from the TEMCO’s vender application and attached to each product package. By scanning the QR code, anyone can easily access the product information."
+
+      ,"image-alt-6" : "Nenia’s employee registering product information through TEMCO’s vender application"
+      ,"content-p-12" : "All the major product information is initially uploaded into blockchain before arriving to the main distribution facility. That information becomes basis for tracking the products at later stages."
+
+      ,"subheader2-title":"Pilot Phase 2"
+      ,"subheader2-subtitle":"The Distribution Facility:<br>Product Transfer"
+
+      ,"content-p-13" : "All manufactured products are shipped to the Nenia’s distribution facility in Gwangju, Korea. Each product is stored based on the product’s characteristics such as temperature and humidity requirements. Since all Nenia’s products do not contain chemical additives, they are more sensitive to the storage environment. Typically, Nenia’s products are refrigerated or stored frozen."
+
+      ,"image-alt-7" : "Nenia’s office staff running verification process when shipments arrive from the manufacturing factory"
+      ,"content-p-14" : "As the products arrive to the distribution facility, they are stored and maintained under a strict guideline using ERP. The company also conducts inventory check twice a month to verify the validity of their inventory. However, inventory check usually takes a lot of time and effort in the existing system."
+
+      ,"image-alt-8" : "Nenia’s employees conducting an inventory check and regular inspection"
+      ,"content-p-15" : "Using blockchain to store information including inventory records will enable Nenia to efficiently manage its inventory and to improve its quality control process. without incurring extra effort or cost."
+
+      ,"image-alt-9" : "Nenia's All-Natural and Organic Dumpling"
+      ,"content-p-16" : "When the orders come in, products in the distribution facility are shipped to the retailers including company-owned store in Bukchon, Seoul and other franchises. For frozen products, dry ice is added to the package to maintain frozen state until they arrive to the retailers and/or customers. After the packaging process, QR codes placed on the package."
+
+      ,"image-alt-10" : "Products are being prepared for second shipping to retail stores"
+      ,"content-p-17" : "After products are packaged, the shipments undergo a final quality evaluation before leaving the distribution facility. This process further increases consumers’ trust in Nenia’s products and its brand."
+
+      ,"image-alt-11" : "All Nenia’s products are shipped through a cold chain and stored at low temperature"
+
+      ,"subheader3-title":"Pilot Phase 3"
+      ,"subheader3-subtitle":"Company-Owned Store in Bukchon:<br>Accessing Product Information"
+
+      ,"content-p-18" : "Nowadays, consumers are interested in healthier life style, have smart consumption habits, and are thoroughly knowledgeable about products before purchasing. In other words, consumers don’t just pay for something because they want or need it. They still check the details and compare with other products to see the differences and find out which one is better."
+
+      ,"image-alt-12" : "Bukchon market is becoming more popular due to strong demand for high quality organic products"
+      ,"content-p-19" : "Using a blockchain based platform satisfies consumers’ need for complete information in addition to building loyalty between businesses and smart consumers."
+
+      ,"image-alt-13" : "Using blockchain isolated supply chain systems are connected. The entire supply chain information about the product is in blockchain"
+
+      ,"content-p-20" : "Capturing and sharing production, the processes and product data with customers are essential for businesses to earn consumers’ trust."
+
+      ,"content-h2-21" : "Convenient and Accessible"
+      ,"content-p-21" : "From manufacturing to consumers, the entire supply chain management information is easily accessible from TEMCO’s smartphone application"
+
+      ,"content-p-22" : "Using TEMCO’s smartphone application, consumers can access product information by scanning the QR code on the product package. By sharing all the information, Nenia can build a high level of consumer trust."
+
+      ,"image-alt-14" : "Increasing product value and brand awareness through blockchain"
+      
+      ,"content-p-23" : "From manufacturing to retail, information stored in blockchain increases the reliability of Nenia’s products. As a result, consumers feel comfortable making a purchase."
+
+      ,"content-h2-24" : "Living Healthy with TEMCO"
+      ,"content-p-24" : "Using smart scan, consumers can access the entire supply chain information about the purchased product."
+      
+      ,"content-p-25" : "Through Nenia’s use case, TEMCO and Nenia confirmed that production, distribution, and supply chain processes can be monitored in real time. By pilot testing TEMCO’s solution, Nenia saw an opportunity to improve it’s value proposition through fully integrated system."
+
+      ,"content-h2-26" : "Potential benefits using TEMCO platform"
+      ,"content-p-26" : "Manufactures can now understand where and how their products are transferred. Blockchain based supply chain network informs where the problems occurred, and participants can quickly find out how to solve the problems. In addition, manufacturers can check the storage conditions through TEMCO’s application regardless of the place. Through blockchain based supply chain network, the manufacturer can maintain the high quality of the products and communicate with the responsible party to address any issues or problems. Through such effort, businesses will gain consumer’s trust by offering higher quality products."
+      ,"content-p-26-1" : "TEMCO’s vendor application will simplify the process of uploading data. The application is also easy to use as well, it can be used by anyone. By using the application, no manual entry is needed, reducing any human errors. With the innovation of blockchain and IoT technology, information can be automatically entered and thus, eliminate redundancy of manual input and validation."
+      ,"content-p-26-2" : "Until now, accessing product information and supply chain data was difficult. However, scanning the QR code through TEMCO’s consumer application will not only show basic product information, but also raw ingredients used, manufacture information, distribution records and shipping data. This complete connection of all data will reduce the barrier in purchasing and will eventually lead to higher customer satisfaction."
+      ,"content-p-26-3" : "More information about products are available through TEMCO’s consumer application, and this will increase the probability of consumer purchases. Businesses like Nenia can benefit greatly from the TEMCO platform, gaining consumer loyalty and brand awareness."
+
+    }
   }
 }

@@ -3,7 +3,7 @@ angular.module('technology', [])
     return{
       scope:{
       },
-      templateUrl: 'technology/technology.tpl.html?ver=0627',
+      templateUrl: 'technology/technology.tpl.html?ver=0703',
       link: function($scope) {
         var scene6 = new ScrollMagic.Scene({
           triggerElement: "#parallax6",
