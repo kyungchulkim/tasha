@@ -482,6 +482,7 @@
 
 	#ourMissionText{
 		max-width: 500px;
+		width: auto;
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;

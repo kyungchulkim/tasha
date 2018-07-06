@@ -1,7 +1,5 @@
 #parallax1{
-	/* background-image: url(../img/par1.png); */
 	background-position-x:left;
-	/* min-height:1200px; */
 	color:#fff;
 	padding-top:60px;
 	padding-bottom: 250px;
@@ -119,16 +117,6 @@
 	background-repeat:no-repeat; */
 }
 
-#headerBinary{
-	position: absolute;
-	right: 65px;
-	top: 35px;
-	width:210px;
-	height:595px;
-	background-image: url(../img/headerBinaryCode.png);
-	background-repeat:no-repeat;
-}
-
 .change-text{
 	width: 18vw
 }
@@ -157,12 +145,6 @@
 	.header3-kr{
 		font-size: 16px;
 		height: 32px;
-	}
-
-	#headerBinary{
-		position: absolute;
-		right: 65px;
-		top: 35px;
 	}
 }
 
@@ -195,14 +177,6 @@
 		right:-150px;
 		
 	}
-
-	#headerBinary{
-		position: absolute;
-		right: 35px;
-		top: 35px;
-		--width:150px;
-	}
-
 }
 
 @media (max-width: 1200px) {
@@ -233,14 +207,6 @@
 		right:-150px;
 
 	}
-
-	#headerBinary{
-		position: absolute;
-		right: 35px;
-		top: 35px;
-		--width:150px;
-	}
-
 }
 
 @media (max-width: 1024px) {
@@ -252,10 +218,6 @@
 
 	#parallax1{
 		padding-bottom: 0px;
-	}
-
-	#headerBinary{
-		display:none;
 	}
 
 	#headerCube{
@@ -310,13 +272,6 @@
 	}
 
 }
-/* 
-@media only screen and (max-width: 818px) {
-
-	.header1{
-		line-height: 1 !important;
-	}
-} */
 
 @media (max-width: 767px) {
 
@@ -327,10 +282,6 @@
 
 	#parallax1{
 		padding-bottom: 0px;
-	}
-
-	#headerBinary{
-		display:none;
 	}
 
 	#headerCube{
@@ -395,10 +346,6 @@
 		margin-top: 30px;
 	}
 
-	#headerBinary{
-		display:none;
-	}
-
 	#headerCube{
 		width: 250px;
 		margin-top: 70px;
@@ -453,152 +400,3 @@
 
 	
 }
-/* iphone 6 7 8 */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
-
-	#headerCubeLeft {	
-		top: 80px; 		
-	}
-
-	#headerCube {
-		top: 300px;	
-	}
-
-	.header1{
-		font-size:24px;
-		height :33px;
-		margin-bottom: 18px;
-	}
-
-	.header2{
-		font-size:12px;
-		height :16px;
-		margin-bottom: 15px;
-	}
-
-	.header3{
-		font-size:8px;
-		height :41px;
-		display:none;
-	}
-
-	.header3m{
-		font-size:8px;
-		height :41px;
-		display: block;
-	}
-} */
-
-/* iphone 6 7 8 plus */
-/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-	
-	#headerCubeLeft {	
-		top: 80px; 		
-	}
-
-	#headerCube {
-		top: 370px;
-		margin-right: 30px;
-	}
-
-	.header1{
-		font-size:24px;
-		height :33px;
-		margin-bottom: 18px;
-	}
-
-	.header2{
-		font-size:12px;
-		height :16px;
-		margin-bottom: 15px;
-	}
-
-	.header3{
-		font-size:8px;
-		height :41px;
-		display:none;
-	}
-
-	.header3m{
-		font-size:8px;
-		height :41px;
-		display: block;
-	}
-} */
-
-/* iphone x  */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
-
-	#headerCubeLeft {
-		left: -0px; 
-		top: 100px; 
-		width: 250px;
-	}
-
-	#headerCube {
-		top: 350px;
-		width: 630px;
-	}
-
-	.header1{
-		font-size:24px;
-		height :33px;
-		margin-bottom: 18px;
-	}
-
-	.header2{
-		font-size:12px;
-		height :16px;
-		margin-bottom: 15px;
-	}
-
-	.header3{
-		font-size:8px;
-		height :41px;
-		display:none;
-	}
-
-	.header3m{
-		font-size:8px;
-		height :41px;
-		display: block;
-	}
-} */
-
-/* galxay  */
-/* @media only screen and (max-width: 360px) {
-
-	#headerCubeLeft {	
-		top: 80px !important; 		
-	}
-
-	#headerCube {
-		top: 300px !important;
-		margin-right: 0px !important;
-	}
-
-	.header1{
-		font-size:24px;
-		height :33px;
-		margin-bottom: 18px;
-	}
-
-	.header2{
-		font-size:12px;
-		height :16px;
-		margin-bottom: 15px;
-	}
-
-	.header3{
-		font-size:8px;
-		height :41px;
-		display:none;
-	}
-
-	.header3m{
-		font-size:8px;
-		height :41px;
-		display: block;
-
-	}
-} */

@@ -1,15 +1,9 @@
 #parallax7 {
 	background-position-x:center;
-	/* height: 1198px; */
 	position:relative;
 	z-index:999;
 	margin-top:-278px;
-	/* padding-top:300px; */
 }
-
-/* #parallax7 .content{
-	width: 720px;
-} */
 
 #phone{
 	position:relative;z-index:2;
@@ -18,7 +12,6 @@
 }
 
 #prototypeBGGraphic{
-	/* background: url('../img/BG ELEMENTS_PROTOTYPE.png'); */
 	width: 1200px;
 	height: 1175px;
 	position: absolute;
@@ -45,14 +38,6 @@
 
 	margin-right:125px;
 	margin-left:125px;
-}
-
-#download-button{
-	background:url('../img/BUTTON BASE@2x.png');
-	background-repeat:no-repeat;
-	text-align:center;
-    width: 255px;
-    height: 71px;
 }
 
 .video720p{
@@ -107,33 +92,6 @@
 	}
 }
 
-/* @media only screen and (max-width: 900px) {
-	
-	#phone{
-		width:320px;
-		height:500px;
-	}
-
-	#prototypeBGGraphic{
-		top: -665px;
-	}
-
-	#prototypeHeader{
-		margin-top:400px;
-	}
-}
-
-
-@media only screen and (max-width: 770px) {
-
-	#prototypeBGGraphic{
-		margin-left:-700px;
-		top: -780px;
-	}
-
-} */
-
-
 @media only screen and (max-width: 450px) {
 	
 	#parallax7 {
@@ -163,147 +121,3 @@
 		float: left;
 	}
 }
-
-
-/* iphone 6 7 8 */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {	
-	#dot-rev-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-	
-	
-	#download-button{
-		width: 120px;
-		height: 30px;
-	}
-
-	#prototypeHeader {
-		margin-top: 150px;
-	}
-
-	
-	#download-desc{
-		padding-top: 8px !important;
-	}
-
-	#parallax7{
-		height: 1000px;
-	}
-
-	#protoContainer{
-		text-align: center;
-	}
-
-	#phone{
-		margin-left: auto; 
-	}
-
-} */
-
-/* iphone 6 7 8 plus */
-/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-	#dot-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-	
-	#download-button{
-		width: 120px;
-		height: 30px;
-	}
-
-	#prototypeHeader {
-		margin-top: 150px;
-	}
-
-	
-	#download-desc{
-		padding-top: 8px !important;
-	}
-
-	#parallax7{
-		height: 1000px;
-	}
-
-	#protoContainer{
-		text-align: center;
-	}
-
-	#phone{
-		margin-left: auto; 
-	}
-} */
-
-
-/* iphone x  */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
-	#dot-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	
-	#download-button{
-		width: 120px;
-		height: 30px;
-	}
-
-	#prototypeHeader {
-		margin-top: 150px;
-	}
-
-	
-	#download-desc{
-		padding-top: 8px !important;
-	}
-
-	#parallax7{
-		height: 1000px;
-	}
-
-	#protoContainer{
-		text-align: center;
-	}
-	
-	#phone{
-		margin-left: auto; 
-	}
-} */
-
-/* galxay  */
-/* @media only screen and (max-width: 360px) {
-	#dot-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#download-button{
-		width: 120px;
-		height: 30px;
-	}
-
-	#prototypeHeader {
-		margin-top: 150px;
-	}
-
-	#download-desc{
-		padding-top: 8px !important;
-	}
-
-	#parallax7{
-		height: 1000px;
-	}
-
-	#protoContainer{
-		text-align: center;
-	}
-
-	#phone{
-		margin-left: auto; 
-	}
-} */

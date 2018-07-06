@@ -2,7 +2,7 @@
 	max-width: 230px;
 	height: 422px;
 	margin:0 auto;
-	background-image: url(../img/rectangle-13.png);
+	background-image: url(../img/bio-bg.png);
 	background-repeat: no-repeat;
 }
 
@@ -10,7 +10,7 @@
 	max-width: 200px;
 	height: 422px;
 	margin:0 auto;
-	background-image: url(../img/rectangle-13.png);
+	background-image: url(../img/bio-bg.png);
 }
 
 .portrait .linkedin{
@@ -262,46 +262,4 @@
 		background-color: transparent;
 		background-blend-mode: multiply;
 	}
-
-	/* .portrait{
-		max-width: 115px;
-		height: 211px;
-		margin:0 auto;
-		background-image: url(../img/rectangle-13.png);
-	}
-
-	.mug {
-		padding-top: 14.5px;
-		padding-right: 20px;
-		position: relative;
-	}
-
-	.mug-inner {
-		height: auto;
-		max-width: 130px;
-		background-size: cover;
-		padding-bottom: 100%;
-	}
-
-	.portrait .linkedin {
-		right: 2px;
-		bottom: -35px;
-		margin-bottom: 22px;
-		position: absolute;
-	}
-
-	.team-info-wrapper {
-		margin-left: 15px;
-	}
-	
-	.team-name{
-		font-size: 12px;
-	}
-
-	.team-line {
-		width: auto;
-		margin-right: 20%;
-		height: 1px;
-		background-color: #00fff7;
-	} */
 }

@@ -59,7 +59,7 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
   //nav
 
   function updateTop(mode){
-        $('#go_to_top img').attr('src','img/go_to_top_white@2x.png');
+        $('#go_to_top img').attr('src','img/go_to_top_white.png');
         $('#go_to_top_text').css('color','#fff');
   }
 
