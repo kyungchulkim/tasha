@@ -19,7 +19,7 @@ app.config(['$translateProvider', function ($translateProvider) {
   
   $translateProvider.useStaticFilesLoader({
     prefix: 'lang/locale-',
-    suffix: '.json?ver=0703'
+    suffix: '.json?ver=0706'
   });
 
   $translateProvider.fallbackLanguage('en');

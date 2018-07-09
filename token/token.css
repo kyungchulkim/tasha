@@ -346,6 +346,9 @@
 	font-size: 16px;
 	text-align: left;
 	margin-top: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .press-content{
@@ -379,7 +382,8 @@
 	background-position: 50% 50%;
 	background-origin: border-box!important;
 	background-size: cover!important;
-	height: 172px;
+	/* height: 172px; */
+	height: 130px;
 	width: 100%;
 }
 .press-image1{
@@ -397,6 +401,12 @@
 .press-image4{
 	background-image: url("https://cdn-images-1.medium.com/max/500/1*c49c1V8e6A3gqPLXYr2sGA.png")
 }
+
+#tokenWeb {
+	float: none;
+	margin: 0 auto;
+}
+
 @media only screen and (max-width: 1380px) {
 	/* #parallax9{
 		height: 1900px;
@@ -549,17 +559,11 @@
 		margin-top: 0px;
 	}
 
+
 	#tokenText1{	
-		width: 500px;
-		
+		max-width: 500px;
+		width: auto;
 		font-size: 16px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: justify;
-		color: #ffffff;
 		padding-top: 22px;
 		margin: 0 auto 84px auto;
 	}
@@ -667,20 +671,28 @@
 		display: block !important;
 	} */
 
+	.press-image { 
+		height: 20vw;
+	}
+
 	#parallax14 ul {
-		width: 320px;
+		width: 80%;
 	}
 
 	#parallax14 .item{
-		width: 140px;
+		width: 100%;
 	}
 
 	#parallax14 .item-left{
-		width: 140px;
+		width: 100%;
 	}
 
 	.press-title{
 		font-size: 16px;
+		height: 24px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	.press-content{
@@ -895,6 +907,14 @@
 
 
 @media only screen and (max-width: 450px) {
+
+	.press-title {
+		font-size: 12px;
+		height: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 
 	.use-case-wrapper {
 		max-width: 350px;

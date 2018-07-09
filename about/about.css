@@ -491,6 +491,7 @@
 		letter-spacing: normal;
 		text-align: justify;
 		color: #ffffff;
+		margin: 0 30px;
 	}
 
 	#parallax3{
@@ -498,7 +499,7 @@
 	}
 	
 	#parallax4 {
-		margin-top: 250;
+		margin-top: 250px;
 	}
 
 	.aboutVideo{

@@ -3,7 +3,7 @@ angular.module('nav', [])
     return{
       scope:{
       },
-      templateUrl: 'nav/nav.tpl.html?ver=0703',
+      templateUrl: 'nav/nav.tpl.html?ver=0706',
       link: function($scope) {
 
         //navbar

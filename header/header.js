@@ -3,7 +3,7 @@ angular.module('header', [])
     return{
       scope:{
       },
-      templateUrl: 'header/header.tpl.html?ver=0703',
+      templateUrl: 'header/header.tpl.html?ver=0706',
       link: function($scope) {
         var scene1 = new ScrollMagic.Scene({
           triggerElement: "#parallax1",
