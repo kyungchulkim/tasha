@@ -1,23 +1,44 @@
 angular.module('whitepaper', [])
-  .directive('whitepaper', function(){
-    return{
-      scope:{
+  .directive('whitepaper', function () {
+    return {
+      scope: {
       },
-      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0706',
-      link: function($scope) {
+      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0717',
+      link: function ($scope) {
 
         var scene5 = new ScrollMagic.Scene({
           triggerElement: "#parallax5",
-          offset:-150
-        }).setVelocity("#parallax5 .content", {opacity: 1.0}, {duration: 400})
+          offset: -150
+        }).setVelocity("#parallax5 .content", { opacity: 1.0 }, { duration: 400 })
           //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var sceneTop5 = new ScrollMagic.Scene({
           triggerElement: "#parallax5",
-          triggerHook:1,
-          offset:750
+          triggerHook: 1,
+          offset: 750
         })//.addIndicators()
+          .addTo($scope.$parent.controller);
+
+        var scene13 = new ScrollMagic.Scene({
+          triggerElement: "#parallax13",
+          offset: -300
+        }).setVelocity("#parallax13 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
+          .addTo($scope.$parent.controller);
+
+        var scene14 = new ScrollMagic.Scene({
+          triggerElement: "#parallax14",
+          offset: -300
+        }).setVelocity("#parallax14 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
+          .addTo($scope.$parent.controller);
+
+        var scene15 = new ScrollMagic.Scene({
+          triggerElement: "#parallax15",
+          offset: -300
+        }).setVelocity("#parallax15 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('whitepaper');
@@ -44,17 +65,58 @@ angular.module('whitepaper', [])
           $scope.$parent.$apply();
         });
 
-        $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
-        
-        $scope.$on("language", function(event,message){
+        scene13.on("enter", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
 
-          if(message === "en"){
-            $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
-          }else if(message === "kr"){
-            $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
-            // $scope.whitepaper = "templates/temco_whitepaper_kr.pdf";
-          }
-        })
+          $scope.$parent.aniDiv("#parallax13");
+        });
+
+        scene13.on("leave", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+        });
+
+        scene14.on("enter", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax14");
+        });
+
+        scene14.on("leave", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+        });
+
+        scene15.on("enter", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+
+          $scope.$parent.aniDiv("#parallax14");
+        });
+
+        scene15.on("leave", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+        });
+
+        $scope.whitepaper_en = "templates/temco_whitepaper_en.pdf";
+        $scope.whitepaper_kr = "templates/temco_whitepaper_kr.pdf";
+        $scope.fastfact_en = "templates/fast_fact_one_page_en.pdf";
+        $scope.fastfact_kr = "templates/fast_fact_one_page_kr.pdf";
+
+        // $scope.$on("language", function(event,message){
+
+        //   if(message === "en"){
+        //     $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
+        //     $scope.fastfact = "templates/temco_whitepaper_eng.backup.180704.pdf";
+        //   }else if(message === "kr"){
+        //     $scope.whitepaper = "templates/temco_whitepaper_eng.pdf";
+        //     $scope.fastfact = "templates/temco_whitepaper_eng.backup.180704.pdf";
+        //     // $scope.whitepaper = "templates/temco_whitepaper_kr.pdf";
+        //   }
+        // })
       }
     };
   });

@@ -1,0 +1,15 @@
+<div class="usecase-container" ng-controller="faqController">
+    <article class="faq-article" ng-repeat="faq in faqs">
+        <h3 ng-click="openfaq($index)">
+            <span class="faq-btn">
+                +
+            </span>
+            <span translate>
+                {{faq.title}}
+            </span>
+        </h3>
+        <p class="faq-para" ng-style="isShow($index)">
+                {{faq.paragraph}}
+        </p>
+    </article>
+</div>

@@ -3,7 +3,7 @@ angular.module('token', [])
     return{
       scope:{
       },
-      templateUrl: 'token/token.tpl.html?ver=0706',
+      templateUrl: 'token/token.tpl.html?ver=0717',
       link: function($scope) {
 
         var scene8 = new ScrollMagic.Scene({
@@ -54,20 +54,6 @@ angular.module('token', [])
             offset:200
           })//.addIndicators()
             .addTo($scope.$parent.controller);
-
-            var scene13 = new ScrollMagic.Scene({
-              triggerElement: "#parallax13",
-              offset:-300
-            }).setVelocity("#parallax13 .content", {opacity: 1.0}, {duration: 400})
-            //.addIndicators()
-              .addTo($scope.$parent.controller);
-
-          var scene14 = new ScrollMagic.Scene({
-              triggerElement: "#parallax14",
-                offset:-300
-              }).setVelocity("#parallax14 .content", {opacity: 1.0}, {duration: 400})
-              //.addIndicators()
-                .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('token');
 
@@ -138,30 +124,8 @@ angular.module('token', [])
           $scope.$parent.activeNav = 'prototype';
           $scope.$parent.$apply();
         });
-        
-        scene13.on("enter", function (event) {
-          $scope.$parent.activeNav = 'token';
-          $scope.$parent.$apply();
 
-          $scope.$parent.aniDiv("#parallax13");
-        });
 
-        scene13.on("leave", function (event) {
-          $scope.$parent.activeNav = 'prototype';
-          $scope.$parent.$apply();
-        });
-
-        scene14.on("enter", function (event) {
-          $scope.$parent.activeNav = 'token';
-          $scope.$parent.$apply();
-
-          $scope.$parent.aniDiv("#parallax14");
-        });
-
-        scene14.on("leave", function (event) {
-          $scope.$parent.activeNav = 'prototype';
-          $scope.$parent.$apply();
-        });
         // var languageCheck = 'en'
         
         // $owl = $('body').find('#owl-roadmap');

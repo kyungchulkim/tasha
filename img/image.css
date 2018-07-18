@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(about_icon/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-analytictool {
+    width: 300px;
+    height: 320px;
+    background-position: -5px -5px;
+}
+
+.sprite-connected {
+    width: 300px;
+    height: 320px;
+    background-position: -315px -5px;
+}
+
+.sprite-credible {
+    width: 300px;
+    height: 320px;
+    background-position: -625px -5px;
+}
+
+.sprite-intelligence {
+    width: 300px;
+    height: 320px;
+    background-position: -5px -335px;
+}
+
+.sprite-linkeddata {
+    width: 300px;
+    height: 320px;
+    background-position: -315px -335px;
+}
+
+.sprite-marketplace {
+    width: 300px;
+    height: 320px;
+    background-position: -625px -335px;
+}
+
+.sprite-prototype {
+    width: 136px;
+    height: 136px;
+    background-position: -5px -665px;
+}
+
+.sprite-realreviews {
+    width: 300px;
+    height: 320px;
+    background-position: -151px -665px;
+}
+
+.sprite-tracecable {
+    width: 300px;
+    height: 320px;
+    background-position: -461px -665px;
+}
+
+.sprite-transparent {
+    width: 300px;
+    height: 320px;
+    background-position: -935px -5px;
+}
+
+.sprite-vendor {
+    width: 300px;
+    height: 320px;
+    background-position: -935px -335px;
+}

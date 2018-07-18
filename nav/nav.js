@@ -3,7 +3,7 @@ angular.module('nav', [])
     return{
       scope:{
       },
-      templateUrl: 'nav/nav.tpl.html?ver=0706',
+      templateUrl: 'nav/nav.tpl.html?ver=0717',
       link: function($scope) {
 
         //navbar
@@ -36,6 +36,10 @@ angular.module('nav', [])
           {
             title:'usecase'
           }
+          // ,
+          // {
+          //   title:'faq'
+          // }
         ];
 
         $scope.click_en = {

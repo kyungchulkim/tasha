@@ -155,7 +155,16 @@
     "contents":"SUPPLY CHAIN MANAGEMENT REIMAGINED",
     "copyright":"2018 COPYRIGHT TEMCO"
   },
-
+  "faq" : [
+    {
+      "title" : "안녕하세요.zz",
+      "paragraph" : "RSK is the first general purpose smart contract platform secured by the Bitcoin Network."
+    },
+    {
+      "title" : "안녕하세요.zz",
+      "paragraph" : "RSK is the first general purpose smart contract platform secured by the Bitcoin Network."
+    }
+  ],
   "usecase" : {
     "nenia" : {
       "header-title" : "USE CASE"
