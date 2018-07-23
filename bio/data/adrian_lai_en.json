@@ -1,0 +1,17 @@
+{
+    "firstName": "Adrian",
+    "lastName": "Lai",
+    "bio": [
+        "Managing Director, BlackHorse",
+        "Sales & marketing, FinTech, corporate governance, BlackRock",
+        "Advisor, Plair Life - first ICO on Vechain",
+        "Ex-Founder & ICO investment lead, Orichal Partners",
+        "Blockchain Trainer, Hong Kong Securities and Investment Institute"
+    ],
+    "img": "bio/data/adrian_lai.png",
+    "linkedInUrl": "adrian-lai",
+    "isTeam": false,
+    "company": [
+        "blackhorse","blackrock","plair","orichal","hksi"
+    ]
+}

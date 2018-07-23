@@ -1,5 +1,5 @@
 #about-container{
-	padding-top:350px;
+	padding-top:200px;
 }
 
 #parallax2{
@@ -24,7 +24,7 @@
 }
 
 #parallax4 {
-	margin-top: 307px;
+	margin-top: 200px;
 }
 
 .about-header{
@@ -37,7 +37,7 @@
 
 .about-header2{
 	height: 90px;
-	margin-top: 190px;
+	margin-top: 150px;
 	margin-right: 125px;
 	margin-bottom:70px;
 	margin-left: 10px;
@@ -141,7 +141,6 @@
 }
 
 #ourMissionHeader{
-	margin-top:32px;
 	margin-bottom:79px;
 	text-transform: uppercase;
 	font-size: 50px;
@@ -358,11 +357,20 @@
 
 .aboutVideo{
 	text-align: center; 
-	margin-top: 260px;
+	margin-top: 200px;
 	padding-left: 60px;
 	padding-right: 60px;
 }
 
+.oval-image {
+	position: absolute; 
+	top:4000px; 
+	left:100px;
+	background-image: url('../img/effect/oval.png'); 
+	width: 737px;
+	height: 737px;
+	background-repeat: no-repeat;
+}
 @media only screen and (max-width: 1450px) {
 	.pl60{
 		padding-left: 8vw;
@@ -420,7 +428,7 @@
 
 	.about-header{
 		height: 90px;
-		margin-top: 190px;
+		margin-top: 300px;
 		margin-bottom:70px;
 		margin-left: 10px;
 	}
@@ -499,7 +507,7 @@
 	}
 	
 	#parallax4 {
-		margin-top: 250px;
+		margin-top: 150px;
 	}
 
 	.aboutVideo{
@@ -524,9 +532,8 @@
 
 	.about-header{
 		height: 90px;
-		margin-top: 190px;
+		margin-top: 300px;
 		margin-bottom:70px;
-		
 		font-size: 30px;
 		font-weight: 900;
 		font-style: normal;
@@ -547,6 +554,10 @@
 
 @media only screen and (max-width: 450px) {
 
+	.oval-image {
+		display: none;
+	}
+	
 	.videoMobile{
 		padding-top: 70px !important;
 	}
@@ -566,7 +577,7 @@
 	}
 
 	#parallax4 {
-		margin-top: 120px;
+		margin-top: 100px;
 	}
 
 	#parallax-video {
@@ -579,7 +590,7 @@
 	}
 
 	#parallax2{
-		margin-top: -350px;
+		margin-top: -200px;
 		background-size:cover;
 		min-width: none;
 	}
@@ -700,296 +711,3 @@
 	  
 	}
 }
-
-/* iphone 6 7 8 */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
-	
-	.icon-container {
-		float: left;
-		flex-wrap:nowrap;
-		margin-bottom: 10px;
-		padding-left: 19px;
-		padding-top: 9px;
-		height: 150px;
-		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
-		text-align: left;
-	}
-
-	.icon-container img{
-		width: 38px;
-		height: 38px;
-	}
-
-	.accent4{
-		margin-top: 10px;
-	}
-	
-	#about-container{
-		padding-top:148px;
-	}
-
-	.parallax2-image{
-		display: none;
-	}
-
-	.about-header{
-		margin-bottom: 25px;
-	}
-
-	#parallax2{
-		min-height: 640px;
-		margin-top: -345px;
-	}
-
-	#revolutionary-container{
-		margin-top:0px;
-	}
-
-	#parallax3{
-		min-height: 0px;
-	}
-
-	.mission-top-img{
-		width: 60px;
-		margin-left: 12px;
-	}
-
-	#dot-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#dot-rev-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#dot-mission-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#ourMissionHeader {
-		font-size:16px;
-		margin-top: 32px;
-		margin-bottom:38px;		
-	}
-} */
-
-/* iphone 6 7 8 plus */
-/* @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-	
-	.icon-container {
-		float: left;
-		flex-wrap:nowrap;
-		margin-bottom: 10px;
-		padding-left: 19px;
-	
-		padding-top: 9px;
-
-		height: 150px;
-		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
-		text-align: left;
-	}
-
-	.accent4{
-		margin-top: 12px;
-	}
-	
-	#about-container{
-		padding-top:148px;
-	}
-
-	.parallax2-image{
-		display: none;
-	}
-	
-	.about-header{
-		margin-bottom: 25px;
-	}
-
-	#parallax2{
-		min-height: 640px;
-		margin-top: -320px;
-	}
-
-	#revolutionary-container{
-		margin-top:0px;
-	}
-
-	#parallax3{
-		min-height: 0px;
-	}
-
-	.mission-top-img{
-		width: 60px;
-		margin-left: 12px;
-	}
-
-	
-	#dot-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#dot-rev-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#dot-mission-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#ourMissionHeader {
-		margin-top: 32px;
-		margin-bottom:38px;
-	}
-} */
-
-/* iphone x  */
-/* @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
-	
-	.icon-container {
-		float: left;
-		flex-wrap:nowrap;
-		margin-bottom: 10px;
-		padding-left: 19px;
-		padding-top: 9px;
-		max-width: 146px;
-		height: 150px;
-		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
-		text-align: left;
-	}
-
-	.accent4{
-		margin-top: 12px;
-	}
-	
-	#about-container{
-		padding-top:148px;
-	}
-
-	.parallax2-image{
-		display: none;
-	}
-	
-	.about-header{
-		margin-bottom: 25px;
-	}
-
-	#parallax2{
-		min-height: 640px;
-		margin-top: -320px;
-	}
-
-	#revolutionary-container{
-		margin-top:0px;
-	}
-
-	#parallax3{
-		min-height: 0px;
-	}
-
-	.mission-top-img{
-		width: 60px;
-		margin-left: 12px;
-	}
-
-	#dot-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#dot-rev-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#dot-mission-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#ourMissionHeader {
-		margin-top: 32px;
-		margin-bottom:38px;		
-	}
-} */
-
-/* galxay  */
-/* @media only screen and (max-width: 360px) {
-
-	.icon-container {
-		float: left;
-		flex-wrap:nowrap;
-		margin-bottom: 10px;
-		padding-left: 19px;
-		padding-top: 9px;
-		max-width: 146px;
-		height: 150px;
-		background-image: linear-gradient(to right, rgba(0, 255, 252, 0.2), rgba(0, 255, 247, 0.1));
-		text-align: left;
-	}
-
-	.accent4{
-		margin-top: 12px;
-	}
-	
-	#about-container{
-		padding-top:148px;
-	}
-
-	.parallax2-image{
-		display: none;
-	}
-	
-	.about-header{
-		margin-bottom: 25px;
-	}
-
-	#parallax2{
-		min-height: 640px;
-		margin-top: -320px;
-	}
-
-	#revolutionary-container{
-		margin-top:0px;
-	}
-	
-	#parallax3{
-		min-height: 0px;
-	}
-
-	.mission-top-img{
-		width: 60px;
-		margin-left: 12px;
-	}
-
-	
-	#dot-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#dot-rev-img{		
-		width: 7px !important;		
-		margin-right: 0px !important;		
-		margin-bottom: 10px;
-	}
-
-	#dot-mission-img{		
-		width: 7px !important;		
-		margin-left: 3px !important
-	}
-
-	#ourMissionHeader {
-		margin-top: 32px;
-		margin-bottom:38px;		
-	}
-	
-} */

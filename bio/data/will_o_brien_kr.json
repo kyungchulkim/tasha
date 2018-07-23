@@ -1,0 +1,18 @@
+{
+    "firstName": "Will",
+    "lastName": "O’Brien",
+    "bio": [
+        "Bitgo 대표이사",
+        "Blockchain Capital 유한 파트너",
+        "Ethereum Foundation 시드 투자자",
+        "스타트업 멘토 및 전략 자문가",
+        "MIT MBA",
+        "Harvard 대학교 컴퓨터공학 학사"
+    ],
+    "img": "bio/data/will_o_brien.png",
+    "linkedInUrl": "willobrien",
+    "isTeam": false,
+    "company": [
+        "bitgo","ethereum","block_chain_capital","mit","harvard"
+    ]
+}

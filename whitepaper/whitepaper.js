@@ -3,7 +3,7 @@ angular.module('whitepaper', [])
     return {
       scope: {
       },
-      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0717',
+      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0723_2',
       link: function ($scope) {
 
         var scene5 = new ScrollMagic.Scene({
@@ -27,19 +27,7 @@ angular.module('whitepaper', [])
           //.addIndicators()
           .addTo($scope.$parent.controller);
 
-        var scene14 = new ScrollMagic.Scene({
-          triggerElement: "#parallax14",
-          offset: -300
-        }).setVelocity("#parallax14 .content", { opacity: 1.0 }, { duration: 400 })
-          //.addIndicators()
-          .addTo($scope.$parent.controller);
 
-        var scene15 = new ScrollMagic.Scene({
-          triggerElement: "#parallax15",
-          offset: -300
-        }).setVelocity("#parallax15 .content", { opacity: 1.0 }, { duration: 400 })
-          //.addIndicators()
-          .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('whitepaper');
 
@@ -77,29 +65,7 @@ angular.module('whitepaper', [])
           $scope.$parent.$apply();
         });
 
-        scene14.on("enter", function (event) {
-          $scope.$parent.activeNav = 'whitepaper';
-          $scope.$parent.$apply();
 
-          $scope.$parent.aniDiv("#parallax14");
-        });
-
-        scene14.on("leave", function (event) {
-          $scope.$parent.activeNav = 'whitepaper';
-          $scope.$parent.$apply();
-        });
-
-        scene15.on("enter", function (event) {
-          $scope.$parent.activeNav = 'whitepaper';
-          $scope.$parent.$apply();
-
-          $scope.$parent.aniDiv("#parallax14");
-        });
-
-        scene15.on("leave", function (event) {
-          $scope.$parent.activeNav = 'whitepaper';
-          $scope.$parent.$apply();
-        });
 
         $scope.whitepaper_en = "templates/temco_whitepaper_en.pdf";
         $scope.whitepaper_kr = "templates/temco_whitepaper_kr.pdf";

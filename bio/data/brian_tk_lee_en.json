@@ -1,0 +1,17 @@
+{
+    "firstName": "Brian",
+    "lastName": "Lee",
+    "bio": [
+        "Managing Director, BlackHorse",
+        "Former investment banker, China Development Bank & CJSC",
+        "President, Digital Asset Investment Association",
+        "Investor, Quarkchain, Fantom, Open Platform, etc.",
+        "BA in Financial Risk Management, Cass Business School"
+    ],
+    "img": "bio/data/brian_tk_Lee.png",
+    "linkedInUrl": "leetinka",
+    "isTeam": false,
+    "company": [
+        "blackhorse","cjsc","hkdaia","quarkchain","factom","openplatform","cass"
+    ]
+}

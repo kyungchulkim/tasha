@@ -3,7 +3,7 @@ angular.module('token', [])
     return{
       scope:{
       },
-      templateUrl: 'token/token.tpl.html?ver=0717',
+      templateUrl: 'token/token.tpl.html?ver=0723_2',
       link: function($scope) {
 
         var scene8 = new ScrollMagic.Scene({
@@ -29,7 +29,7 @@ angular.module('token', [])
 
         var scene10 = new ScrollMagic.Scene({
           triggerElement: "#parallax10",
-          offset:-200
+          offset:-250
         }).setVelocity("#parallax10 .content", {opacity: 1.0}, {duration: 400})
         //.addIndicators()
           .addTo($scope.$parent.controller);

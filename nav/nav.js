@@ -3,7 +3,7 @@ angular.module('nav', [])
     return{
       scope:{
       },
-      templateUrl: 'nav/nav.tpl.html?ver=0717',
+      templateUrl: 'nav/nav.tpl.html?ver=0723_2',
       link: function($scope) {
 
         //navbar
@@ -25,6 +25,10 @@ angular.module('nav', [])
           {
             title:'token'
           },
+          {
+            title:'advisors'
+          }
+          ,
           {
             title:'team'
           }

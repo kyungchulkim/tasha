@@ -1,6 +1,5 @@
 #parallax11 {
 	background-color:transparent;
-	margin-bottom:250px;
 	float:left;
 	width:100%;
 }
@@ -36,11 +35,11 @@
 }
 
 .team-margin{
-	margin: 250px auto 100px auto;
+	margin: 110px auto 80px auto;
 }
 
 .advisor-margin{
-	margin: 200px auto 110px auto;
+	margin: 200px auto 80px auto;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -90,11 +89,11 @@
 	}
 	
 	.team-margin{
-		margin: 200px auto 70px auto;
+		margin: 150px auto 70px auto;
 	}
 	
 	.advisor-margin{
-		margin: 200px auto 70px auto;
+		margin: 150px auto 70px auto;
 	}
 
 }
@@ -115,7 +114,11 @@
 @media only screen and (max-width: 610px) {
 
 	.portrait-container{
-		width:50%;
+		width:100%;
+		display:inline-block;
+		vertical-align: top;
+		padding:10px;
+		margin-bottom: 50px;
 	}
 
 	.portrait-container-advisor{
@@ -123,10 +126,9 @@
 		display:inline-block;
 		vertical-align: top;
 		padding:10px;
-		margin-bottom: 90px;
+		margin-bottom: 50px;
 	}
 
-	
 	#teamDropImg{
 		height: 170px;
 		margin-left: 25px !important;
@@ -157,7 +159,7 @@
 	}
 
 	.team-margin {
-		margin: 120px auto 32px auto;
+		margin: 50px auto 20px auto;
 	}
 
 	.team-text-container {
@@ -166,6 +168,6 @@
 	}
 
 	.advisor-margin {
-		margin: 110px auto 32px auto;
+		margin: 100px auto 20px auto;
 	}
 }

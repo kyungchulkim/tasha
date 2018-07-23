@@ -1,12 +1,15 @@
-angular.module('team', ['bio','advisor'])
-  .directive('team', function(){
-    return{
-      scope:{
+angular.module('team', ['bio', 'advisor'])
+  .directive('team', function () {
+    return {
+      scope: {
       },
-      templateUrl: 'team/team.tpl.html?ver=0717',
-      link: function($scope) {
+      templateUrl: 'team/team.tpl.html?ver=0723_2',
+      link: function ($scope) {
 
         $scope.advisors = [
+          'will_o_brien',
+          'adrian_lai',
+          'brian_tk_lee',
           'yongsik',
           'hyungsik',
           'yujin',
@@ -28,23 +31,44 @@ angular.module('team', ['bio','advisor'])
           'natasha_woo',
           'sunha_hwang',
           'kyungchul_kim'
-          
+
         ];
 
         var scene11 = new ScrollMagic.Scene({
           triggerElement: "#parallax11",
-          offset:0
-        }).setVelocity("#parallax11 .content", {opacity: 1.0}, {duration: 400})
-        //.addIndicators()
+          offset: -200
+        }).setVelocity("#parallax11 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var sceneTop11 = new ScrollMagic.Scene({
           triggerElement: "#parallax11",
-          triggerHook:1,
-          offset:-200
+          triggerHook: 1,
+          offset: -200
         })//.addIndicators()
           .addTo($scope.$parent.controller);
 
+        var scene15 = new ScrollMagic.Scene({
+          triggerElement: "#parallax15",
+          offset: -300
+        }).setVelocity("#parallax15 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
+          .addTo($scope.$parent.controller);
+        
+        var scene16 = new ScrollMagic.Scene({
+          triggerElement: "#parallax16",
+          offset: -300
+        }).setVelocity("#parallax16 .content", { opacity: 1.0 }, { duration: 400 })
+          .addTo($scope.$parent.controller);
+
+        var sceneTop16 = new ScrollMagic.Scene({
+          triggerElement: "#parallax16",
+          triggerHook: 1,
+          offset: -200
+        }).addTo($scope.$parent.controller);
+
+
+        $scope.$parent.navLoaded.push('advisors');
         $scope.$parent.navLoaded.push('team');
 
         sceneTop11.on("enter", function (event) {
@@ -69,13 +93,27 @@ angular.module('team', ['bio','advisor'])
           $scope.$parent.$apply();
         });
 
-        // $scope.$on("language", function (event,message){
-        //   console.log($scope.language);
-        //   $scope.language = message;
-        //   console.log($scope.language);
-        // });
+        scene15.on("enter", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
 
+          $scope.$parent.aniDiv("#parallax14");
+        });
 
+        scene15.on("leave", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+        });
+
+        scene16.on("enter", function (event) {
+          $scope.$parent.activeNav = 'advisors';
+          $scope.$parent.$apply();
+        });
+
+        scene16.on("leave", function (event) {
+          $scope.$parent.activeNav = 'advisors';
+          $scope.$parent.$apply();
+        });
       }
     };
   });

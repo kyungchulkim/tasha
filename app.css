@@ -304,6 +304,7 @@ form .form-control {
 		font-size: 30px;
 		font-weight: 900;
 		line-height: 0.8;
+		width: 100%;
 	}
 }
 /* 
@@ -365,6 +366,10 @@ form .form-control {
 
 	token .pin{
 		top: -60px;
+	}
+
+	advisors .pin{
+		top: -135px;
 	}
 
 	team .pin{

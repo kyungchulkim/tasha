@@ -1,0 +1,18 @@
+{
+    "firstName": "Will",
+    "lastName": "O’Brien",
+    "bio": [
+        "CEO, Bitgo",
+        "Limited partner, Blockchain Capital",
+        "Seed investor of the Ethereum foundation",
+        "Investor, mentor and strategic advisor for early stage startups",
+        "MBA in Sloan School of Management, MIT",
+        "BA in Computer Science, Harvard University"
+    ],
+    "img": "bio/data/will_o_brien.png",
+    "linkedInUrl": "willobrien",
+    "isTeam": false,
+    "company": [
+        "bitgo","ethereum","block_chain_capital","mit","harvard"
+    ]
+}

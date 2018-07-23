@@ -167,7 +167,7 @@
 }
 
 #technologyImage{
-	max-width:843px; width:80vw; margin: 0 auto 300px auto;
+	max-width:843px; width:80vw; margin: 0 auto 0 auto;
 }
 
 /* @media only screen and (max-width: 1200px) {
@@ -194,7 +194,7 @@
 	}
 
 	#parallax6 {
-		--height:1400px;
+		
 	}
 
 	#bgTechnologyTop{
@@ -323,7 +323,7 @@
 @media only screen and (max-width: 767px) {
 
 	#parallax6 {
-		--height:1400px;
+		
 	}
 
 	#bgTechnologyTop{
@@ -373,8 +373,7 @@
 	}
 
 	#parallax6 {
-		--height:1400px;
-		padding-top: 20px;
+		padding-top: 100px;
 	}
 
 	#bgTechnologyTop{
@@ -401,7 +400,7 @@
 
 	#technologyWeb{
 		order:1;
-		margin-left: 0px;
+		/* margin-left: 0px; */
 	}
 	
 	#technologyHeader{
@@ -415,10 +414,9 @@
 		font-stretch: normal;
 		line-height: 1.71;
 		letter-spacing: normal;
-		text-align: justify;
 		color: #ffffff;
 		float: left;
-		margin-bottom: 22px;
+		margin: 0 auto;
 	}
 
 	.technologyText{
@@ -454,7 +452,7 @@
 	}
 
 	#technologyContent{
-		margin:0 30px 0 50px;
+		margin:0 30px 0 30px;
 		padding: 0px;
 	}
 

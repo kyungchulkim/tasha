@@ -1,35 +1,62 @@
-<!-- <div id="teamDropContainer" >
-	<img id="teamDropImg" style="width: 100px;" src="img/drop_team.png" />
-</div> -->
-
+<div id="parallax16" class="parallax">
+	<div class="content">
+		<div class="row">
+			<div class="team-text-container advisor-margin" translate>
+				{{'team.advisorTitle'}}
+			</div>
+		</div>
+		<a name="advisors" class="pin">&nbsp;</a>
+		<div>
+			<div class="portrait-container-advisor animated" data-animate="fadeInUp" data-delay="0.3" ng-repeat="advisor in advisors">
+				<advisor data="{{advisor}}" />
+			</div>
+		</div>
+	</div>
+</div>
 <div id="parallax11" class="parallax">
 	<div class="content">
 		<div class="row">
-		<div class="team-text-container team-margin animated" translate data-animate="fadeInUp" data-delay="0.3">
-			{{'team.teamTitle'}}
+			<div class="team-text-container team-margin animated" translate data-animate="fadeInUp" data-delay="0.3">
+				{{'team.teamTitle'}}
+			</div>
 		</div>
-	</div>
-	<a name="team" class="pin">&nbsp;</a>
+		<a name="team" class="pin">&nbsp;</a>
 		<div>
-			<div id="teamMembers" class="portrait-container"
-			 ng-repeat="teamMember in teamMembers">
-				<bio data="{{teamMember}}" language="{{language}}"/>
-			</div>			
+			<div id="teamMembers" class="portrait-container" ng-repeat="teamMember in teamMembers">
+				<bio data="{{teamMember}}" language="{{language}}" />
+			</div>
 		</div>
 	</div>
-	
-	<div class="content">
-			<div class="row">
-			<div class="team-text-container advisor-margin" translate>
-		{{'team.advisorTitle'}}
-		</div>
-	</div>	
-	<div>		
-		<div class="portrait-container-advisor animated" data-animate="fadeInUp" data-delay="0.3" ng-repeat="advisor in advisors">
-			<advisor data="{{advisor}}" />
-		</div>
-	</div>
-	</div>
-	
 </div>
+<div id="parallax15" class="parallax">
+	<div class="content">
+		<div class="header-text use-case-header">
+			PRESS
+		</div>
+		<div class="press-wrapper">
+			<a class="press-item" target="blank" href="http://news.heraldcorp.com/view.php?ud=20180713000161">
+				<img class="partners-image" src="img/press-logo/herald-corp.png" alt="harald-corp logo" />
+			</a>
+
+			<a class="press-item" target="blank" href="http://view.asiae.co.kr/news/view.htm?idxno=2018071310135667803">
+				<img class="partners-image" src="img/press-logo/asiae.png" alt="asiae logo" />
+			</a>
+
+			<a class="press-item" target="blank" href="http://www.edaily.co.kr/news/news_detail.asp?newsId=02476406619274192&mediaCodeNo=257&OutLnkChk=Y">
+				<img class="partners-image" src="img/press-logo/edaily.png" alt="nenia logo" />
+			</a>
+
+			<a class="press-item" target="blank" href="http://www.dt.co.kr/contents.html?article_no=2018071602109923813001&ref=naver">
+				<img class="partners-image" src="img/press-logo/dt.png" alt="digital times logo" />
+			</a>
+
+			<a class="press-item" target="blank" href="http://moneys.mt.co.kr/news/mwView.php?no=2018071609408052693">
+				<img class="partners-image" style="width: 80%;" src="img/press-logo/moneys.png" alt="money s logo" />
+			</a>
+
+			<a class="press-item" target="blank" href="http://www.insight.co.kr/news/166193">
+				<img class="partners-image" style="width: 67%;" src="img/press-logo/insight.png" alt="insight s logo" />
+			</a>
+		</div>
+	</div>
 </div>

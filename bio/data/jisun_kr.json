@@ -1,5 +1,5 @@
 {
-    "firstName":"Jisun",
+    "firstName":"Jinsun",
     "lastName":"Koh",
     "bio":[
       "법무법인 J.Koh 미국 변호사",
@@ -8,4 +8,4 @@
     ],    
     "img": "bio/data/jisun_profile.jpg",
     "company" : ["johnmarshall","wuniv"]
-  }
+}

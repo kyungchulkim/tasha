@@ -1,6 +1,6 @@
 #parallax5 {
 	background-position-x:center;
-	padding-top:390px;
+	padding-top:300px;
 	max-width: 1650px;
 	margin : 0 auto;
 	position:relative;
@@ -13,7 +13,9 @@
 }
 
 #parallax15 {
-	margin-top: 200px;    
+	margin-top: 110px;
+	width: 100%;
+    float: left;  
 }
 
 .download{
@@ -102,16 +104,31 @@
 	height: 68px;
 }
 
+.partners-bg{
+	height: 32vw;
+	margin: 0px 64px;
+	background-image: url('../img/partners-bg.png');
+	background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 100%;
+}
 
 .partners-wrapper{
-	max-width: 1000px;
-	height: 200px;
-	margin: 0 auto;
-	padding-bottom: 100px;
+    height: 28vw;
+    margin: 0 50px;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	padding: 6vw 5vw;
+	position: relative;
+    top: -1vw;
 }
 
 .press-wrapper{
-	max-width: 650px;
+	max-width: 1000px;
 	height: 200px;
 	margin: 0 auto;
 	padding-bottom: 100px;
@@ -119,17 +136,18 @@
 
 .partners-item{
 	width: 25%;
-	height: 120px;
-	line-height: 75px;
+	height: 6vw;
+	line-height: 6vw;
 	display: inline-block;
 	font-size: 20px;
 	color: white;
 	text-align: center;
 	float: left;
+	display: inline-table;
 }
 
 .press-item{
-	width: 20%;
+	width: 13.6%;
 	height: 80px;
 	line-height: 75px;
 	display: inline-block;
@@ -137,6 +155,14 @@
 	color: white;
 	text-align: center;
 	float: left;
+	margin: 0 15px;
+}
+
+.rsk-image {
+	width: 60%; 
+	position: relative; 
+	top: -1.5vw;
+	margin: 0 auto;
 }
 
 .partners-image{
@@ -196,19 +222,40 @@
 }
 
 .press-image1{
-	background-image: url("https://cdn-images-1.medium.com/max/800/1*wUBpiDEBXe3scyObTeKGQg.png");
+	background-image: url("../img/news/willobrian.jpg");
 }
 
 .press-image2{
-	background-image: url("https://cdn-images-1.medium.com/max/800/1*VkSUmMqcVPQbJsPcQ9BeFg.png");
+	background-image: url("https://cdn-images-1.medium.com/max/800/1*wUBpiDEBXe3scyObTeKGQg.png");
 }
 
 .press-image3{
-	background-image: url("https://cdn-images-1.medium.com/max/1250/1*PM8REYvBW4MN5-QoJLAe4g.png");
+	background-image: url("https://cdn-images-1.medium.com/max/800/1*VkSUmMqcVPQbJsPcQ9BeFg.png");
 }
 
 .press-image4{
 	background-image: url("https://cdn-images-1.medium.com/max/1250/1*w-oESx6rZJHXkWx_DkHE2g.png")
+}
+
+@media only screen and (max-width: 1136px) {
+	.press-wrapper{
+		max-width: 800px;
+	}
+
+	.press-item {
+		width: 15.1%;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	
+	#parallax14 ul{
+		columns: 2;
+		width: 600px;
+		margin: 0 auto;
+	}
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -226,16 +273,21 @@
 	float: right;
 }
 
-#parallax14 ul{
-	columns: 2;
-	padding: 0px;
-	width: 600px;
-	margin: 0 auto;
+.partners-wrapper {
+	height: 65vw;
+	padding: 6vw 12vw;	
 }
 
-	.partners-item{
-		width: 33%;
-	}
+.partners-bg {
+	height: 75vw;
+	margin: 0;
+}
+
+.partners-item{
+	width: 50%;
+	height: 10vw;
+	line-height: 10vw;
+}
 
 	.prototype-text{
 		font-size: 24px; 
@@ -336,11 +388,13 @@
 	
 	.partners-item{
 		width: 50%;
-		height: 100px;
+		/* height: 150px;
+		line-height: 150px; */
 	}
 
 	.press-item {
 		width: 25%;
+		margin: 0;
 	}
 
 	#whitepaperContainer{
@@ -394,22 +448,41 @@
 }
 
 @media only screen and (max-width: 450px) {
-		
+
+
+	.press-wrapper{
+		height: auto;
+	}
+
+	.rsk-image {
+		top: -10px;
+	}
+
 	#parallax13 {
-		margin-top: 80px;    
+		margin-top: 100px;
+		display: inline-block;    
 	}
 
 	#parallax15 {
-		margin-top: 150px;    
+		margin-top: 50px;    
+	}
+		
+	.partners-bg {
+		height: 110vw;
+		margin: 0;
 	}
 
 	.partners-wrapper {
-		height: 150px;
+		height: 85vw;
+		padding: 5vw 2vw;
+		margin: 0 4vw;
+		top: 12vw;
 	}
 	
 	.partners-item{
 		width: 50%;
-		height: 80px;
+		height: 16vw;
+		line-height: 16vw;
 	}
 	
 	.press-title {
@@ -423,6 +496,7 @@
 	.press-item{
 		width: 33%;
 		height: 60px;
+		margin: 0;
 	}
 
 	.prototype-text{
@@ -448,6 +522,7 @@
 	#parallax5 {
 		background-position-x:center;
 		padding-top:80px;
+		padding-bottom: 50px;
 		position:relative;
 		z-index:1001
 	}

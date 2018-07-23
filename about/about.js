@@ -1,52 +1,59 @@
 angular.module('about', [])
-  .directive('about', function(){
-    return{
-      scope:{
+  .directive('about', function () {
+    return {
+      scope: {
       },
-      templateUrl: 'about/about.tpl.html?ver=0717',
-      link: function($scope) {
+      templateUrl: 'about/about.tpl.html?ver=0723_2',
+      link: function ($scope) {
 
         var scene2 = new ScrollMagic.Scene({
           triggerElement: "#parallax2",
-          offset:150
-        }).setVelocity("#parallax2 .content", {opacity: 1.0}, {duration: 400})
-        //.addIndicators()
+          offset: 0
+        }).setVelocity("#parallax2 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var scene3 = new ScrollMagic.Scene({
           triggerElement: "#parallax3",
-          offset:-50
-        }).setVelocity("#parallax3 .content", {opacity: 1.0}, {duration: 400})
-        //.addIndicators()
+          offset: -50
+        }).setVelocity("#parallax3 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var sceneTop3 = new ScrollMagic.Scene({
           triggerElement: "#parallax3",
-          triggerHook:1,
-          offset:75
+          triggerHook: 1,
+          offset: 75
         })//.addIndicators()
           .addTo($scope.$parent.controller);
 
         var scene4 = new ScrollMagic.Scene({
           triggerElement: "#parallax4",
-          offset:-200
-        }).setVelocity("#parallax4 .content", {opacity: 1.0}, {duration: 400})
-        //.addIndicators()
+          offset: -250
+        }).setVelocity("#parallax4 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var sceneTop4 = new ScrollMagic.Scene({
           triggerElement: "#parallax4",
-          triggerHook:1,
-          offset:-325
+          triggerHook: 1,
+          offset: -325
         })//.addIndicators()
+          .addTo($scope.$parent.controller);
+
+        var scene14 = new ScrollMagic.Scene({
+          triggerElement: "#parallax14",
+          offset: -300
+        }).setVelocity("#parallax14 .content", { opacity: 1.0 }, { duration: 400 })
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         var topTransform = new ScrollMagic.Scene({
           triggerElement: "#parallax2",
-          triggerHook:1,
-          offset:350
+          triggerHook: 1,
+          offset: 350
         }).setClassToggle("#go_to_top", "show")
-        //.addIndicators()
+          //.addIndicators()
           .addTo($scope.$parent.controller);
 
         $scope.$parent.navLoaded.push('about');
@@ -78,9 +85,9 @@ angular.module('about', [])
         scene2.on("enter", function (event) {
           $scope.$parent.activeNav = 'about';
           $scope.$parent.$apply();
-          
+
           $scope.$parent.aniDiv("#parallax2");
-          
+
         });
 
         scene2.on("leave", function (event) {
@@ -88,7 +95,17 @@ angular.module('about', [])
           $scope.$parent.$apply();
         });
 
+        scene14.on("enter", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
 
+          $scope.$parent.aniDiv("#parallax14");
+        });
+
+        scene14.on("leave", function (event) {
+          $scope.$parent.activeNav = 'whitepaper';
+          $scope.$parent.$apply();
+        });
       }
 
     };

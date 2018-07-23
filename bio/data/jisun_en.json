@@ -1,5 +1,5 @@
 {
-    "firstName":"Jisun",
+    "firstName":"Jinsun",
     "lastName":"Koh",
     "bio":[
       "Lawyer, J.Koh Law Firm",
@@ -7,5 +7,7 @@
       "B.S in Business Administration, Washington University"
     ],    
     "img": "bio/data/jisun_profile.jpg",
-    "company" : ["johnmarshall","wuniv"]
-  }
+    "company" : [
+      "johnmarshall","wuniv"
+    ]
+}
