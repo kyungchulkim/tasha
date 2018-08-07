@@ -1,0 +1,15 @@
+{
+    "firstName": "Gabriel",
+    "lastName": "Kurman",
+    "position":"Social Impact Advisor",
+    "bio": [
+        "RSK 공동 창업자",
+        "Koibanx CFO 및 IR 총괄"
+    ],
+    "img": "bio/data/gabriel_kurman.png",
+    "linkedInUrl": "gabriel-kurman-4515497",
+    "isTeam": false,
+    "company": [
+        "rsk","koibanx"
+    ]
+}

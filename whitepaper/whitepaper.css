@@ -121,7 +121,6 @@
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    justify-content: space-between;
 	padding: 6vw 5vw;
 	position: relative;
     top: -1vw;

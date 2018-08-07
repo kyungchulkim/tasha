@@ -1,0 +1,15 @@
+{
+    "firstName": "Will",
+    "lastName": "Guida",
+    "bio": [
+        "Partner, New York Crypto Consultants",
+        "Portfolio Manager, Silver Bay Capital",
+        "SCM & Logistics Expert"
+    ],
+    "img": "bio/data/will_guida.png",
+    "linkedInUrl": "will-guida",
+    "isTeam": false,
+    "company": [
+        "newyorkcryptoconsultants","silverbaycapital"
+    ]
+}

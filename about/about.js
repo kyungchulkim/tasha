@@ -1,9 +1,9 @@
-angular.module('about', [])
-  .directive('about', function () {
+angular.module('about', ['advisor-board'])
+  .directive('about', function ($timeout) {
     return {
       scope: {
       },
-      templateUrl: 'about/about.tpl.html?ver=0723_2',
+      templateUrl: 'about/about.tpl.html?ver=0807',
       link: function ($scope) {
 
         var scene2 = new ScrollMagic.Scene({
@@ -106,7 +106,54 @@ angular.module('about', [])
           $scope.$parent.activeNav = 'whitepaper';
           $scope.$parent.$apply();
         });
-      }
 
+        let isShow = [];
+
+        $scope.open_advisor = function (index) {
+
+          let countTrue = 0;
+          for (j = 0; j < 2; j++) {
+            if (isShow[j] === true) {
+              countTrue++;
+            }
+          }
+
+          if (countTrue === 0) {
+            isShow[index] = !isShow[index];
+            countTrue = 0;
+            $("html, body").animate({scrollTop : $('.advisor-board-detail-wrapper').offset().top-72 },500);
+          }
+          else {
+            for (i = 0; i < 4; i++) {
+              if (i != index) {
+                isShow[i] = false;
+              } else {
+                if (isShow[index] === true) {
+                  isShow[index] = !isShow[index];
+                  
+                } else {
+                  $timeout(function () {
+                    isShow[index] = !isShow[index];
+                  }, 500);
+                  $("html, body").animate({scrollTop : $('.advisor-board-detail-wrapper').offset().top-72 });
+
+                }
+              }
+            }
+          }
+
+          
+        }
+
+        $scope.isShow = function (index) {
+
+          let display = isShow[index] ? 'block' : 'block';
+          let max_height = isShow[index] ? '500px' : '0';
+          return {
+            "display": display,
+            "height": max_height
+          }
+        }
+      }
     };
   });

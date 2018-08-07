@@ -2,28 +2,41 @@
 <html lang="en">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123168763-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-123168763-1');
+	</script>
+
 	<!-- <base href="/"> -->
 	<meta http-equiv="Expires" content="0">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
 	<meta name="author" content="TEMCO">
-	<meta name="description" content="Supply Chain Management Reimagined, TEMCO delivers trusted data from the point of origin to the point of consumption">
+	<meta name="description" content="TEMCO is developing a supply chain platform based on RSK blockchain. Using blockchain technology, we connet isolated supply chain systems and offer data services.">
 	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" />
 	<meta property="og:title" content="TEMCO" />
 	<meta property="og:url" content="http://temco.io" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="TEMCO is developing a supply chain platform based on RSK blockchain. Using blockchain technology, we connet isolated supply chain systems and offer data services." />
+	<meta property="og:description" content="TEMCO is developing a supply chain platform based on RSK blockchain. Using blockchain technology, we connet isolated supply chain systems and offer data services."
+	/>
 	<meta property="og:image" content="http://temco.io/img/share-sns-image.png" />
 	<title>TEMCO | Supply Chain Management Powered by RSK Blockchain</title>
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
+	
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	
+	
 	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.css?ver=0723_2" rel="stylesheet">
+	<link href="css/bootstrap.css?ver=0807" rel="stylesheet">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="css/animate.css?ver=0723_2">
+	<link rel="stylesheet" href="css/animate.css?ver=0807">
 
 	<!-- google fonts -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Avenir:400,600,700,800" rel="stylesheet"> -->
@@ -33,22 +46,22 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="nav/nav.css?ver=0723_2" rel="stylesheet">
-	<link href="header/header.css?ver=0723_2" rel="stylesheet">
-	<link href="about/about.css?ver=0723_2" rel="stylesheet">
-	<link href="whitepaper/whitepaper.css?ver=0723_2" rel="stylesheet">
-	<link href="technology/technology.css?ver=0723_2" rel="stylesheet">
-	<link href="prototype/prototype.css?ver=0723_2" rel="stylesheet">
-	<link href="token/token.css?ver=0723_2" rel="stylesheet">
-	<link href="team/team.css?ver=0723_2" rel="stylesheet">
-	<link href="bio/bio.css?ver=0723_2" rel="stylesheet">
-	<link href="footer/footer.css?ver=0723_2" rel="stylesheet">
-	<link href="app.css?ver=0723_2" rel="stylesheet">
-	<link href="usecase/usecase.css?ver=0723_2" rel="stylesheet">
-	<link href="faq/faq.css?ver=0723_2" rel="stylesheet">
-	<link href="img/image.css?ver=0723_2" rel="stylesheet">
+	<link href="nav/nav.css?ver=0807" rel="stylesheet">
+	<link href="header/header.css?ver=0807" rel="stylesheet">
+	<link href="about/about.css?ver=0807" rel="stylesheet">
+	<link href="whitepaper/whitepaper.css?ver=0807" rel="stylesheet">
+	<link href="technology/technology.css?ver=0807" rel="stylesheet">
+	<link href="prototype/prototype.css?ver=0807" rel="stylesheet">
+	<link href="token/token.css?ver=0807" rel="stylesheet">
+	<link href="team/team.css?ver=0807" rel="stylesheet">
+	<link href="bio/bio.css?ver=0807" rel="stylesheet">
+	<link href="footer/footer.css?ver=0807" rel="stylesheet">
+	<link href="app.css?ver=0807" rel="stylesheet">
+	<link href="usecase/usecase.css?ver=0807" rel="stylesheet">
+	<link href="faq/faq.css?ver=0807" rel="stylesheet">
+	<link href="img/image.css?ver=0807" rel="stylesheet">
 
-	<link rel="stylesheet" href="/js/owl.carousel.min.css?ver=0723_2" />
+	<link rel="stylesheet" href="/js/owl.carousel.min.css?ver=0807" />
 
 	<style type="text/css">
 		@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=d80bcf78-9b2f-4220-b673-24b52cdf81c4");
@@ -85,15 +98,15 @@
 		function preload(imageArray, index) {
 			index = index || 0;
 			if (imageArray && imageArray.length > index) {
-				var img = new Image ();
-				img.onload = function() {
+				var img = new Image();
+				img.onload = function () {
 					preload(imageArray, index + 1);
 				}
 				img.src = imageArray[index];
 			}
 		}
 		/* images is an array with image metadata */
-		var imageArray = new Array("/img/bg-min.png","/img/header-illustration.png","/img/effect/effect1.png","/img/effect/effect2.png","/img/star_line.png");
+		var imageArray = new Array("/img/bg-min.png", "/img/header-illustration.png", "/img/effect/effect1.png", "/img/effect/effect2.png", "/img/star_line.png");
 		preload(imageArray);
 	</script>
 </head>
@@ -123,6 +136,7 @@
 							<!-- <div>
 								test: {{$ctrl.user.password}}
 							</div> -->
+						<a ng-click="$ctrl.forgetPassword()" style="cursor:pointer">forgot password</a>
 						<button class="btn btn-lg btn-primary btn-block login-btn" ng-click="$ctrl.loginCheck()">로그인</button>
 					</form>
 						<button class="btn btn-lg btn-primary btn-block signup-btn" ng-click="$ctrl.toSignup()">회원가입</button>
@@ -158,6 +172,46 @@
 				</div>
 			</script>
 
+			<script type="text/ng-template" id="forgetpassword.html">
+				<div class="modal-body singupDiv" id="modal-body">
+					<form novalidate>
+						<div class="form-group">
+							<input type="email" class="form-control" ng-model="$ctrl.user.email" name="email" id="email" ng-required="true" placeholder="email">
+							<div ng-show="$ctrl.emailErrorCheck === false" class="alert alert-warning" role="alert">이메일 주소를 제대로 입력해주세요.</div>
+							<div ng-show="$ctrl.emailRequireCheck === false" class="alert alert-warning" role="alert">이메일을 입력해주세요.</div>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" ng-click="$ctrl.passwordreset()">패스워드 재설정</button>
+					</form>
+				</div>
+			</script>
+
+			<script type="text/ng-template" id="updatepassword.html">
+			<div class="modal-body singupDiv" id="modal-body">
+
+				<form novalidate>
+					<div class="form-group">
+							<input type="password" class="form-control" ng-model="$ctrl.user.password" id="password" name="password"
+							placeholder="Password" ng-required="true"/>
+							<div ng-show="$ctrl.passwordErrorCheck === false" class="alert alert-warning" role="alert">최소 6글자, 최대 20글자이고 적어도 하나의 특수문자, 소문자, 대문자 그리고 숫자를 포함해야합니다.</div>
+					</div>
+						<div class="form-group">
+								<input type="password" class="form-control" ng-model="$ctrl.user.passwordCheck" id="passwordCheck" name="passwordCheck"
+								placeholder="Password" ng-required="true"/>
+								<div ng-show="$ctrl.passwordEqualCheck === false" class="alert alert-warning" role="alert">동일한 패스워드를 입력하셔야 합니다.</div>
+						</div>
+					<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" ng-click="$ctrl.updatePassword()">패스워드 변경</button>
+				</form>
+			</div>
+		</script>
+
+			<script type="text/ng-template" id="verifysignup.html">
+				<div class="modal-body singupDiv" id="modal-body">
+					<form novalidate>
+						<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" ng-click="$ctrl.verifysignup()">회원가입 인증이 완료 되었습니다.</button>
+					</form>
+				</div>
+			</script>
+
 			<script type="text/ng-template" id="kakao.html">
 				<div class="modal-body kakao-modal">
 					<div class="kakao-modal-header" translate>
@@ -179,7 +233,7 @@
 			</div>
 		</div>
 	</main>
-	
+
 
 	<!-- Bootstrap core JavaScript
 		================================================== -->
@@ -192,10 +246,10 @@
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.js"></script>
 
-	<script src="js/bootstrap.bundle.js?ver=0723_2"></script>
+	<script src="js/bootstrap.bundle.js?ver=0807"></script>
 	<!-- <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script> -->
 	<!-- <script src="js/ui-bootstrap-tpls-2.5.0.js"></script> -->
-	<script src="js/ui-bootstrap-tpls-3.0.3.js?ver=0723_2"></script>
+	<script src="js/ui-bootstrap-tpls-3.0.3.js?ver=0807"></script>
 	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
 
 	<!-- parallax -->
@@ -207,35 +261,37 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
 	<!-- translate-->
-	<script src="js/angular-translate.min.js?ver=0723_2"></script>
-	<script src="js/angular-translate-loader-static-files.min.js?ver=0723_2"></script>
+	<script src="js/angular-translate.min.js?ver=0807"></script>
+	<script src="js/angular-translate-loader-static-files.min.js?ver=0807"></script>
 
 	<!-- Custom JavaScript for this template -->
-	<script src="nav/nav.js?ver=0723_2"></script>
-	<script src="header/header.js?ver=0723_2"></script>
-	<script src="about/about.js?ver=0723_2"></script>
-	<script src="whitepaper/whitepaper.js?ver=0723_2"></script>
-	<script src="technology/technology.js?ver=0723_2"></script>
-	<script src="prototype/prototype.js?ver=0723_2"></script>
-	<script src="token/token.js?ver=0723_2"></script>
-	<script src="team/team.js?ver=0723_2"></script>
-	<script src="bio/bio.js?ver=0723_2"></script>
-	<script src="bio/advisor.js?ver=0723_2"></script>
-	<script src="footer/footer.js?ver=0723_2"></script>
-	<script src="faq/faq.js?ver=0723_2"></script>
-	<script src="app.js?ver=0723_2"></script>
+	<script src="nav/nav.js?ver=0807"></script>
+	<script src="header/header.js?ver=0807"></script>
+	<script src="about/about.js?ver=0807"></script>
+	<script src="whitepaper/whitepaper.js?ver=0807"></script>
+	<script src="technology/technology.js?ver=0807"></script>
+	<script src="prototype/prototype.js?ver=0807"></script>
+	<script src="token/token.js?ver=0807"></script>
+	<script src="team/team.js?ver=0807"></script>
+	<script src="bio/bio.js?ver=0807"></script>
+	<script src="bio/advisor.js?ver=0807"></script>
+	<script src="bio/advisor-board.js?ver=0807"></script>
+	<script src="footer/footer.js?ver=0807"></script>
+	<script src="faq/faq.js?ver=0807"></script>
+	<script src="app.js?ver=0807"></script>
 
-	<script src="login/login.js?ver=0723_2"></script>
+	<script src="login/login.js?ver=0807"></script>
 
 
-	<script src="/js/owl.carousel.min.js?ver=0723_2"></script>
+	<script src="/js/owl.carousel.min.js?ver=0807"></script>
 	<!-- support cross broswer-->
-	<script src="js/ofi.min.js?ver=0723_2"></script>
+	<script src="js/ofi.min.js?ver=0807"></script>
 
 	<script>
 
 
-		function myFunction() {
+		function myFunction(linkId) {
+			console.log(linkId);
 			let ariaIndex = document.getElementsByClassName('navbar-toggler')[0].getAttribute("aria-expanded");
 
 			if (ariaIndex === "true") {
@@ -265,4 +321,5 @@
 		});
 	</script>
 </body>
+
 </html>

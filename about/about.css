@@ -25,6 +25,7 @@
 
 #parallax4 {
 	margin-top: 200px;
+	position: relative;
 }
 
 .about-header{
@@ -364,13 +365,56 @@
 
 .oval-image {
 	position: absolute; 
-	top:4000px; 
+	top:-400px; 
 	left:100px;
-	background-image: url('../img/effect/oval.png'); 
 	width: 737px;
 	height: 737px;
-	background-repeat: no-repeat;
 }
+
+#parallax17 {
+	text-align: center;
+	margin-top: 200px; 
+}
+
+.advisor-board-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 70px;
+	display: flex;
+	flex-direction: row;
+}
+
+.advisor-board-item {
+	width: 50%;
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+.advisor-board-detail-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 70px;
+}
+
+.advisor-board-detail {
+	width: 100%;
+	text-align: left;
+	background: white;
+	height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.advisor-board-image {
+	width: 40%;
+}
+
+.board-text-wrapper {
+	width: 60%;
+	text-align: left;
+}
+
 @media only screen and (max-width: 1450px) {
 	.pl60{
 		padding-left: 8vw;
@@ -417,6 +461,15 @@
 
 @media only screen and (max-width: 1024px) {
 
+	.advisor-board-wrapper {
+		flex-direction: column;
+	}
+
+	.advisor-board-item {
+		width: 100%;
+		color: white;
+	}
+	
 	#about-row-desktop{
 		display: none;
 	}

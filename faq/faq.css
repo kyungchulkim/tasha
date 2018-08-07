@@ -21,11 +21,3 @@
     overflow: hidden;
     transition: height 0.5s;
 }
-/* 
-.close-faq + .faq-para {
-    display: none;
-}
-
-.open-faq + .faq-para {
-    display: block;
-} */

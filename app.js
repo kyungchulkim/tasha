@@ -19,7 +19,7 @@ app.config(['$translateProvider', function ($translateProvider) {
 
   $translateProvider.useStaticFilesLoader({
     prefix: 'lang/locale-',
-    suffix: '.json?ver=0723_2'
+    suffix: '.json?ver=0807'
   });
 
   $translateProvider.fallbackLanguage('en');
@@ -43,9 +43,31 @@ app.config(function ($routeProvider, $locationProvider) {
     //   templateUrl: "faq/faq.tpl.html",
     //   controller: "faqController"
     // })
+    .when("/forgetpassword", {
+      templateUrl: "home/home.tpl.html",
+      resolve: { function() { forgetpassword(); } }
+    })
+    .when("/updatepassword", {
+      templateUrl: "home/home.tpl.html",
+      resolve: { function() { updatepassword(); } }
+    })
+    .when("/verifysignup", {
+      templateUrl: "home/home.tpl.html",
+      resolve: { function() { verifysignup(); } }
+    })
     .otherwise({ redirectTo: '/' });
 });
 
+function forgetpassword() {
+  $ctrl.forgetpassword();
+}
+
+function updatepassword() {
+  $ctrl.updatepassword();
+}
+function verifysignup() {
+  $ctrl.verifysignup();
+}
 
 app.controller('faqController', __faqController);
 app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
@@ -101,15 +123,20 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
     if (linkId === 'usecase') {
       window.location.href = "/#/usecase";
       window.scroll(0, 0);
+      navbarClick();
       return;
     }
     else if (linkId === 'faq') {
       window.location.href = "/#/faq";
       window.scroll(0, 0);
+      navbarClick();
       return;
     }
+    // else if (linkId === 'community'){
+    //   return;
+    // }
     else if (!noScroll) {
-
+      
       if (window.location.hash != "#/") {
         window.location.href = "/#/";
         setTimeout(function () {
@@ -127,7 +154,18 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
         });
       }
 
+      navbarClick();
+      
     }
+
+    function navbarClick(){
+      let ariaIndex = document.getElementsByClassName('navbar-toggler')[0].getAttribute("aria-expanded");
+      
+			if (ariaIndex === "true") {
+        $('.navbar-toggler').trigger('click');
+      }
+    }
+
     $('.nav-item').removeClass('active');
 
     if (linkId === 'home') {
@@ -163,9 +201,10 @@ app.controller('TashaCtrl', function ($translate, $scope, $timeout) {
     console.log("test");
   }
 });
-
+var $ctrl;
 app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
-  var $ctrl = this;
+  
+  $ctrl = this;
 
   $ctrl.animationsEnabled = true;
 
@@ -218,10 +257,76 @@ app.controller('ModalCtrl', function ($scope, $uibModal, $log, $document) {
     });
   };
 
+  $ctrl.forgetpassword = function (size, parentSelector) {
+    var parentElem = parentSelector ?
+      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'forgetpassword.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      appendTo: parentElem,
+      resolve: {
+        items: function () {
+          return $ctrl;
+        }
+      }
+    });
+
+  };
+
+  $ctrl.updatepassword = function (size, parentSelector) {
+    var parentElem = parentSelector ?
+      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'updatepassword.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      appendTo: parentElem,
+      resolve: {
+        items: function () {
+          return $ctrl;
+        }
+      }
+    });
+
+  };
+  
+  $ctrl.verifysignup = function (size, parentSelector) {
+    var parentElem = parentSelector ?
+      angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'verifysignup.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      appendTo: parentElem,
+      resolve: {
+        items: function () {
+          return $ctrl;
+        }
+      }
+    });
+
+  };
+
   $ctrl.openkakao = function (size, parentSelector) {
     var parentElem = parentSelector ?
       angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-    
+
     var modalInstance = $uibModal.open({
       animation: $ctrl.animationsEnabled,
       ariaLabelledBy: 'modal-title',
@@ -334,7 +439,7 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
 
     var req = {
       method: 'POST',
-      url: 'http://localhost:8080/loginJson',
+      url: 'http://DESKTOP-JPD032E:8080/loginJson',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       transformRequest: function (obj) {
         var str = [];
@@ -415,7 +520,7 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
 
     var req = {
       method: 'POST',
-      url: 'http://localhost:8080/registerUserJson',
+      url: 'http://DESKTOP-JPD032E:8080/registerUserJson',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       transformRequest: function (obj) {
         var str = [];
@@ -445,12 +550,133 @@ app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items, 
 
   }
 
+  $ctrl.passwordreset = function () {
+    
+    var emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+    if ($ctrl.user === undefined) {
+      $ctrl.emailRequireCheck = false;
+      return;
+    }
+    else {
+      if ($ctrl.user.email === undefined) {
+        $ctrl.emailRequireCheck = false;
+        return;
+      } else {
+        $ctrl.emailRequireCheck = true;
+
+        if (emailReg.test($ctrl.user.email))
+          $ctrl.emailErrorCheck = true;
+        else {
+          $ctrl.emailErrorCheck = false;
+          return;
+        }
+      }
+    }
+
+    var req = {
+      method: 'POST',
+      url: 'http://DESKTOP-JPD032E:8080/resetPassword',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      transformRequest: function (obj) {
+        var str = [];
+        for (var p in obj)
+          str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+        return str.join("&");
+      },
+      data: {
+        email: $ctrl.user.email
+      }
+    }
+
+    $http(req).then(function (resp) {
+      console.log(resp.data);
+      if (resp.data.content === "successful") {
+
+        $uibModalInstance.dismiss();
+      } else if (resp.data.content === "failed_user_exists") {
+        $ctrl.failed_user_exists = false;
+      }
+    },
+      function (error) { // optional
+        console.log("error", error);
+      });
+  }
+
+  $ctrl.updatePassword = function() {
+
+    // 패스워드 정규식 
+    // 영문 대소문자 1개 이상 6자리이상 20자리 이하 
+    var passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    if ($ctrl.user === undefined) {
+      $ctrl.passwordErrorCheck = false;
+      return;
+    }
+    else {
+      passwordReg.test($ctrl.user.password) ? $ctrl.passwordErrorCheck = true : $ctrl.passwordErrorCheck = false;
+      if ($ctrl.passwordErrorCheck) {
+        if ($ctrl.user.passwordCheck !== undefined) {
+          $ctrl.user.password === $ctrl.user.passwordCheck ? $ctrl.passwordEqualCheck = true : $ctrl.passwordEqualCheck = false;
+          if ($ctrl.passwordEqualCheck === false)
+            return;
+        } else {
+          $ctrl.passwordEqualCheck = false;
+          return;
+        }
+      } else {
+        return;
+      }
+    }
+
+    var req = {
+      method: 'POST',
+      url: 'http://DESKTOP-JPD032E:8080/updatePassword',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      transformRequest: function (obj) {
+        var str = [];
+        for (var p in obj)
+          str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+        return str.join("&");
+      },
+      data: {
+        email: $ctrl.user.email,
+        password: $ctrl.user.password
+      }
+    }
+
+    $http(req).then(function (resp) {
+      console.log(resp.data);
+      if (resp.data.content === "successful") {
+
+        $uibModalInstance.dismiss();
+        items.openlogin();
+      } else if (resp.data.content === "failed_user_exists") {
+        $ctrl.failed_user_exists = false;
+      }
+    },
+      function (error) { // optional
+        console.log("error", error);
+      });
+
+
+  }
+
   $ctrl.toSignup = function () {
-    console.log(items);
     $uibModalInstance.dismiss();
     items.signup();
   }
 
+  $ctrl.forgetPassword = function () {
+    $uibModalInstance.dismiss();
+    items.forgetpassword();
+  }
+
+  $ctrl.verifysignup = function () {
+    $uibModalInstance.dismiss();
+    window.location.href = "/#/";
+    items.openlogin();
+  }
 });
 
 // app.controller('KakaoModalInstanceCtrl', function ($uibModalInstance, items) {

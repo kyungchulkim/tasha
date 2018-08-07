@@ -1,0 +1,16 @@
+{
+    "firstName": "Jaron",
+    "lastName": "Lukasiewicz",
+    "bio": [
+        "CEO, Autonomos Capital",
+        "Advisor, Nucleus Vision, Agora, Ambrosus, SONM, and Kraken",
+        "Ex-CEO & Founder, Coinsetter",
+        "Private Equity Associate, The CapStreet Group"
+    ],
+    "img": "bio/data/jaron_lukasiewicz.png",
+    "linkedInUrl": "jaronlukasiewicz",
+    "isTeam": false,
+    "company": [
+        "autonomoscapital","coinsetter","nucleusvision","ambrosus", "kraken"
+    ]
+}

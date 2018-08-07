@@ -3,13 +3,15 @@ angular.module('team', ['bio', 'advisor'])
     return {
       scope: {
       },
-      templateUrl: 'team/team.tpl.html?ver=0723_2',
+      templateUrl: 'team/team.tpl.html?ver=0807',
       link: function ($scope) {
 
         $scope.advisors = [
+          'gabriel_kurman',
           'will_o_brien',
-          'adrian_lai',
-          'brian_tk_lee',
+          // 'jaron_lukasiewicz',
+          // 'adrian_lai',
+          // 'brian_tk_lee',
           'yongsik',
           'hyungsik',
           'yujin',

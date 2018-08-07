@@ -102,6 +102,25 @@
 	font-size: 12px;
 }
 
+.community-nav-wrapper {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+}
+
+.community-nav-img {
+	width: 30px;
+	position: relative;
+	top: -2px;
+}
+
+.community-nav-item {
+ height: 30px;
+ line-height: 30px;
+ margin-left: 10px;
+}
+
 @media (min-width: 1025px) {
 
 	.navbar-expand-custom {
@@ -125,6 +144,10 @@
 }
 
 @media (max-width: 1024px) {
+
+	.community-nav-wrapper {
+		position: relative;
+	}
 
 	.language-change{
 		right: 85px;

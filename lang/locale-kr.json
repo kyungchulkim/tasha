@@ -62,84 +62,116 @@
 
   "roadMap" : [
     {
-      "year" : "05 2018",
+      "year" : "May 2018",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "TEMCO Website Launch",
-      "contents2" : "TEMCO Whitepaper Release"
+      "contents1" : "Launch website",
+      "contents2" : "Release whitepaper"
     },
     {
-      "year" : "06 2018",
+      "year" : "June 2018",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "TEMCO Prototype Release",
-      "contents2" : "Development of Adivsory Board"
+      "contents1" : "Release prototype",
+      "contents2" : "Develop advisory board"
     },
     {
-      "year" : "3Q 2018",
+      "year" : "Aug 2018",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Partnership and Business Development",
+      "contents1" : "Start private sale",
       "contents2" : ""
     },
     {
-      "year" : "4Q 2018",
+      "year" : "Oct 2018",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Prototype TEMCO Platform",
-      "contents2" : "Pilot Test with Partners"
+      "contents1" : "Start whitelisting",
+      "contents2" : ""
+    },
+    {
+      "year" : "Nov 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Start public sale (TBD)",
+      "contents2" : ""
+    },
+    {
+      "year" : "Dec 2018",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Develop decentralized RSK based supply chain network",
+      "contents2" : ""
     },
     {
       "year" : "1Q 2019",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Begin Developing Decentralized Supply Chain Network",
-      "contents2" : ""
+      "contents1" : "Develop BI tool, ERP, and consumer application",
+      "contents2" : "Develop a business model for luxury goods industry"
     },
     {
       "year" : "2Q 2019",
-      "sub1" : "Smart Scan and Voting System",
+      "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Release consumer application",
-      "contents2" : "Release business intelligence tool"
+      "contents1" : "Develop IoT on TEMCO supply chain platform",
+      "contents2" : ""
     },
     {
       "year" : "3Q 2019",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Launch Partner's Mall and Points Mall",
-      "contents2" : "Begin TEMCO Blockchain API Service"
+      "contents1" : "Launch beta BI tool",
+      "contents2" : ""
     },
     {
       "year" : "4Q 2019",
-      "sub1" : "Vendor Verification System",
-      "sub2" : "Smart Contract (transfer, compensation, and penalty agreements etc.)",
-      "sub3" : "",
-      "contents1" : "Launch vendor application",
-      "contents2" : ""
-    },
-    {
-      "year" : "1Q 2020",
-      "sub1" : "Data Warehouse(Hadoop), Analytics Engine(Spark)",
-      "sub2" : "Data Visualization Tool",
-      "sub3" : "PKI Tool",
-      "contents1" : "Begin TEMCO Big Data Service",
-      "contents2" : ""
-    },
-    {
-      "year" : "2~4Q 2020",
       "sub1" : "",
       "sub2" : "",
       "sub3" : "",
-      "contents1" : "Development of TEMCO Blockchain",
+      "contents1" : "Launch beta consumer application",
+      "contents2" : "Launch TEMCO verified API service"
+    },
+    {
+      "year" : "1Q 2020",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Launch beta luxury goods market on TEMCO platform",
       "contents2" : ""
+    },
+    {
+      "year" : "2Q 2020",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Launch luxury goods market on TEMCO platform",
+      "contents2" : "Launch BI tool and beta ERP"
+    },
+    {
+      "year" : "3Q 2020",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Launch ERP and consumer application",
+      "contents2" : ""
+    },
+    {
+      "year" : "4Q 2020",
+      "sub1" : "",
+      "sub2" : "",
+      "sub3" : "",
+      "contents1" : "Launch partner's mall and point mall",
+      "contents2" : "Launch TEMCO data service"
     }
   ],
 

@@ -3,7 +3,7 @@ angular.module('nav', [])
     return{
       scope:{
       },
-      templateUrl: 'nav/nav.tpl.html?ver=0723_2',
+      templateUrl: 'nav/nav.tpl.html?ver=0807',
       link: function($scope) {
 
         //navbar
@@ -15,7 +15,8 @@ angular.module('nav', [])
             title:'whitepaper'
           },
           {
-            title:'technology',
+            title:'technology'
+            ,
             subtitle1: 'test1',
             subtitle2: 'test2'
           },
@@ -34,7 +35,17 @@ angular.module('nav', [])
           }
           ,
           {
-            title:'community'
+            title:'community',
+            community:[
+              'medium',
+              'brunch',
+              'facebook',
+              'twitter',
+              'telegram',
+              'telegram chat',
+              'kakaotalk',
+              'steemit'
+            ]
           }
           ,
           {
@@ -99,6 +110,23 @@ angular.module('nav', [])
         //   }
         // }
 
+        var isShow = [];
+
+        $scope.openComunity = function (index,title) {
+          if(title === "community")
+            isShow[index] = !isShow[index];
+        }
+  
+        $scope.isShow = function ($index) {
+          if(window.innerWidth <= 1024){
+            var display = isShow[$index] ? 'block' : 'block';
+            var max_height = isShow[$index] ? '255px' : '0px';
+            return {
+                "display": display,
+                "height" : max_height
+            }
+          }
+        }
       }
     };
   });

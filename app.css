@@ -148,8 +148,10 @@ team .pin{
 
 .TEMCO-LOGO {
 	width: 104px;
-	height: 28px;
-	object-fit: contain;
+    height: 28px;
+    position: absolute;
+    object-fit: contain;
+    top: 22.5px;
 }
 /* end of zeplin */
 

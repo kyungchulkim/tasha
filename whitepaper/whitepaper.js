@@ -3,7 +3,7 @@ angular.module('whitepaper', [])
     return {
       scope: {
       },
-      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0723_2',
+      templateUrl: 'whitepaper/whitepaper.tpl.html?ver=0807',
       link: function ($scope) {
 
         var scene5 = new ScrollMagic.Scene({
@@ -71,7 +71,7 @@ angular.module('whitepaper', [])
         $scope.whitepaper_kr = "templates/temco_whitepaper_kr.pdf";
         $scope.fastfact_en = "templates/fast_fact_one_page_en.pdf";
         $scope.fastfact_kr = "templates/fast_fact_one_page_kr.pdf";
-
+        $scope.fastfact_cn = "templates/fast_fact_one_page_cn.pdf";
         // $scope.$on("language", function(event,message){
 
         //   if(message === "en"){

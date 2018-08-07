@@ -1,0 +1,14 @@
+{
+    "firstName": "Gabriel",
+    "lastName": "Kurman",
+    "bio": [
+            "Co-Founder, RSK",
+            "CFO & Head of Investor Relations, Koibanx"
+    ],
+    "img": "bio/data/gabriel_kurman.png",
+    "linkedInUrl": "gabriel-kurman-4515497",
+    "isTeam": false,
+    "company": [
+        "rsk","koibanx"
+    ]
+}

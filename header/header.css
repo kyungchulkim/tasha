@@ -11,10 +11,8 @@
 
 .header1{
 	height: 96px;
-	margin-top:114px;
+	margin-top:-5px;
 	margin-bottom:22px;
-	/* text-transform:uppercase; */
-	
 	font-size: 70px;
 	font-weight: 900;
 	font-style: normal;
@@ -121,6 +119,19 @@
 	width: 18vw
 }
 
+.header-rsk-text {
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header-rsk-logo {
+	width: 250px;
+	position: relative;
+	top: -20px;
+	left: -35px;
+}
+
 @media only screen and (max-width: 1650px) {
 	#headerCube{
 		right:-110px;
@@ -146,6 +157,8 @@
 		font-size: 16px;
 		height: 32px;
 	}
+
+
 }
 
 
@@ -154,6 +167,7 @@
 	.header1{
 		font-size: 48px;
 		height: 66px;
+		margin-top: -30px;
 	}
 
 	.header2{
@@ -184,6 +198,7 @@
 	.header1{
 		font-size: 40px;
 		height: 55px;
+		margin-top: -25px;
 	}
 
 	.header2{
@@ -231,7 +246,6 @@
 		height :82px;
 		margin-bottom: 28px;
 		margin-top: 0px;
-		
 		font-size: 60px;
 		font-weight: 900;
 		font-style: normal;
@@ -271,6 +285,9 @@
 		width: 28vw !important;
 	}
 
+	.header-rsk-text {
+		margin-top: 30px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -398,5 +415,14 @@
 		width: 28vw !important;
 	}
 
+	.header-rsk-text {
+		font-size: 16px;
+	}
 	
+	.header-rsk-logo {
+		width: 150px;
+		position: relative;
+		top: -15px;
+		left: -22px;
+	}
 }

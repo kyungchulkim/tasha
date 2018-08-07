@@ -1,13 +1,13 @@
 <div id="navContainer">
-	<div class="navbar-brand TEMCO-LOGO"
-		 ng-click="$parent.navClicked($event,'home')">
+	<div class="navbar-brand TEMCO-LOGO" ng-click="$parent.navClicked($event,'home')">
 	</div>
-	
+
 	<div class="language-change" style="color: #ffffff">
 		<span ng-style="click_en" ng-click="$parent.changeLanguage('en')">
 			English
 		</span>
-		&nbsp;<span style="opacity: 0.8;">|</span>&nbsp;
+		&nbsp;
+		<span style="opacity: 0.8;">|</span>&nbsp;
 		<span ng-style="click_kr" ng-click="$parent.changeLanguage('kr')">
 			한글
 		</span>
@@ -16,29 +16,51 @@
 		</span> -->
 	</div>
 
-	<button class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarsExampleDefault"
-					aria-controls="navbarsExampleDefault"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-					ng-click="navbarClick()">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+	 aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item" ng-repeat="item in $parent.navBars">
-				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)" onclick="myFunction()">{{item.title}}</a>
+				<!-- <a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title)" onclick="myFunction()">{{item.title}}</a> -->
+				<a class="nav-link" data={{item.title}} ng-click="$parent.$parent.navClicked($event,item.title); openComunity($index,item.title);">{{item.title}}</a>
 				<!-- <a class="nav-link" data={{item.subtitle1}} ng-click="$parent.$parent.navClicked($event,item.subtitle1)" 
 				 style="margin-left: 20px;" onclick="myFunction()">{{item.subtitle1}}</a>
 				 <a class="nav-link" data={{item.subtitle2}} ng-click="$parent.$parent.navClicked($event,item.subtitle2)" 
 				 style="margin-left: 20px;" onclick="myFunction()">{{item.subtitle2}}</a> -->
-				 
+
+				<!-- <div class="community-nav-wrapper" ng-style="isShow($index)">
+					<a target="_blank" href="https://medium.com/temcolabs" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/medium@3x.png" alt="medium-icon" class="community-nav-img"/>
+						{{item.community[0]}}
+					</a>
+					<a target="_blank" href="https://brunch.co.kr/@temcolabs" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/brunch@3x.png" alt="brunch-icon" class="community-nav-img"/>
+						{{item.community[1]}}</a>
+					<a target="_blank" href="https://www.facebook.com/TEMCOLABS/" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/facebook@3x.png" alt="facebook-icon" class="community-nav-img"/>
+						{{item.community[2]}}</a>
+					<a target="_blank" href="https://twitter.com/TEMCOLABS" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/twitter@3x.png" alt="twitter-icon" class="community-nav-img"/>
+						{{item.community[3]}}</a>
+					<a target="_blank" href="https://t.me/HITEMCO" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/telegram@3x.png" alt="telegram-icon" class="community-nav-img"/>
+						{{item.community[4]}}</a>
+					<a target="_blank" href="https://t.me/TEMCOLABS" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/telegram_en@3x.png" alt="telegram-icon" class="community-nav-img"/>
+						{{item.community[5]}}</a>
+					<a target="_blank" ng-click="$parent.$parent.$ctrl.openkakao()" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/kakao@3x.png" alt="kakao-icon" class="community-nav-img"/>
+						{{item.community[6]}}</a>
+					<a target="_blank" href="https://steemit.com/@temcolabs" class="nav-link community-nav-item" >
+						<img src="img/footer_icon/steemit@3x.png" alt="steemit-icon" class="community-nav-img"/>
+						{{item.community[7]}}</a>
+				</div> -->
 			</li>
 			<!-- <button type="button" class="btn btn-default" ng-click="$parent.open();">Open me!</button>		 -->
 		</ul>
 	</div>
-	
+
 </div>
